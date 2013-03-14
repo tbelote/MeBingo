@@ -10,7 +10,7 @@
 
 @interface WordGamePlayViewController (){
     NSMutableArray *bNumbers, *iNumbers, *nNumbers, *gNumbers, *oNumbers;
-    NSMutableArray *resultWord;
+    NSMutableArray *remainingWords, *resultWord;
     
     NSArray *wordsArray, *allEnglishWord;
     
@@ -56,6 +56,8 @@
     
     allEnglishWord = [[NSArray alloc] initWithObjects:@"null", @"ant", @"airplane", @"animal", @"bag", @"bird", @"ball", @"car", @"cat", @"cake", @"dog", @"doll", @"eight", @"egg", @"eye", @"ear", @"four", @"fish", @"fire", @"feet", @"gate", @"gift", @"guitar", @"hat", @"hand", @"hair", @"house", @"ice", @"island", @"jar", @"jump", @"key", @"king", @"leaf", @"lemon", @"lion", @"milk", @"man", @"nail", @"net", @"nose", @"nest", @"nine", @"one", @"onion", @"orange", @"pen", @"pig", @"pin", @"pail", @"pan", @"queen", @"row", @"rabbit", @"rose", @"ring", @"rain", @"rat", @"six", @"seven", @"seal", @"two", @"tent", @"three", @"tooth", @"tomato", @"umbrella", @"vest",  @"vowel", @"world", @"wheel", @"woman", @"yacht", @"yam", @"yell", @"zebra", nil];
     
+    remainingWords = [NSMutableArray arrayWithArray:allEnglishWord];
+    
     if ([language isEqual:@"english"]) {
         wordsArray = [[NSArray alloc] initWithObjects:@"null", @"ant", @"airplane", @"animal", @"bag", @"bird", @"ball", @"car", @"cat", @"cake", @"dog", @"doll", @"eight", @"egg", @"eye", @"ear", @"four", @"fish", @"fire", @"feet", @"gate", @"gift", @"guitar", @"hat", @"hand", @"hair", @"house", @"ice", @"island", @"jar", @"jump", @"key", @"king", @"leaf", @"lemon", @"lion", @"milk", @"man", @"nail", @"net", @"nose", @"nest", @"nine", @"one", @"onion", @"orange", @"pen", @"pig", @"pin", @"pail", @"pan", @"queen", @"row", @"rabbit", @"rose", @"ring", @"rain", @"rat", @"six", @"seven", @"seal", @"two", @"tent", @"three", @"tooth", @"tomato", @"umbrella", @"vest",  @"vowel", @"world", @"wheel", @"woman", @"yacht", @"yam", @"yell", @"zebra", nil];
     }
@@ -100,6 +102,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) dealloc {
+    [timer invalidate];
 }
 
 #pragma IBOutlet Methods
@@ -260,7 +266,6 @@
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil, nil];
         [alert show];
-        [alert release];
     }else{
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sorry"
@@ -269,7 +274,6 @@
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil, nil];
         [alert show];
-        [alert release];
     }
     
 }
@@ -277,31 +281,18 @@
 #pragma Private Methods
 
 - (void)updateTime{
-    int generatedNumber = [self getRandomNumberBetweenMin:1 andMax:75];
-    
-    if ([resultWord count]!=75) {
-        if (![resultWord containsObject:[NSNumber numberWithInt:generatedNumber]]) {
-            NSLog(@"generatedNumber: %i", generatedNumber);
-            [resultWord addObject:[NSNumber numberWithInt:generatedNumber]];
-            
-            displayText = [self appendBINGOLetterWithNumber:generatedNumber];
-            displayLabel.text = displayText;
-        }else{
-            [self updateTime];
-        }
-    }else{
-        [timer invalidate];
-        
-        shouldRestartGame = TRUE;
-        
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Done!"
-                                                        message:@"All possible numbers are selected!"
-                                                       delegate:self
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil, nil];
-        [alert show];
-        [alert release];
+    if (([remainingWords count]) <= 0) {
+        return;
     }
+    int generatedNumber = [self getRandomNumberBetweenMin:0 andMax:([remainingWords count]-1)];
+    
+    int indexOfWord = [allEnglishWord indexOfObject:[remainingWords objectAtIndex:generatedNumber]];
+   
+    NSLog(@"generatedNumber, indexOfWord: %i, %i", generatedNumber, indexOfWord);
+    [resultWord addObject:[NSNumber numberWithInt:indexOfWord]];
+    
+    displayLabel.text = [self appendBINGOLetterWithNumber:indexOfWord];
+    [remainingWords removeObjectAtIndex:generatedNumber];
 }
 
 -(int) getRandomNumberBetweenMin:(int)min andMax:(int)max
@@ -328,7 +319,7 @@
         int generatedNumber = [self getRandomNumberBetweenMin:1 andMax:15];
         if (![bNumbers containsObject:[NSNumber numberWithInt:generatedNumber]]) {
             [bNumbers addObject:[NSNumber numberWithInt:generatedNumber]];
-            UIButton *button = [[[UIButton alloc] init] autorelease];
+            UIButton *button = [[UIButton alloc] init];
             NSString *buttonTitle = [wordsArray objectAtIndex:generatedNumber];
             if (i==1){ button = b1Button; b1ButtonText = buttonTitle; }
             if (i==2){ button = b2Button; b2ButtonText = buttonTitle; }
@@ -349,7 +340,7 @@
         int generatedNumber = [self getRandomNumberBetweenMin:16 andMax:30];
         if (![iNumbers containsObject:[NSNumber numberWithInt:generatedNumber]]) {
             [iNumbers addObject:[NSNumber numberWithInt:generatedNumber]];
-            UIButton *button = [[[UIButton alloc] init] autorelease];
+            UIButton *button = [[UIButton alloc] init];
             NSString *buttonTitle = [wordsArray objectAtIndex:generatedNumber];
             if (i==1){ button = i1Button; i1ButtonText = buttonTitle; }
             if (i==2){ button = i2Button; i2ButtonText = buttonTitle; }
@@ -370,7 +361,7 @@
         int generatedNumber = [self getRandomNumberBetweenMin:31 andMax:45];
         if (![nNumbers containsObject:[NSNumber numberWithInt:generatedNumber]]) {
             [nNumbers addObject:[NSNumber numberWithInt:generatedNumber]];
-            UIButton *button = [[[UIButton alloc] init] autorelease];
+            UIButton *button = [[UIButton alloc] init];
             NSString *buttonTitle = [wordsArray objectAtIndex:generatedNumber];
             if (i==1){ button = n1Button; n1ButtonText = buttonTitle; }
             if (i==2){ button = n2Button; n2ButtonText = buttonTitle; }
@@ -391,7 +382,7 @@
         int generatedNumber = [self getRandomNumberBetweenMin:46 andMax:60];
         if (![gNumbers containsObject:[NSNumber numberWithInt:generatedNumber]]) {
             [gNumbers addObject:[NSNumber numberWithInt:generatedNumber]];
-            UIButton *button = [[[UIButton alloc] init] autorelease];
+            UIButton *button = [[UIButton alloc] init];
             NSString *buttonTitle = [wordsArray objectAtIndex:generatedNumber];
             if (i==1){ button = g1Button; g1ButtonText = buttonTitle; }
             if (i==2){ button = g2Button; g2ButtonText = buttonTitle; }
@@ -412,7 +403,7 @@
         int generatedNumber = [self getRandomNumberBetweenMin:61 andMax:75];
         if (![oNumbers containsObject:[NSNumber numberWithInt:generatedNumber]]) {
             [oNumbers addObject:[NSNumber numberWithInt:generatedNumber]];
-            UIButton *button = [[[UIButton alloc] init] autorelease];
+            UIButton *button = [[UIButton alloc] init];
             NSString *buttonTitle = [wordsArray objectAtIndex:generatedNumber];
             if (i==1){ button = o1Button; o1ButtonText = buttonTitle; }
             if (i==2){ button = o2Button; o2ButtonText = buttonTitle; }

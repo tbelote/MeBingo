@@ -66,7 +66,7 @@
             break;
     }
     
-    WordGamePlayViewController *wordGamePlay = [[[WordGamePlayViewController alloc] initWithNibName:@"WordGamePlayViewController" bundle:nil] autorelease];
+    WordGamePlayViewController *wordGamePlay = [[WordGamePlayViewController alloc] initWithNibName:@"WordGamePlayViewController" bundle:nil];
     wordGamePlay.language = lang;
     [self.navigationController pushViewController:wordGamePlay animated:YES];
 }

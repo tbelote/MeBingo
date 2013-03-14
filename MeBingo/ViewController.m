@@ -33,7 +33,7 @@
 #pragma IBOutlet Method
 
 -(IBAction)playGameIsClciked:(id)sender{
-    SelectGamePlayViewController *selectGamePlay = [[[SelectGamePlayViewController alloc] initWithNibName:@"SelectGamePlayViewController" bundle:nil] autorelease];
+    SelectGamePlayViewController *selectGamePlay = [[SelectGamePlayViewController alloc] initWithNibName:@"SelectGamePlayViewController" bundle:nil];
     [self.navigationController pushViewController:selectGamePlay animated:YES];
 }
 

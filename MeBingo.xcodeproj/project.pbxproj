@@ -378,6 +378,7 @@
 		B89F8E2016E3200A000FB79C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeBingo/MeBingo-Prefix.pch";
 				INFOPLIST_FILE = "MeBingo/MeBingo-Info.plist";
@@ -389,6 +390,7 @@
 		B89F8E2116E3200A000FB79C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeBingo/MeBingo-Prefix.pch";
 				INFOPLIST_FILE = "MeBingo/MeBingo-Info.plist";

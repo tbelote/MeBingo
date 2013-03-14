@@ -46,13 +46,13 @@
     /*GamePlayViewController *gamePlay = [[[GamePlayViewController alloc] initWithNibName:@"GamePlayViewController" bundle:nil] autorelease];
     [self.navigationController pushViewController:gamePlay animated:YES];*/
     
-    WordGamePlayViewController *wordGamePlay = [[[WordGamePlayViewController alloc] initWithNibName:@"WordGamePlayViewController" bundle:nil] autorelease];
+    WordGamePlayViewController *wordGamePlay = [[WordGamePlayViewController alloc] initWithNibName:@"WordGamePlayViewController" bundle:nil];
     wordGamePlay.language = @"numbers";
     [self.navigationController pushViewController:wordGamePlay animated:YES];
 }
 
 -(IBAction)wordBingoGameIsClicked:(id)sender{
-    SelectLanguageViewController *selectLanguage = [[[SelectLanguageViewController alloc] initWithNibName:@"SelectLanguageViewController" bundle:nil] autorelease];
+    SelectLanguageViewController *selectLanguage = [[SelectLanguageViewController alloc] initWithNibName:@"SelectLanguageViewController" bundle:nil];
     [self.navigationController pushViewController:selectLanguage animated:YES];
 }
 

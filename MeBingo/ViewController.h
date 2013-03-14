@@ -10,6 +10,6 @@
 
 @interface ViewController : UIViewController
 
-@property(nonatomic, retain) IBOutlet UIButton *playGameButton;
+@property(nonatomic, strong) IBOutlet UIButton *playGameButton;
 
 @end

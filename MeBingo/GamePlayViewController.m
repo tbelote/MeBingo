@@ -215,7 +215,6 @@
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil, nil];
         [alert show];
-        [alert release];
     }else{
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sorry"
@@ -224,7 +223,6 @@
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil, nil];
         [alert show];
-        [alert release];
     }
     
 }
@@ -260,7 +258,6 @@
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil, nil];
         [alert show];
-        [alert release];
     }
 }
 
@@ -287,7 +284,7 @@
         int generatedNumber = [self getRandomNumberBetweenMin:1 andMax:15];
         if (![bNumbers containsObject:[NSNumber numberWithInt:generatedNumber]]) {
             [bNumbers addObject:[NSNumber numberWithInt:generatedNumber]];
-            UIButton *button = [[[UIButton alloc] init] autorelease];
+            UIButton *button = [[UIButton alloc] init];
             if (i==1) button = b1Button;
             if (i==2) button = b2Button;
             if (i==3) button = b3Button;
@@ -306,7 +303,7 @@
         int generatedNumber = [self getRandomNumberBetweenMin:16 andMax:30];
         if (![iNumbers containsObject:[NSNumber numberWithInt:generatedNumber]]) {
             [iNumbers addObject:[NSNumber numberWithInt:generatedNumber]];
-            UIButton *button = [[[UIButton alloc] init] autorelease];
+            UIButton *button = [[UIButton alloc] init];
             if (i==1) button = i1Button;
             if (i==2) button = i2Button;
             if (i==3) button = i3Button;
@@ -325,7 +322,7 @@
         int generatedNumber = [self getRandomNumberBetweenMin:31 andMax:45];
         if (![nNumbers containsObject:[NSNumber numberWithInt:generatedNumber]]) {
             [nNumbers addObject:[NSNumber numberWithInt:generatedNumber]];
-            UIButton *button = [[[UIButton alloc] init] autorelease];
+            UIButton *button = [[UIButton alloc] init];
             if (i==1) button = n1Button;
             if (i==2) button = n2Button;
             if (i==3) button = n3Button;
@@ -344,7 +341,7 @@
         int generatedNumber = [self getRandomNumberBetweenMin:46 andMax:60];
         if (![gNumbers containsObject:[NSNumber numberWithInt:generatedNumber]]) {
             [gNumbers addObject:[NSNumber numberWithInt:generatedNumber]];
-            UIButton *button = [[[UIButton alloc] init] autorelease];
+            UIButton *button = [[UIButton alloc] init];
             if (i==1) button = g1Button;
             if (i==2) button = g2Button;
             if (i==3) button = g3Button;
@@ -363,7 +360,7 @@
         int generatedNumber = [self getRandomNumberBetweenMin:61 andMax:75];
         if (![oNumbers containsObject:[NSNumber numberWithInt:generatedNumber]]) {
             [oNumbers addObject:[NSNumber numberWithInt:generatedNumber]];
-            UIButton *button = [[[UIButton alloc] init] autorelease];
+            UIButton *button = [[UIButton alloc] init];
             if (i==1) button = o1Button;
             if (i==2) button = o2Button;
             if (i==3) button = o3Button;
