@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B801356316F0D8A70025111F /* WordGamePlayViewControllerIphone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = B801356116F0D8A70025111F /* WordGamePlayViewControllerIphone5.xib */; };
+		B822774816ECBC1F00456D3C /* SelectGamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B822774616ECBC1F00456D3C /* SelectGamePlayViewController.m */; };
+		B822774916ECBC1F00456D3C /* SelectGamePlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B822774716ECBC1F00456D3C /* SelectGamePlayViewController.xib */; };
+		B822774E16ECC51200456D3C /* WordGamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B822774C16ECC51200456D3C /* WordGamePlayViewController.m */; };
+		B822774F16ECC51200456D3C /* WordGamePlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B822774D16ECC51200456D3C /* WordGamePlayViewController.xib */; };
+		B822775416ECC5CB00456D3C /* SelectLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B822775216ECC5CB00456D3C /* SelectLanguageViewController.m */; };
+		B822775516ECC5CB00456D3C /* SelectLanguageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B822775316ECC5CB00456D3C /* SelectLanguageViewController.xib */; };
+		B87A786C16EFFCA500FCE831 /* WordGamePlayViewController-landscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87A786A16EFFCA500FCE831 /* WordGamePlayViewController-landscape.xib */; };
+		B89944F616F14930007A223B /* WordGamePlayViewController-landscapeIphone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = B89944F416F14930007A223B /* WordGamePlayViewController-landscapeIphone5.xib */; };
+		B89944FB16F14E3D007A223B /* SelectLanguageViewController-landscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = B89944F916F14E3D007A223B /* SelectLanguageViewController-landscape.xib */; };
+		B8998C3216E3831800878C17 /* GamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8998C3016E3831800878C17 /* GamePlayViewController.m */; };
+		B8998C3316E3831800878C17 /* GamePlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8998C3116E3831800878C17 /* GamePlayViewController.xib */; };
+		B89F8E0016E3200A000FB79C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89F8DFF16E3200A000FB79C /* UIKit.framework */; };
+		B89F8E0216E3200A000FB79C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89F8E0116E3200A000FB79C /* Foundation.framework */; };
+		B89F8E0416E3200A000FB79C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89F8E0316E3200A000FB79C /* CoreGraphics.framework */; };
+		B89F8E0A16E3200A000FB79C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B89F8E0816E3200A000FB79C /* InfoPlist.strings */; };
+		B89F8E0C16E3200A000FB79C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B89F8E0B16E3200A000FB79C /* main.m */; };
+		B89F8E1016E3200A000FB79C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B89F8E0F16E3200A000FB79C /* AppDelegate.m */; };
+		B89F8E1216E3200A000FB79C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B89F8E1116E3200A000FB79C /* Default.png */; };
+		B89F8E1416E3200A000FB79C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B89F8E1316E3200A000FB79C /* Default@2x.png */; };
+		B89F8E1616E3200A000FB79C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B89F8E1516E3200A000FB79C /* Default-568h@2x.png */; };
+		B89F8E1916E3200A000FB79C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B89F8E1816E3200A000FB79C /* ViewController.m */; };
+		B89F8E1C16E3200A000FB79C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B89F8E1A16E3200A000FB79C /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B801356116F0D8A70025111F /* WordGamePlayViewControllerIphone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WordGamePlayViewControllerIphone5.xib; sourceTree = "<group>"; };
+		B822774516ECBC1F00456D3C /* SelectGamePlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectGamePlayViewController.h; sourceTree = "<group>"; };
+		B822774616ECBC1F00456D3C /* SelectGamePlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectGamePlayViewController.m; sourceTree = "<group>"; };
+		B822774716ECBC1F00456D3C /* SelectGamePlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectGamePlayViewController.xib; sourceTree = "<group>"; };
+		B822774B16ECC51200456D3C /* WordGamePlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordGamePlayViewController.h; sourceTree = "<group>"; };
+		B822774C16ECC51200456D3C /* WordGamePlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordGamePlayViewController.m; sourceTree = "<group>"; };
+		B822774D16ECC51200456D3C /* WordGamePlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WordGamePlayViewController.xib; sourceTree = "<group>"; };
+		B822775116ECC5CB00456D3C /* SelectLanguageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectLanguageViewController.h; sourceTree = "<group>"; };
+		B822775216ECC5CB00456D3C /* SelectLanguageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectLanguageViewController.m; sourceTree = "<group>"; };
+		B822775316ECC5CB00456D3C /* SelectLanguageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectLanguageViewController.xib; sourceTree = "<group>"; };
+		B87A786A16EFFCA500FCE831 /* WordGamePlayViewController-landscape.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "WordGamePlayViewController-landscape.xib"; sourceTree = "<group>"; };
+		B89944F416F14930007A223B /* WordGamePlayViewController-landscapeIphone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "WordGamePlayViewController-landscapeIphone5.xib"; sourceTree = "<group>"; };
+		B89944F916F14E3D007A223B /* SelectLanguageViewController-landscape.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SelectLanguageViewController-landscape.xib"; sourceTree = "<group>"; };
+		B8998C2F16E3831800878C17 /* GamePlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePlayViewController.h; sourceTree = "<group>"; };
+		B8998C3016E3831800878C17 /* GamePlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePlayViewController.m; sourceTree = "<group>"; };
+		B8998C3116E3831800878C17 /* GamePlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamePlayViewController.xib; sourceTree = "<group>"; };
+		B89F8DFC16E3200A000FB79C /* MeBingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeBingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B89F8DFF16E3200A000FB79C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B89F8E0116E3200A000FB79C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B89F8E0316E3200A000FB79C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B89F8E0716E3200A000FB79C /* MeBingo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeBingo-Info.plist"; sourceTree = "<group>"; };
+		B89F8E0916E3200A000FB79C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B89F8E0B16E3200A000FB79C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B89F8E0D16E3200A000FB79C /* MeBingo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MeBingo-Prefix.pch"; sourceTree = "<group>"; };
+		B89F8E0E16E3200A000FB79C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B89F8E0F16E3200A000FB79C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B89F8E1116E3200A000FB79C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B89F8E1316E3200A000FB79C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B89F8E1516E3200A000FB79C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B89F8E1716E3200A000FB79C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B89F8E1816E3200A000FB79C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B89F8E1B16E3200A000FB79C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B89F8DF916E3200A000FB79C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89F8E0016E3200A000FB79C /* UIKit.framework in Frameworks */,
+				B89F8E0216E3200A000FB79C /* Foundation.framework in Frameworks */,
+				B89F8E0416E3200A000FB79C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B822773F16ECBB2F00456D3C /* Media */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
+		B822774016ECBB4F00456D3C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B822775016ECC59A00456D3C /* SelectLanguageViewController */,
+				B822774A16ECC47500456D3C /* WordGamePlayViewController */,
+				B822774416ECBBED00456D3C /* SelectGamePlayController */,
+				B822774316ECBBA200456D3C /* GamePlayViewController */,
+				B822774216ECBB8400456D3C /* HomeViewController */,
+				B822774116ECBB6400456D3C /* AppDelegate */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		B822774116ECBB6400456D3C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B89F8E0E16E3200A000FB79C /* AppDelegate.h */,
+				B89F8E0F16E3200A000FB79C /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B822774216ECBB8400456D3C /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B89F8E1716E3200A000FB79C /* ViewController.h */,
+				B89F8E1816E3200A000FB79C /* ViewController.m */,
+				B89F8E1A16E3200A000FB79C /* ViewController.xib */,
+			);
+			name = HomeViewController;
+			sourceTree = "<group>";
+		};
+		B822774316ECBBA200456D3C /* GamePlayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B8998C2F16E3831800878C17 /* GamePlayViewController.h */,
+				B8998C3016E3831800878C17 /* GamePlayViewController.m */,
+				B8998C3116E3831800878C17 /* GamePlayViewController.xib */,
+			);
+			name = GamePlayViewController;
+			sourceTree = "<group>";
+		};
+		B822774416ECBBED00456D3C /* SelectGamePlayController */ = {
+			isa = PBXGroup;
+			children = (
+				B822774516ECBC1F00456D3C /* SelectGamePlayViewController.h */,
+				B822774616ECBC1F00456D3C /* SelectGamePlayViewController.m */,
+				B822774716ECBC1F00456D3C /* SelectGamePlayViewController.xib */,
+			);
+			name = SelectGamePlayController;
+			sourceTree = "<group>";
+		};
+		B822774A16ECC47500456D3C /* WordGamePlayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B822774B16ECC51200456D3C /* WordGamePlayViewController.h */,
+				B822774C16ECC51200456D3C /* WordGamePlayViewController.m */,
+				B822774D16ECC51200456D3C /* WordGamePlayViewController.xib */,
+				B87A786A16EFFCA500FCE831 /* WordGamePlayViewController-landscape.xib */,
+				B801356116F0D8A70025111F /* WordGamePlayViewControllerIphone5.xib */,
+				B89944F416F14930007A223B /* WordGamePlayViewController-landscapeIphone5.xib */,
+			);
+			name = WordGamePlayViewController;
+			sourceTree = "<group>";
+		};
+		B822775016ECC59A00456D3C /* SelectLanguageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B822775116ECC5CB00456D3C /* SelectLanguageViewController.h */,
+				B822775216ECC5CB00456D3C /* SelectLanguageViewController.m */,
+				B822775316ECC5CB00456D3C /* SelectLanguageViewController.xib */,
+				B89944F916F14E3D007A223B /* SelectLanguageViewController-landscape.xib */,
+			);
+			name = SelectLanguageViewController;
+			sourceTree = "<group>";
+		};
+		B89F8DF316E3200A000FB79C = {
+			isa = PBXGroup;
+			children = (
+				B89F8E0516E3200A000FB79C /* MeBingo */,
+				B89F8DFE16E3200A000FB79C /* Frameworks */,
+				B89F8DFD16E3200A000FB79C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B89F8DFD16E3200A000FB79C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B89F8DFC16E3200A000FB79C /* MeBingo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B89F8DFE16E3200A000FB79C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B89F8DFF16E3200A000FB79C /* UIKit.framework */,
+				B89F8E0116E3200A000FB79C /* Foundation.framework */,
+				B89F8E0316E3200A000FB79C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B89F8E0516E3200A000FB79C /* MeBingo */ = {
+			isa = PBXGroup;
+			children = (
+				B822774016ECBB4F00456D3C /* Classes */,
+				B822773F16ECBB2F00456D3C /* Media */,
+				B89F8E0616E3200A000FB79C /* Supporting Files */,
+			);
+			path = MeBingo;
+			sourceTree = "<group>";
+		};
+		B89F8E0616E3200A000FB79C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B89F8E0716E3200A000FB79C /* MeBingo-Info.plist */,
+				B89F8E0816E3200A000FB79C /* InfoPlist.strings */,
+				B89F8E0B16E3200A000FB79C /* main.m */,
+				B89F8E0D16E3200A000FB79C /* MeBingo-Prefix.pch */,
+				B89F8E1116E3200A000FB79C /* Default.png */,
+				B89F8E1316E3200A000FB79C /* Default@2x.png */,
+				B89F8E1516E3200A000FB79C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B89F8DFB16E3200A000FB79C /* MeBingo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B89F8E1F16E3200A000FB79C /* Build configuration list for PBXNativeTarget "MeBingo" */;
+			buildPhases = (
+				B89F8DF816E3200A000FB79C /* Sources */,
+				B89F8DF916E3200A000FB79C /* Frameworks */,
+				B89F8DFA16E3200A000FB79C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeBingo;
+			productName = MeBingo;
+			productReference = B89F8DFC16E3200A000FB79C /* MeBingo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B89F8DF416E3200A000FB79C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Anthony Yanto";
+			};
+			buildConfigurationList = B89F8DF716E3200A000FB79C /* Build configuration list for PBXProject "MeBingo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B89F8DF316E3200A000FB79C;
+			productRefGroup = B89F8DFD16E3200A000FB79C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B89F8DFB16E3200A000FB79C /* MeBingo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B89F8DFA16E3200A000FB79C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89F8E0A16E3200A000FB79C /* InfoPlist.strings in Resources */,
+				B89F8E1216E3200A000FB79C /* Default.png in Resources */,
+				B89F8E1416E3200A000FB79C /* Default@2x.png in Resources */,
+				B89F8E1616E3200A000FB79C /* Default-568h@2x.png in Resources */,
+				B89F8E1C16E3200A000FB79C /* ViewController.xib in Resources */,
+				B8998C3316E3831800878C17 /* GamePlayViewController.xib in Resources */,
+				B822774916ECBC1F00456D3C /* SelectGamePlayViewController.xib in Resources */,
+				B822774F16ECC51200456D3C /* WordGamePlayViewController.xib in Resources */,
+				B822775516ECC5CB00456D3C /* SelectLanguageViewController.xib in Resources */,
+				B87A786C16EFFCA500FCE831 /* WordGamePlayViewController-landscape.xib in Resources */,
+				B801356316F0D8A70025111F /* WordGamePlayViewControllerIphone5.xib in Resources */,
+				B89944F616F14930007A223B /* WordGamePlayViewController-landscapeIphone5.xib in Resources */,
+				B89944FB16F14E3D007A223B /* SelectLanguageViewController-landscape.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B89F8DF816E3200A000FB79C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89F8E0C16E3200A000FB79C /* main.m in Sources */,
+				B89F8E1016E3200A000FB79C /* AppDelegate.m in Sources */,
+				B89F8E1916E3200A000FB79C /* ViewController.m in Sources */,
+				B8998C3216E3831800878C17 /* GamePlayViewController.m in Sources */,
+				B822774816ECBC1F00456D3C /* SelectGamePlayViewController.m in Sources */,
+				B822774E16ECC51200456D3C /* WordGamePlayViewController.m in Sources */,
+				B822775416ECC5CB00456D3C /* SelectLanguageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B89F8E0816E3200A000FB79C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B89F8E0916E3200A000FB79C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B89F8E1A16E3200A000FB79C /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B89F8E1B16E3200A000FB79C /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B89F8E1D16E3200A000FB79C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B89F8E1E16E3200A000FB79C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B89F8E2016E3200A000FB79C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MeBingo/MeBingo-Prefix.pch";
+				INFOPLIST_FILE = "MeBingo/MeBingo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B89F8E2116E3200A000FB79C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MeBingo/MeBingo-Prefix.pch";
+				INFOPLIST_FILE = "MeBingo/MeBingo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B89F8DF716E3200A000FB79C /* Build configuration list for PBXProject "MeBingo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B89F8E1D16E3200A000FB79C /* Debug */,
+				B89F8E1E16E3200A000FB79C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B89F8E1F16E3200A000FB79C /* Build configuration list for PBXNativeTarget "MeBingo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B89F8E2016E3200A000FB79C /* Debug */,
+				B89F8E2116E3200A000FB79C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B89F8DF416E3200A000FB79C /* Project object */;
+}
