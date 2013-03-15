@@ -55,31 +55,34 @@
     [self callAppropriateXIB:self.interfaceOrientation];
     
     allEnglishWord = [[NSArray alloc] initWithObjects:@"null", @"ant", @"airplane", @"animal", @"bag", @"bird", @"ball", @"car", @"cat", @"cake", @"dog", @"doll", @"eight", @"egg", @"eye", @"ear", @"four", @"fish", @"fire", @"feet", @"gate", @"gift", @"guitar", @"hat", @"hand", @"hair", @"house", @"ice", @"island", @"jar", @"jump", @"key", @"king", @"leaf", @"lemon", @"lion", @"milk", @"man", @"nail", @"net", @"nose", @"nest", @"nine", @"one", @"onion", @"orange", @"pen", @"pig", @"pin", @"pail", @"pan", @"queen", @"row", @"rabbit", @"rose", @"ring", @"rain", @"rat", @"six", @"seven", @"seal", @"two", @"tent", @"three", @"tooth", @"tomato", @"umbrella", @"vest",  @"vowel", @"world", @"wheel", @"woman", @"yacht", @"yam", @"yell", @"zebra", nil];
-    
+
+    //Except for numbers
     remainingWords = [NSMutableArray arrayWithArray:allEnglishWord];
     
     if ([language isEqual:@"english"]) {
         wordsArray = [[NSArray alloc] initWithObjects:@"null", @"ant", @"airplane", @"animal", @"bag", @"bird", @"ball", @"car", @"cat", @"cake", @"dog", @"doll", @"eight", @"egg", @"eye", @"ear", @"four", @"fish", @"fire", @"feet", @"gate", @"gift", @"guitar", @"hat", @"hand", @"hair", @"house", @"ice", @"island", @"jar", @"jump", @"key", @"king", @"leaf", @"lemon", @"lion", @"milk", @"man", @"nail", @"net", @"nose", @"nest", @"nine", @"one", @"onion", @"orange", @"pen", @"pig", @"pin", @"pail", @"pan", @"queen", @"row", @"rabbit", @"rose", @"ring", @"rain", @"rat", @"six", @"seven", @"seal", @"two", @"tent", @"three", @"tooth", @"tomato", @"umbrella", @"vest",  @"vowel", @"world", @"wheel", @"woman", @"yacht", @"yam", @"yell", @"zebra", nil];
     }
-    if ([language isEqual:@"tagalog"]) {
+    else if ([language isEqual:@"tagalog"]) {
         wordsArray = [[NSArray alloc] initWithObjects:@"null", @"langgam", @"eruplano", @"hayop", @"supot", @"ibon", @"bola", @"kotse", @"pusa", @"keyk", @"aso", @"manika", @"walo", @"itlog", @"mata", @"tainga", @"apat", @"isda", @"sunog", @"paa", @"gate", @"regalo", @"gitara", @"sombrero", @"kamay", @"buhok", @"bahay", @"yelo", @"isla", @"garapon", @"tumalon", @"susi", @"hari", @"dahon", @"limon", @"leon", @"gatas", @"tao", @"kuko", @"lambat", @"ilong", @"pugad", @"siyam", @"isa", @"sibuyas", @"kahel", @"panulat", @"baboy", @"pin", @"timba", @"kawali", @"reyna", @"hilera", @"kuneho", @"rosas", @"singsing", @"ulan", @"daga", @"anim", @"pito", @"selyo", @"dalawa", @"tent", @"tatlo", @"ngipin", @"kamatis", @"payong", @"damtan", @"patinig", @"mundo", @"gulong", @"babae", @"yate", @"nami", @"sumigaw", @"sebra", nil];
     }
-    if ([language isEqual:@"spanish"]) {
+    else if ([language isEqual:@"spanish"]) {
         wordsArray = [[NSArray alloc] initWithObjects:@"null", @"hormiga", @"avión", @"animal", @"bolsa", @"pájaro", @"bola", @"coche", @"gato", @"pastel", @"perro", @"muñeca", @"ocho", @"huevo", @"ojo", @"oído", @"cuatro", @"pescado", @"fuego", @"pies", @"puerta", @"regalo", @"guitarra", @"sombrero", @"mano", @"cabello", @"casa", @"hielo", @"isla", @"tarro", @"saltar", @"clave", @"rey", @"hoja", @"limón", @"león", @"leche", @"hombre", @"clavo", @"neto", @"nariz", @"nido", @"nueve", @"uno", @"cebolla", @"naranja", @"pluma", @"cerdo", @"pin", @"cubo", @"pan", @"reina", @"fila", @"conejo", @"rosa", @"anillo", @"lluvia", @"rata", @"seis", @"siete", @"sellar", @"dos", @"tienda", @"tres", @"diente", @"tomate", @"paraguas", @"chaleco", @"vocal", @"mundo", @"rueda", @"mujer", @"yate", @"ñame", @"gritar", @"cebra", nil];
     }
-    if ([language isEqual:@"french"]) {
+    else if ([language isEqual:@"french"]) {
         wordsArray = [[NSArray alloc] initWithObjects:@"null", @"fourmi", @"avion", @"animal", @"sac", @"oiseau", @"balle", @"voiture", @"chat", @"gâteau", @"chien", @"poupée", @"huit", @"œuf", @"œil", @"oreille", @"quatre", @"poisson", @"feu", @"pieds", @"porte", @"cadeau", @"guitare", @"chapeau", @"main", @"cheveux", @"maison", @"glace", @"île", @"bocal", @"sauter", @"clé", @"roi", @"feuille", @"citron", @"lion", @"lait", @"homme", @"clouer", @"net", @"nez", @"nid", @"neuf", @"un", @"oignon", @"orange", @"stylo", @"porc", @"broche", @"seau", @"casserole", @"reine", @"rangée", @"lapin", @"rose", @"anneau", @"pluie", @"rat", @"six", @"sept", @"sceller", @"deux", @"tente", @"trois", @"dent", @"tomate", @"parapluie", @"gilet", @"voyelle", @"monde", @"roue", @"femme", @"yacht", @"igname", @"crier", @"zèbre", nil];
     }
-    if ([language isEqual:@"chinese"]) {
+    else if ([language isEqual:@"chinese"]) {
         wordsArray = [[NSArray alloc] initWithObjects:@"null", @"蚂蚁", @"飞机", @"动物", @"袋", @"鸟", @"球", @"汽车", @"猫", @"蛋糕", @"狗", @"娃娃", @"八", @"鸡蛋", @"眼", @"耳", @"四", @"鱼", @"火", @"脚", @"门", @"礼物", @"吉他", @"帽子", @"手", @"头发", @"房子", @"冰", @"岛", @"罐", @"跳", @"关键", @"王", @"叶", @"柠檬", @"狮子", @"牛奶", @"人", @"钉", @"净", @"鼻子", @"巢", @"九", @"一", @"洋葱", @"橙", @"笔", @"猪", @"针", @"桶", @"锅", @"女王", @"行", @"兔", @"玫瑰", @"环", @"雨", @"鼠", @"六", @"七", @"密封", @"二", @"帐篷", @"三", @"牙齿", @"西红柿", @"伞", @"背心", @"元音", @"世界", @"轮", @"女人", @"游艇", @"薯", @"喊叫", @"斑马", nil];
     }
-    if ([language isEqual:@"italian"]) {
+    else if ([language isEqual:@"italian"]) {
         wordsArray = [[NSArray alloc] initWithObjects:@"null", @"formica", @"aereo", @"animale", @"borsa", @"uccello", @"palla", @"auto", @"gatto", @"torta", @"cane", @"bambola", @"otto", @"uovo", @"occhio", @"orecchio", @"quattro", @"pesce", @"fuoco", @"piedi", @"gate", @"regalo", @"chitarra", @"cappello", @"mano", @"capelli", @"casa", @"ghiaccio", @"isola", @"vaso", @"saltare", @"chiave", @"re", @"foglia", @"limone", @"leone", @"latte", @"uomo", @"chiodo", @"netto", @"naso", @"nido", @"nove", @"uno", @"cipolla", @"arancione", @"penna", @"maiale", @"pin", @"secchio", @"padella", @"regina", @"fila", @"coniglio", @"rosa", @"anello", @"pioggia", @"ratto", @"sei", @"sette", @"sigillare", @"due", @"tenda", @"tre", @"dente", @"pomodoro", @"ombrello", @"gilet", @"vocale", @"mondo", @"ruota", @"donna", @"yacht", @"batata", @"urlare", @"zebra", nil];
     }
-    if ([language isEqual:@"numbers"]){
+    else if ([language isEqual:@"numbers"]){
         wordsArray = [[NSArray alloc] initWithObjects:@"null", @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"11", @"12", @"13", @"14", @"15", @"16", @"17", @"18", @"19", @"20", @"21", @"22", @"23", @"24", @"25", @"26", @"27", @"28", @"29", @"30", @"31", @"32", @"33", @"34", @"35", @"36", @"37", @"38", @"39", @"40", @"41", @"42", @"43", @"44", @"45", @"46", @"47", @"48", @"49", @"50", @"51", @"52", @"53", @"54", @"55", @"56", @"57", @"58", @"59", @"60", @"61", @"62", @"63", @"64", @"65", @"66", @"67", @"68", @"69", @"70", @"71", @"72", @"73", @"74", @"75", nil];
         
         allEnglishWord = [[NSArray alloc] initWithArray:wordsArray];
+        remainingWords = [NSMutableArray arrayWithArray:allEnglishWord];
+
     }
     
     resultWord = [[NSMutableArray alloc] init];
@@ -284,7 +287,7 @@
     if (([remainingWords count]) <= 0) {
         return;
     }
-    int generatedNumber = [self getRandomNumberBetweenMin:0 andMax:([remainingWords count]-1)];
+    int generatedNumber = [self getRandomNumberBetweenMin:1 andMax:([remainingWords count]-1)];
     
     int indexOfWord = [allEnglishWord indexOfObject:[remainingWords objectAtIndex:generatedNumber]];
    

@@ -227,6 +227,9 @@
     
 }
 
+- (void) dealloc {
+    [timer invalidate];
+}
 #pragma Private Methods
 
 - (void)updateTime{
