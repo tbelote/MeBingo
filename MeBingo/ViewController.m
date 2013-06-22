@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "SelectGamePlayViewController.h"
-#import <GigyaSDK/FBSession.h>
 #import "AppDelegate.h"
 #import "PrintPhotoViewController.h"
 
@@ -178,20 +177,6 @@
     }
 }
 
--(IBAction)loginwithFB:(id)sender{
-    
-    AppDelegate *appDelegate =
-    [[UIApplication sharedApplication] delegate];
-    
-    // If the user is authenticated, log out when the button is clicked.
-    // If the user is not authenticated, log in when the button is clicked.
-    if (FBSession.activeSession.isOpen) {
-        [FBSession.activeSession closeAndClearTokenInformation];
-    } else {
-        [appDelegate openSessionWithAllowLoginUI:YES];
-    }
-
-}
 
 -(IBAction)printCard:(id)sender{
     PrintPhotoViewController *printphoto = [[PrintPhotoViewController alloc] initWithNibName:@"PrintPhotoViewController" bundle:nil];

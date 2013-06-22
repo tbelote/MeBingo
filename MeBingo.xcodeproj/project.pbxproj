@@ -91,7 +91,6 @@
 		614881EB1776172900290172 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881EA1776172900290172 /* AVFoundation.framework */; };
 		614881ED1776172F00290172 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881EC1776172F00290172 /* AudioToolbox.framework */; };
 		614881EF1776173600290172 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881EE1776173600290172 /* libicucore.dylib */; };
-		614881F11776173F00290172 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881F01776173F00290172 /* libstdc++.dylib */; };
 		614881F31776174900290172 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881F21776174900290172 /* QuartzCore.framework */; };
 		614881F51776175100290172 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881F41776175100290172 /* CoreData.framework */; };
 		614882061776177900290172 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881F61776177800290172 /* GLKit.framework */; };
@@ -99,9 +98,6 @@
 		614882081776177900290172 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881F81776177800290172 /* libz.dylib */; };
 		614882091776177900290172 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881F91776177800290172 /* AddressBook.framework */; };
 		6148820A1776177900290172 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881FA1776177800290172 /* CFNetwork.framework */; };
-		6148820B1776177900290172 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881FB1776177800290172 /* libsqlite3.0.dylib */; };
-		6148820C1776177900290172 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881FC1776177800290172 /* libsqlite3.dylib */; };
-		6148820D1776177900290172 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881FD1776177800290172 /* Twitter.framework */; };
 		6148820E1776177900290172 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881FE1776177800290172 /* Social.framework */; };
 		6148820F1776177900290172 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881FF1776177800290172 /* MessageUI.framework */; };
 		614882101776177900290172 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614882001776177800290172 /* Accounts.framework */; };
@@ -110,10 +106,6 @@
 		614882131776177900290172 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614882031776177800290172 /* MobileCoreServices.framework */; };
 		614882141776177900290172 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614882041776177800290172 /* CoreLocation.framework */; };
 		614882151776177900290172 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614882051776177800290172 /* GameKit.framework */; };
-		6148821C177619E200290172 /* GigyaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61488217177619E200290172 /* GigyaSDK.framework */; };
-		6148821D177619E200290172 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 61488219177619E200290172 /* FacebookSDKResources.bundle */; };
-		6148821E177619E200290172 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6148821A177619E200290172 /* FBUserSettingsViewResources.bundle */; };
-		6148821F177619E200290172 /* GSWebViewController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 6148821B177619E200290172 /* GSWebViewController.nib */; };
 		6148822817761B2D00290172 /* PrintPhotoPageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148822417761B2D00290172 /* PrintPhotoPageRenderer.m */; };
 		6148822917761B2D00290172 /* PrintPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148822617761B2D00290172 /* PrintPhotoViewController.m */; };
 		6148822A17761B2D00290172 /* PrintPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6148822717761B2D00290172 /* PrintPhotoViewController.xib */; };
@@ -235,7 +227,6 @@
 		614881EA1776172900290172 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		614881EC1776172F00290172 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		614881EE1776173600290172 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
-		614881F01776173F00290172 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		614881F21776174900290172 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		614881F41776175100290172 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		614881F61776177800290172 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -243,9 +234,6 @@
 		614881F81776177800290172 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		614881F91776177800290172 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		614881FA1776177800290172 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		614881FB1776177800290172 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		614881FC1776177800290172 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		614881FD1776177800290172 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		614881FE1776177800290172 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		614881FF1776177800290172 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		614882001776177800290172 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -254,10 +242,6 @@
 		614882031776177800290172 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		614882041776177800290172 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		614882051776177800290172 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
-		61488217177619E200290172 /* GigyaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GigyaSDK.framework; sourceTree = "<group>"; };
-		61488219177619E200290172 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
-		6148821A177619E200290172 /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
-		6148821B177619E200290172 /* GSWebViewController.nib */ = {isa = PBXFileReference; lastKnownFileType = file; path = GSWebViewController.nib; sourceTree = "<group>"; };
 		6148822317761B2D00290172 /* PrintPhotoPageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintPhotoPageRenderer.h; sourceTree = "<group>"; };
 		6148822417761B2D00290172 /* PrintPhotoPageRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintPhotoPageRenderer.m; sourceTree = "<group>"; };
 		6148822517761B2D00290172 /* PrintPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintPhotoViewController.h; sourceTree = "<group>"; };
@@ -318,9 +302,6 @@
 				614882081776177900290172 /* libz.dylib in Frameworks */,
 				614882091776177900290172 /* AddressBook.framework in Frameworks */,
 				6148820A1776177900290172 /* CFNetwork.framework in Frameworks */,
-				6148820B1776177900290172 /* libsqlite3.0.dylib in Frameworks */,
-				6148820C1776177900290172 /* libsqlite3.dylib in Frameworks */,
-				6148820D1776177900290172 /* Twitter.framework in Frameworks */,
 				6148820E1776177900290172 /* Social.framework in Frameworks */,
 				6148820F1776177900290172 /* MessageUI.framework in Frameworks */,
 				614882101776177900290172 /* Accounts.framework in Frameworks */,
@@ -337,38 +318,17 @@
 				614881EB1776172900290172 /* AVFoundation.framework in Frameworks */,
 				614881ED1776172F00290172 /* AudioToolbox.framework in Frameworks */,
 				614881EF1776173600290172 /* libicucore.dylib in Frameworks */,
-				614881F11776173F00290172 /* libstdc++.dylib in Frameworks */,
 				614881F31776174900290172 /* QuartzCore.framework in Frameworks */,
 				614881F51776175100290172 /* CoreData.framework in Frameworks */,
 				B89F8E0016E3200A000FB79C /* UIKit.framework in Frameworks */,
 				B89F8E0216E3200A000FB79C /* Foundation.framework in Frameworks */,
 				B89F8E0416E3200A000FB79C /* CoreGraphics.framework in Frameworks */,
-				6148821C177619E200290172 /* GigyaSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		61488216177619E200290172 /* GigyaSDK.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				61488217177619E200290172 /* GigyaSDK.framework */,
-				61488218177619E200290172 /* Resources */,
-			);
-			path = GigyaSDK.embeddedframework;
-			sourceTree = "<group>";
-		};
-		61488218177619E200290172 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				61488219177619E200290172 /* FacebookSDKResources.bundle */,
-				6148821A177619E200290172 /* FBUserSettingsViewResources.bundle */,
-				6148821B177619E200290172 /* GSWebViewController.nib */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		6148822017761A9A00290172 /* Printing */ = {
 			isa = PBXGroup;
 			children = (
@@ -586,7 +546,6 @@
 		B89F8DFE16E3200A000FB79C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				61488216177619E200290172 /* GigyaSDK.embeddedframework */,
 				614882001776177800290172 /* Accounts.framework */,
 				614881F91776177800290172 /* AddressBook.framework */,
 				614881F71776177800290172 /* AdSupport.framework */,
@@ -603,9 +562,6 @@
 				614882051776177800290172 /* GameKit.framework */,
 				614881F61776177800290172 /* GLKit.framework */,
 				614881EE1776173600290172 /* libicucore.dylib */,
-				614881FB1776177800290172 /* libsqlite3.0.dylib */,
-				614881FC1776177800290172 /* libsqlite3.dylib */,
-				614881F01776173F00290172 /* libstdc++.dylib */,
 				614881F81776177800290172 /* libz.dylib */,
 				614881E61776171C00290172 /* MediaPlayer.framework */,
 				614881FF1776177800290172 /* MessageUI.framework */,
@@ -615,7 +571,6 @@
 				614882021776177800290172 /* Security.framework */,
 				614881FE1776177800290172 /* Social.framework */,
 				614882011776177800290172 /* SystemConfiguration.framework */,
-				614881FD1776177800290172 /* Twitter.framework */,
 				B89F8DFF16E3200A000FB79C /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -787,9 +742,6 @@
 				614881A7177615FE00290172 /* yam.jpg in Resources */,
 				614881A8177615FE00290172 /* yell.jpg in Resources */,
 				614881A9177615FE00290172 /* zebra.jpg in Resources */,
-				6148821D177619E200290172 /* FacebookSDKResources.bundle in Resources */,
-				6148821E177619E200290172 /* FBUserSettingsViewResources.bundle in Resources */,
-				6148821F177619E200290172 /* GSWebViewController.nib in Resources */,
 				6148822A17761B2D00290172 /* PrintPhotoViewController.xib in Resources */,
 				6148823517761B4300290172 /* PictureBingoGameViewController-landscape.xib in Resources */,
 				6148823617761B4300290172 /* PictureBingoGameViewController-landscapeIphone5.xib in Resources */,

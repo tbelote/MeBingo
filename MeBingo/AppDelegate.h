@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GigyaSDK/FacebookSDK.h>
 
 @class ViewController;
 
@@ -21,6 +20,4 @@
 
 @property (strong, nonatomic) ViewController *viewController;
 @property (strong, nonatomic) UINavigationController *navController;
-@property (strong, nonatomic) FBSession *session;
-- (BOOL)openSessionWithAllowLoginUI:(BOOL)allowLoginUI;
 @end

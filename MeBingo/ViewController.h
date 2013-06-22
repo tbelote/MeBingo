@@ -10,7 +10,6 @@
 #import <GameKit/GameKit.h>
 #import "GameCenterManager.h"
 #import "AppSpecificValues.h"
-#import <GigyaSDK/FacebookSDK.h>
 
 @interface ViewController : UIViewController<UIActionSheetDelegate,GKLeaderboardViewControllerDelegate, GKAchievementViewControllerDelegate, GameCenterManagerDelegate>{
     
