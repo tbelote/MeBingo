@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1552</int>
-		<string key="IBDocument.SystemVersion">12C3012</string>
+		<string key="IBDocument.SystemVersion">11G63b</string>
 		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
-		<string key="IBDocument.AppKitVersion">1187.34</string>
-		<string key="IBDocument.HIToolboxVersion">625.00</string>
+		<string key="IBDocument.AppKitVersion">1138.51</string>
+		<string key="IBDocument.HIToolboxVersion">569.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			<string key="NS.object.0">2083</string>
@@ -733,7 +733,6 @@
 						<string key="NSFrame">{{255, 357}, {50, 48}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<reference key="IBUIBackgroundColor" ref="930406094"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -1401,32 +1400,15 @@
 						<int key="objectID">1</int>
 						<reference key="object" ref="191373211"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="792718575"/>
-							<reference ref="12662402"/>
-							<reference ref="1065983884"/>
-							<reference ref="61792023"/>
-							<reference ref="637952513"/>
-							<reference ref="1004531727"/>
-							<reference ref="205127754"/>
-							<reference ref="422544944"/>
 							<reference ref="566064609"/>
-							<reference ref="118084072"/>
-							<reference ref="914691777"/>
-							<reference ref="1000307869"/>
-							<reference ref="370174630"/>
-							<reference ref="25111968"/>
-							<reference ref="169481570"/>
 							<reference ref="645710453"/>
 							<reference ref="926239614"/>
-							<reference ref="417763246"/>
 							<reference ref="929073324"/>
 							<reference ref="447407684"/>
 							<reference ref="236675273"/>
-							<reference ref="879019289"/>
 							<reference ref="511268859"/>
 							<reference ref="741729917"/>
 							<reference ref="243594988"/>
-							<reference ref="45196072"/>
 							<reference ref="321206823"/>
 							<reference ref="849445124"/>
 							<reference ref="191256037"/>
@@ -1435,6 +1417,23 @@
 							<reference ref="760847178"/>
 							<reference ref="186140913"/>
 							<reference ref="198802315"/>
+							<reference ref="792718575"/>
+							<reference ref="12662402"/>
+							<reference ref="1065983884"/>
+							<reference ref="118084072"/>
+							<reference ref="914691777"/>
+							<reference ref="1000307869"/>
+							<reference ref="370174630"/>
+							<reference ref="25111968"/>
+							<reference ref="169481570"/>
+							<reference ref="417763246"/>
+							<reference ref="879019289"/>
+							<reference ref="45196072"/>
+							<reference ref="61792023"/>
+							<reference ref="637952513"/>
+							<reference ref="1004531727"/>
+							<reference ref="205127754"/>
+							<reference ref="422544944"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>

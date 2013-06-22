@@ -9,6 +9,7 @@
 #import "SelectGamePlayViewController.h"
 #import "WordGamePlayViewController.h"
 #import "SelectLanguageViewController.h"
+#import "PictureBingoGameViewController.h"
 
 @interface SelectGamePlayViewController ()
 
@@ -53,6 +54,11 @@
 
 -(IBAction)wordBingoGameIsClicked:(id)sender{
     SelectLanguageViewController *selectLanguage = [[SelectLanguageViewController alloc] initWithNibName:@"SelectLanguageViewController" bundle:nil];
+    [self.navigationController pushViewController:selectLanguage animated:YES];
+}
+
+-(IBAction)pictureBingoIsClicked:(id)sender{
+    PictureBingoGameViewController *selectLanguage = [[PictureBingoGameViewController alloc] initWithNibName:@"PictureBingoGameViewController" bundle:nil];
     [self.navigationController pushViewController:selectLanguage animated:YES];
 }
 
