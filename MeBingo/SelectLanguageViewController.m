@@ -80,7 +80,7 @@
             break;
     }
     
-    WordGamePlayViewController *wordGamePlay = [[WordGamePlayViewController alloc] initWithNibName:@"WordGamePlayViewController" bundle:nil];
+    WordGamePlayViewController *wordGamePlay = [[WordGamePlayViewController alloc] initWithNibName:@"GamePlayViewController" bundle:nil];
     wordGamePlay.language = lang;
     [self.navigationController pushViewController:wordGamePlay animated:YES];
 }
@@ -109,7 +109,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations
 //    [self callAppropriateXIB:interfaceOrientation];
-    return YES;
+    return UIInterfaceOrientationIsPortrait(interfaceOrientation);
 }
 
 -(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration

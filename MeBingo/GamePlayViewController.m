@@ -279,7 +279,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations
-    return YES;
+    return UIInterfaceOrientationIsPortrait(interfaceOrientation);
 }
 
 -(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
@@ -289,7 +289,7 @@
 }
 
 
--(void) callAppropriateXIB:(UIInterfaceOrientation)toInterfaceOrientation{
+-(void) callAppropriateXIB:(UIInterfaceOrientation)toInterfaceOrientation {
     
 //    
 //    if( UIInterfaceOrientationIsLandscape(toInterfaceOrientation) )
