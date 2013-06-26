@@ -13,6 +13,7 @@
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IBProxyObject</string>
 			<string>IBUIButton</string>
+			<string>IBUIImageView</string>
 			<string>IBUIView</string>
 		</array>
 		<array key="IBDocument.PluginDependencies">
@@ -35,6 +36,21 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
+					<object class="IBUIImageView" id="958399056">
+						<reference key="NSNextResponder" ref="774585933"/>
+						<int key="NSvFlags">274</int>
+						<string key="NSFrameSize">{320, 460}</string>
+						<reference key="NSSuperview" ref="774585933"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="555187070"/>
+						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<object class="NSCustomResource" key="IBUIImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">MeBingo_Background@2x.png</string>
+						</object>
+					</object>
 					<object class="IBUIButton" id="555187070">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">293</int>
@@ -47,8 +63,6 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">Play a Game</string>
 						<object class="NSColor" key="IBUIHighlightedTitleColor" id="225976296">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MQA</bytes>
@@ -60,6 +74,10 @@
 						<object class="NSColor" key="IBUINormalTitleShadowColor" id="358164272">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
+						</object>
+						<object class="NSCustomResource" key="IBUINormalImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">Button_PlayGame@2x.png</string>
 						</object>
 						<object class="IBUIFontDescription" key="IBUIFontDescription" id="111335531">
 							<int key="type">2</int>
@@ -83,14 +101,16 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">Print Bingo Cards</string>
 						<reference key="IBUIHighlightedTitleColor" ref="225976296"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="358164272"/>
+						<object class="NSCustomResource" key="IBUINormalImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">Button_PrintBingoCards@2x.png</string>
+						</object>
 						<reference key="IBUIFontDescription" ref="111335531"/>
 						<reference key="IBUIFont" ref="809798368"/>
 					</object>
@@ -106,37 +126,40 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">Customize Games</string>
 						<reference key="IBUIHighlightedTitleColor" ref="225976296"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="358164272"/>
+						<object class="NSCustomResource" key="IBUINormalImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">Button_CustomizeGames@2x.png</string>
+						</object>
 						<reference key="IBUIFontDescription" ref="111335531"/>
 						<reference key="IBUIFont" ref="809798368"/>
 					</object>
 					<object class="IBUIButton" id="383683136">
 						<reference key="NSNextResponder" ref="774585933"/>
-						<int key="NSvFlags">292</int>
+						<int key="NSvFlags">293</int>
 						<string key="NSFrame">{{29, 237}, {262, 44}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">Game Center</string>
 						<reference key="IBUIHighlightedTitleColor" ref="225976296"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="358164272"/>
+						<object class="NSCustomResource" key="IBUINormalImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">Button_GameCenter@2x.png</string>
+						</object>
 						<reference key="IBUIFontDescription" ref="111335531"/>
 						<reference key="IBUIFont" ref="809798368"/>
 					</object>
@@ -144,7 +167,7 @@
 				<string key="NSFrame">{{0, 20}, {320, 460}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="555187070"/>
+				<reference key="NSNextKeyView" ref="958399056"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MC43NQA</bytes>
@@ -194,12 +217,12 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">playGameIsClciked:</string>
+						<string key="label">playGameIsClicked:</string>
 						<reference key="source" ref="555187070"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
-					<int key="connectionID">17</int>
+					<int key="connectionID">23</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -243,9 +266,10 @@
 						<int key="objectID">6</int>
 						<reference key="object" ref="774585933"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="226714833"/>
 							<reference ref="82864456"/>
 							<reference ref="555187070"/>
+							<reference ref="958399056"/>
+							<reference ref="226714833"/>
 							<reference ref="383683136"/>
 						</array>
 						<reference key="parent" ref="0"/>
@@ -270,6 +294,11 @@
 						<reference key="object" ref="383683136"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">22</int>
+						<reference key="object" ref="958399056"/>
+						<reference key="parent" ref="774585933"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -280,6 +309,7 @@
 				<string key="11.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="12.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="15.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="22.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="8.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			</dictionary>
@@ -287,7 +317,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">21</int>
+			<int key="maxID">23</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -297,8 +327,7 @@
 					<dictionary class="NSMutableDictionary" key="actions">
 						<string key="gamecenter:">id</string>
 						<string key="increaseScore">id</string>
-						<string key="loginwithFB:">id</string>
-						<string key="playGameIsClciked:">id</string>
+						<string key="playGameIsClicked:">id</string>
 						<string key="printCard:">id</string>
 						<string key="reset">id</string>
 						<string key="showAchievements">id</string>
@@ -314,12 +343,8 @@
 							<string key="name">increaseScore</string>
 							<string key="candidateClassName">id</string>
 						</object>
-						<object class="IBActionInfo" key="loginwithFB:">
-							<string key="name">loginwithFB:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="playGameIsClciked:">
-							<string key="name">playGameIsClciked:</string>
+						<object class="IBActionInfo" key="playGameIsClicked:">
+							<string key="name">playGameIsClicked:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="printCard:">
@@ -368,6 +393,13 @@
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
+		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="Button_CustomizeGames@2x.png">{520, 90}</string>
+			<string key="Button_GameCenter@2x.png">{520, 90}</string>
+			<string key="Button_PlayGame@2x.png">{520, 90}</string>
+			<string key="Button_PrintBingoCards@2x.png">{520, 90}</string>
+			<string key="MeBingo_Background@2x.png">{640, 960}</string>
+		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">2083</string>
 	</data>
 </archive>

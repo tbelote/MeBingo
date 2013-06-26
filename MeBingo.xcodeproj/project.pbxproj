@@ -90,13 +90,10 @@
 		614881E91776172300290172 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881E81776172300290172 /* OpenGLES.framework */; };
 		614881EB1776172900290172 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881EA1776172900290172 /* AVFoundation.framework */; };
 		614881ED1776172F00290172 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881EC1776172F00290172 /* AudioToolbox.framework */; };
-		614881EF1776173600290172 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881EE1776173600290172 /* libicucore.dylib */; };
 		614881F31776174900290172 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881F21776174900290172 /* QuartzCore.framework */; };
 		614881F51776175100290172 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881F41776175100290172 /* CoreData.framework */; };
 		614882061776177900290172 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881F61776177800290172 /* GLKit.framework */; };
-		614882071776177900290172 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881F71776177800290172 /* AdSupport.framework */; };
 		614882081776177900290172 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881F81776177800290172 /* libz.dylib */; };
-		614882091776177900290172 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881F91776177800290172 /* AddressBook.framework */; };
 		6148820A1776177900290172 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881FA1776177800290172 /* CFNetwork.framework */; };
 		6148820E1776177900290172 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881FE1776177800290172 /* Social.framework */; };
 		6148820F1776177900290172 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881FF1776177800290172 /* MessageUI.framework */; };
@@ -110,22 +107,55 @@
 		6148822917761B2D00290172 /* PrintPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148822617761B2D00290172 /* PrintPhotoViewController.m */; };
 		6148822A17761B2D00290172 /* PrintPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6148822717761B2D00290172 /* PrintPhotoViewController.xib */; };
 		6148822E17761B3700290172 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148822D17761B3700290172 /* GameCenterManager.m */; };
-		6148823517761B4300290172 /* PictureBingoGameViewController-landscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6148822F17761B4200290172 /* PictureBingoGameViewController-landscape.xib */; };
-		6148823617761B4300290172 /* PictureBingoGameViewController-landscapeIphone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6148823017761B4200290172 /* PictureBingoGameViewController-landscapeIphone5.xib */; };
 		6148823717761B4300290172 /* PictureBingoGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148823217761B4300290172 /* PictureBingoGameViewController.m */; };
-		6148823817761B4300290172 /* PictureBingoGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6148823317761B4300290172 /* PictureBingoGameViewController.xib */; };
-		6148823917761B4300290172 /* PictureBingoGameViewControllerIphone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6148823417761B4300290172 /* PictureBingoGameViewControllerIphone5.xib */; };
 		6148823B17761F8100290172 /* FirstImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6148823A17761F8100290172 /* FirstImage.jpg */; };
 		6148823D1776239D00290172 /* loginWithFacebook_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6148823C1776239D00290172 /* loginWithFacebook_button.png */; };
-		B801356316F0D8A70025111F /* WordGamePlayViewControllerIphone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = B801356116F0D8A70025111F /* WordGamePlayViewControllerIphone5.xib */; };
+		6148823F1779569100290172 /* GamePlayViewController-landscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6148823E1779569100290172 /* GamePlayViewController-landscape.xib */; };
+		61488246177AD4AB00290172 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61488240177AD4A600290172 /* Icon-72@2x.png */; };
+		61488247177AD4AB00290172 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 61488241177AD4A600290172 /* Icon-Small-50.png */; };
+		61488248177AD4AB00290172 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61488242177AD4A700290172 /* Icon-Small-50@2x.png */; };
+		61488249177AD4AB00290172 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61488243177AD4A800290172 /* Icon-Small@2x.png */; };
+		6148824A177AD4AB00290172 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61488244177AD4A900290172 /* Icon@2x.png */; };
+		6148824B177AD4AB00290172 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61488245177AD4A900290172 /* iTunesArtwork@2x.png */; };
+		6A81A56417771C3B003F0419 /* MeBingo_Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56317771C3B003F0419 /* MeBingo_Background@2x.png */; };
+		6A81A56617771C8A003F0419 /* Button_PlayGame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56517771C8A003F0419 /* Button_PlayGame@2x.png */; };
+		6A81A56817771CA6003F0419 /* Button_PrintBingoCards@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56717771CA6003F0419 /* Button_PrintBingoCards@2x.png */; };
+		6A81A56A17771CDC003F0419 /* Button_CustomizeGames@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56917771CDC003F0419 /* Button_CustomizeGames@2x.png */; };
+		6A81A56C17771CE7003F0419 /* Button_GameCenter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56B17771CE7003F0419 /* Button_GameCenter@2x.png */; };
+		6A81A56E17771D92003F0419 /* Button_Oldtimerbingogame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56D17771D92003F0419 /* Button_Oldtimerbingogame@2x.png */; };
+		6A81A57017771DA8003F0419 /* Button_picturebingogame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56F17771DA8003F0419 /* Button_picturebingogame@2x.png */; };
+		6A81A57217771DAF003F0419 /* Button_world-languagebingogame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57117771DAF003F0419 /* Button_world-languagebingogame@2x.png */; };
+		6A81A57417771FE3003F0419 /* o.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57317771FE3003F0419 /* o.png */; };
+		6A81A57617771FE6003F0419 /* g.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57517771FE6003F0419 /* g.png */; };
+		6A81A57817771FEB003F0419 /* n.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57717771FEB003F0419 /* n.png */; };
+		6A81A57A17771FF1003F0419 /* i.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57917771FF1003F0419 /* i.png */; };
+		6A81A57C17771FF4003F0419 /* b.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57B17771FF4003F0419 /* b.png */; };
+		6A81A57E17772395003F0419 /* Button_Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57D17772395003F0419 /* Button_Play@2x.png */; };
+		6A81A5801777239B003F0419 /* Button_Pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57F1777239B003F0419 /* Button_Pause@2x.png */; };
+		6A81A582177723A6003F0419 /* Button_BINGO@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A581177723A6003F0419 /* Button_BINGO@2x.png */; };
+		6A81A58617772419003F0419 /* free.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A58517772419003F0419 /* free.png */; };
+		6A81A588177724A7003F0419 /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A587177724A7003F0419 /* box.png */; };
+		6A81A58A17772841003F0419 /* Button_French@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A58917772841003F0419 /* Button_French@2x.png */; };
+		6A81A58C1777284A003F0419 /* Button_Italian@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A58B1777284A003F0419 /* Button_Italian@2x.png */; };
+		6A81A58E17772975003F0419 /* Button_Chinese@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A58D17772975003F0419 /* Button_Chinese@2x.png */; };
+		6A81A5901777297F003F0419 /* Button_English@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A58F1777297F003F0419 /* Button_English@2x.png */; };
+		6A81A59217772988003F0419 /* Button_Spanish@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59117772988003F0419 /* Button_Spanish@2x.png */; };
+		6A81A59417772990003F0419 /* Button_Tagalog@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59317772990003F0419 /* Button_Tagalog@2x.png */; };
+		6A81A59617772FC2003F0419 /* Button_Play_click@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59517772FC2003F0419 /* Button_Play_click@2x.png */; };
+		6A81A59817772FCC003F0419 /* Button_Pause_click@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59717772FCC003F0419 /* Button_Pause_click@2x.png */; };
+		6A81A59A17772FDA003F0419 /* TextBox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59917772FDA003F0419 /* TextBox@2x.png */; };
+		6A81A59C177735F0003F0419 /* navBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59B177735F0003F0419 /* navBar@2x.png */; };
+		6A81A59E17773619003F0419 /* Button_Back_SelectGame_click@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59D17773619003F0419 /* Button_Back_SelectGame_click@2x.png */; };
+		6A81A5A01777361F003F0419 /* Button_Back_click@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59F1777361F003F0419 /* Button_Back_click@2x.png */; };
+		6A97B1EF177874A3004056F1 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A97B1EE177874A3004056F1 /* Icon-72.png */; };
+		6A97B1F1177874BA004056F1 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A97B1F0177874BA004056F1 /* Icon.png */; };
+		6A97B1F3177874C2004056F1 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A97B1F2177874C2004056F1 /* Icon-Small.png */; };
+		6A97B1F517787546004056F1 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A97B1F417787546004056F1 /* iTunesArtwork.png */; };
 		B822774816ECBC1F00456D3C /* SelectGamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B822774616ECBC1F00456D3C /* SelectGamePlayViewController.m */; };
 		B822774916ECBC1F00456D3C /* SelectGamePlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B822774716ECBC1F00456D3C /* SelectGamePlayViewController.xib */; };
 		B822774E16ECC51200456D3C /* WordGamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B822774C16ECC51200456D3C /* WordGamePlayViewController.m */; };
-		B822774F16ECC51200456D3C /* WordGamePlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B822774D16ECC51200456D3C /* WordGamePlayViewController.xib */; };
 		B822775416ECC5CB00456D3C /* SelectLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B822775216ECC5CB00456D3C /* SelectLanguageViewController.m */; };
 		B822775516ECC5CB00456D3C /* SelectLanguageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B822775316ECC5CB00456D3C /* SelectLanguageViewController.xib */; };
-		B87A786C16EFFCA500FCE831 /* WordGamePlayViewController-landscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87A786A16EFFCA500FCE831 /* WordGamePlayViewController-landscape.xib */; };
-		B89944F616F14930007A223B /* WordGamePlayViewController-landscapeIphone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = B89944F416F14930007A223B /* WordGamePlayViewController-landscapeIphone5.xib */; };
 		B89944FB16F14E3D007A223B /* SelectLanguageViewController-landscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = B89944F916F14E3D007A223B /* SelectLanguageViewController-landscape.xib */; };
 		B8998C3216E3831800878C17 /* GamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8998C3016E3831800878C17 /* GamePlayViewController.m */; };
 		B8998C3316E3831800878C17 /* GamePlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8998C3116E3831800878C17 /* GamePlayViewController.xib */; };
@@ -226,13 +256,10 @@
 		614881E81776172300290172 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		614881EA1776172900290172 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		614881EC1776172F00290172 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		614881EE1776173600290172 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		614881F21776174900290172 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		614881F41776175100290172 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		614881F61776177800290172 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		614881F71776177800290172 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		614881F81776177800290172 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		614881F91776177800290172 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		614881FA1776177800290172 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		614881FE1776177800290172 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		614881FF1776177800290172 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -250,26 +277,59 @@
 		6148822B17761B3700290172 /* AppSpecificValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSpecificValues.h; sourceTree = "<group>"; };
 		6148822C17761B3700290172 /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
 		6148822D17761B3700290172 /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
-		6148822F17761B4200290172 /* PictureBingoGameViewController-landscape.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "PictureBingoGameViewController-landscape.xib"; sourceTree = "<group>"; };
-		6148823017761B4200290172 /* PictureBingoGameViewController-landscapeIphone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "PictureBingoGameViewController-landscapeIphone5.xib"; sourceTree = "<group>"; };
 		6148823117761B4300290172 /* PictureBingoGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureBingoGameViewController.h; sourceTree = "<group>"; };
 		6148823217761B4300290172 /* PictureBingoGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureBingoGameViewController.m; sourceTree = "<group>"; };
-		6148823317761B4300290172 /* PictureBingoGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PictureBingoGameViewController.xib; sourceTree = "<group>"; };
-		6148823417761B4300290172 /* PictureBingoGameViewControllerIphone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PictureBingoGameViewControllerIphone5.xib; sourceTree = "<group>"; };
 		6148823A17761F8100290172 /* FirstImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FirstImage.jpg; sourceTree = "<group>"; };
 		6148823C1776239D00290172 /* loginWithFacebook_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginWithFacebook_button.png; sourceTree = "<group>"; };
-		B801356116F0D8A70025111F /* WordGamePlayViewControllerIphone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WordGamePlayViewControllerIphone5.xib; sourceTree = "<group>"; };
+		6148823E1779569100290172 /* GamePlayViewController-landscape.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "GamePlayViewController-landscape.xib"; sourceTree = "<group>"; };
+		61488240177AD4A600290172 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		61488241177AD4A600290172 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		61488242177AD4A700290172 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		61488243177AD4A800290172 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		61488244177AD4A900290172 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		61488245177AD4A900290172 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		6A81A56317771C3B003F0419 /* MeBingo_Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeBingo_Background@2x.png"; sourceTree = "<group>"; };
+		6A81A56517771C8A003F0419 /* Button_PlayGame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_PlayGame@2x.png"; sourceTree = "<group>"; };
+		6A81A56717771CA6003F0419 /* Button_PrintBingoCards@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_PrintBingoCards@2x.png"; sourceTree = "<group>"; };
+		6A81A56917771CDC003F0419 /* Button_CustomizeGames@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_CustomizeGames@2x.png"; sourceTree = "<group>"; };
+		6A81A56B17771CE7003F0419 /* Button_GameCenter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_GameCenter@2x.png"; sourceTree = "<group>"; };
+		6A81A56D17771D92003F0419 /* Button_Oldtimerbingogame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Oldtimerbingogame@2x.png"; sourceTree = "<group>"; };
+		6A81A56F17771DA8003F0419 /* Button_picturebingogame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_picturebingogame@2x.png"; sourceTree = "<group>"; };
+		6A81A57117771DAF003F0419 /* Button_world-languagebingogame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_world-languagebingogame@2x.png"; sourceTree = "<group>"; };
+		6A81A57317771FE3003F0419 /* o.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = o.png; sourceTree = "<group>"; };
+		6A81A57517771FE6003F0419 /* g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = g.png; sourceTree = "<group>"; };
+		6A81A57717771FEB003F0419 /* n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = n.png; sourceTree = "<group>"; };
+		6A81A57917771FF1003F0419 /* i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = i.png; sourceTree = "<group>"; };
+		6A81A57B17771FF4003F0419 /* b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b.png; sourceTree = "<group>"; };
+		6A81A57D17772395003F0419 /* Button_Play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Play@2x.png"; sourceTree = "<group>"; };
+		6A81A57F1777239B003F0419 /* Button_Pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Pause@2x.png"; sourceTree = "<group>"; };
+		6A81A581177723A6003F0419 /* Button_BINGO@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_BINGO@2x.png"; sourceTree = "<group>"; };
+		6A81A58517772419003F0419 /* free.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = free.png; sourceTree = "<group>"; };
+		6A81A587177724A7003F0419 /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
+		6A81A58917772841003F0419 /* Button_French@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_French@2x.png"; sourceTree = "<group>"; };
+		6A81A58B1777284A003F0419 /* Button_Italian@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Italian@2x.png"; sourceTree = "<group>"; };
+		6A81A58D17772975003F0419 /* Button_Chinese@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Chinese@2x.png"; sourceTree = "<group>"; };
+		6A81A58F1777297F003F0419 /* Button_English@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_English@2x.png"; sourceTree = "<group>"; };
+		6A81A59117772988003F0419 /* Button_Spanish@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Spanish@2x.png"; sourceTree = "<group>"; };
+		6A81A59317772990003F0419 /* Button_Tagalog@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Tagalog@2x.png"; sourceTree = "<group>"; };
+		6A81A59517772FC2003F0419 /* Button_Play_click@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Play_click@2x.png"; sourceTree = "<group>"; };
+		6A81A59717772FCC003F0419 /* Button_Pause_click@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Pause_click@2x.png"; sourceTree = "<group>"; };
+		6A81A59917772FDA003F0419 /* TextBox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TextBox@2x.png"; sourceTree = "<group>"; };
+		6A81A59B177735F0003F0419 /* navBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navBar@2x.png"; sourceTree = "<group>"; };
+		6A81A59D17773619003F0419 /* Button_Back_SelectGame_click@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Back_SelectGame_click@2x.png"; sourceTree = "<group>"; };
+		6A81A59F1777361F003F0419 /* Button_Back_click@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Back_click@2x.png"; sourceTree = "<group>"; };
+		6A97B1EE177874A3004056F1 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		6A97B1F0177874BA004056F1 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		6A97B1F2177874C2004056F1 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		6A97B1F417787546004056F1 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		B822774516ECBC1F00456D3C /* SelectGamePlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectGamePlayViewController.h; sourceTree = "<group>"; };
 		B822774616ECBC1F00456D3C /* SelectGamePlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectGamePlayViewController.m; sourceTree = "<group>"; };
 		B822774716ECBC1F00456D3C /* SelectGamePlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectGamePlayViewController.xib; sourceTree = "<group>"; };
 		B822774B16ECC51200456D3C /* WordGamePlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordGamePlayViewController.h; sourceTree = "<group>"; };
 		B822774C16ECC51200456D3C /* WordGamePlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordGamePlayViewController.m; sourceTree = "<group>"; };
-		B822774D16ECC51200456D3C /* WordGamePlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WordGamePlayViewController.xib; sourceTree = "<group>"; };
 		B822775116ECC5CB00456D3C /* SelectLanguageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectLanguageViewController.h; sourceTree = "<group>"; };
 		B822775216ECC5CB00456D3C /* SelectLanguageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectLanguageViewController.m; sourceTree = "<group>"; };
 		B822775316ECC5CB00456D3C /* SelectLanguageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectLanguageViewController.xib; sourceTree = "<group>"; };
-		B87A786A16EFFCA500FCE831 /* WordGamePlayViewController-landscape.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "WordGamePlayViewController-landscape.xib"; sourceTree = "<group>"; };
-		B89944F416F14930007A223B /* WordGamePlayViewController-landscapeIphone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "WordGamePlayViewController-landscapeIphone5.xib"; sourceTree = "<group>"; };
 		B89944F916F14E3D007A223B /* SelectLanguageViewController-landscape.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SelectLanguageViewController-landscape.xib"; sourceTree = "<group>"; };
 		B8998C2F16E3831800878C17 /* GamePlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePlayViewController.h; sourceTree = "<group>"; };
 		B8998C3016E3831800878C17 /* GamePlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePlayViewController.m; sourceTree = "<group>"; };
@@ -297,10 +357,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				614882071776177900290172 /* AdSupport.framework in Frameworks */,
 				614882061776177900290172 /* GLKit.framework in Frameworks */,
 				614882081776177900290172 /* libz.dylib in Frameworks */,
-				614882091776177900290172 /* AddressBook.framework in Frameworks */,
 				6148820A1776177900290172 /* CFNetwork.framework in Frameworks */,
 				6148820E1776177900290172 /* Social.framework in Frameworks */,
 				6148820F1776177900290172 /* MessageUI.framework in Frameworks */,
@@ -317,7 +375,6 @@
 				614881E91776172300290172 /* OpenGLES.framework in Frameworks */,
 				614881EB1776172900290172 /* AVFoundation.framework in Frameworks */,
 				614881ED1776172F00290172 /* AudioToolbox.framework in Frameworks */,
-				614881EF1776173600290172 /* libicucore.dylib in Frameworks */,
 				614881F31776174900290172 /* QuartzCore.framework in Frameworks */,
 				614881F51776175100290172 /* CoreData.framework in Frameworks */,
 				B89F8E0016E3200A000FB79C /* UIKit.framework in Frameworks */,
@@ -354,19 +411,53 @@
 		6148822217761ABA00290172 /* PictureBingoGameViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6148822F17761B4200290172 /* PictureBingoGameViewController-landscape.xib */,
-				6148823017761B4200290172 /* PictureBingoGameViewController-landscapeIphone5.xib */,
 				6148823117761B4300290172 /* PictureBingoGameViewController.h */,
 				6148823217761B4300290172 /* PictureBingoGameViewController.m */,
-				6148823317761B4300290172 /* PictureBingoGameViewController.xib */,
-				6148823417761B4300290172 /* PictureBingoGameViewControllerIphone5.xib */,
 			);
 			name = PictureBingoGameViewController;
+			sourceTree = "<group>";
+		};
+		6A81A56017771BE4003F0419 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				6A81A56317771C3B003F0419 /* MeBingo_Background@2x.png */,
+				6A81A59517772FC2003F0419 /* Button_Play_click@2x.png */,
+				6A81A59B177735F0003F0419 /* navBar@2x.png */,
+				6A81A59D17773619003F0419 /* Button_Back_SelectGame_click@2x.png */,
+				6A81A59F1777361F003F0419 /* Button_Back_click@2x.png */,
+				6A81A59917772FDA003F0419 /* TextBox@2x.png */,
+				6A81A59717772FCC003F0419 /* Button_Pause_click@2x.png */,
+				6A81A56517771C8A003F0419 /* Button_PlayGame@2x.png */,
+				6A81A56717771CA6003F0419 /* Button_PrintBingoCards@2x.png */,
+				6A81A56917771CDC003F0419 /* Button_CustomizeGames@2x.png */,
+				6A81A56B17771CE7003F0419 /* Button_GameCenter@2x.png */,
+				6A81A56D17771D92003F0419 /* Button_Oldtimerbingogame@2x.png */,
+				6A81A56F17771DA8003F0419 /* Button_picturebingogame@2x.png */,
+				6A81A57117771DAF003F0419 /* Button_world-languagebingogame@2x.png */,
+				6A81A57D17772395003F0419 /* Button_Play@2x.png */,
+				6A81A57F1777239B003F0419 /* Button_Pause@2x.png */,
+				6A81A581177723A6003F0419 /* Button_BINGO@2x.png */,
+				6A81A58917772841003F0419 /* Button_French@2x.png */,
+				6A81A58B1777284A003F0419 /* Button_Italian@2x.png */,
+				6A81A58D17772975003F0419 /* Button_Chinese@2x.png */,
+				6A81A58F1777297F003F0419 /* Button_English@2x.png */,
+				6A81A59117772988003F0419 /* Button_Spanish@2x.png */,
+				6A81A59317772990003F0419 /* Button_Tagalog@2x.png */,
+				6A81A58517772419003F0419 /* free.png */,
+				6A81A587177724A7003F0419 /* box.png */,
+				6A81A57B17771FF4003F0419 /* b.png */,
+				6A81A57917771FF1003F0419 /* i.png */,
+				6A81A57717771FEB003F0419 /* n.png */,
+				6A81A57517771FE6003F0419 /* g.png */,
+				6A81A57317771FE3003F0419 /* o.png */,
+			);
+			name = screens;
 			sourceTree = "<group>";
 		};
 		B822773F16ECBB2F00456D3C /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				6A81A56017771BE4003F0419 /* screens */,
 				61488110177615FE00290172 /* airplane.jpg */,
 				61488111177615FE00290172 /* animal.jpg */,
 				61488112177615FE00290172 /* ant.jpg */,
@@ -455,8 +546,8 @@
 				6148822217761ABA00290172 /* PictureBingoGameViewController */,
 				B822775016ECC59A00456D3C /* SelectLanguageViewController */,
 				B822774A16ECC47500456D3C /* WordGamePlayViewController */,
-				B822774416ECBBED00456D3C /* SelectGamePlayController */,
 				B822774316ECBBA200456D3C /* GamePlayViewController */,
+				B822774416ECBBED00456D3C /* SelectGamePlayController */,
 				B822774216ECBB8400456D3C /* HomeViewController */,
 				B822774116ECBB6400456D3C /* AppDelegate */,
 			);
@@ -488,6 +579,7 @@
 				B8998C2F16E3831800878C17 /* GamePlayViewController.h */,
 				B8998C3016E3831800878C17 /* GamePlayViewController.m */,
 				B8998C3116E3831800878C17 /* GamePlayViewController.xib */,
+				6148823E1779569100290172 /* GamePlayViewController-landscape.xib */,
 			);
 			name = GamePlayViewController;
 			sourceTree = "<group>";
@@ -507,10 +599,6 @@
 			children = (
 				B822774B16ECC51200456D3C /* WordGamePlayViewController.h */,
 				B822774C16ECC51200456D3C /* WordGamePlayViewController.m */,
-				B822774D16ECC51200456D3C /* WordGamePlayViewController.xib */,
-				B87A786A16EFFCA500FCE831 /* WordGamePlayViewController-landscape.xib */,
-				B801356116F0D8A70025111F /* WordGamePlayViewControllerIphone5.xib */,
-				B89944F416F14930007A223B /* WordGamePlayViewController-landscapeIphone5.xib */,
 			);
 			name = WordGamePlayViewController;
 			sourceTree = "<group>";
@@ -547,8 +635,6 @@
 			isa = PBXGroup;
 			children = (
 				614882001776177800290172 /* Accounts.framework */,
-				614881F91776177800290172 /* AddressBook.framework */,
-				614881F71776177800290172 /* AdSupport.framework */,
 				614881E01776170300290172 /* AssetsLibrary.framework */,
 				614881EC1776172F00290172 /* AudioToolbox.framework */,
 				614881EA1776172900290172 /* AVFoundation.framework */,
@@ -561,7 +647,6 @@
 				B89F8E0116E3200A000FB79C /* Foundation.framework */,
 				614882051776177800290172 /* GameKit.framework */,
 				614881F61776177800290172 /* GLKit.framework */,
-				614881EE1776173600290172 /* libicucore.dylib */,
 				614881F81776177800290172 /* libz.dylib */,
 				614881E61776171C00290172 /* MediaPlayer.framework */,
 				614881FF1776177800290172 /* MessageUI.framework */,
@@ -589,6 +674,16 @@
 		B89F8E0616E3200A000FB79C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				61488240177AD4A600290172 /* Icon-72@2x.png */,
+				61488241177AD4A600290172 /* Icon-Small-50.png */,
+				61488242177AD4A700290172 /* Icon-Small-50@2x.png */,
+				61488243177AD4A800290172 /* Icon-Small@2x.png */,
+				61488244177AD4A900290172 /* Icon@2x.png */,
+				61488245177AD4A900290172 /* iTunesArtwork@2x.png */,
+				6A97B1EE177874A3004056F1 /* Icon-72.png */,
+				6A97B1F2177874C2004056F1 /* Icon-Small.png */,
+				6A97B1F0177874BA004056F1 /* Icon.png */,
+				6A97B1F417787546004056F1 /* iTunesArtwork.png */,
 				6148823C1776239D00290172 /* loginWithFacebook_button.png */,
 				6148823A17761F8100290172 /* FirstImage.jpg */,
 				B89F8E0716E3200A000FB79C /* MeBingo-Info.plist */,
@@ -660,11 +755,7 @@
 				B89F8E1C16E3200A000FB79C /* ViewController.xib in Resources */,
 				B8998C3316E3831800878C17 /* GamePlayViewController.xib in Resources */,
 				B822774916ECBC1F00456D3C /* SelectGamePlayViewController.xib in Resources */,
-				B822774F16ECC51200456D3C /* WordGamePlayViewController.xib in Resources */,
 				B822775516ECC5CB00456D3C /* SelectLanguageViewController.xib in Resources */,
-				B87A786C16EFFCA500FCE831 /* WordGamePlayViewController-landscape.xib in Resources */,
-				B801356316F0D8A70025111F /* WordGamePlayViewControllerIphone5.xib in Resources */,
-				B89944F616F14930007A223B /* WordGamePlayViewController-landscapeIphone5.xib in Resources */,
 				B89944FB16F14E3D007A223B /* SelectLanguageViewController-landscape.xib in Resources */,
 				6148815D177615FE00290172 /* airplane.jpg in Resources */,
 				6148815E177615FE00290172 /* animal.jpg in Resources */,
@@ -743,12 +834,49 @@
 				614881A8177615FE00290172 /* yell.jpg in Resources */,
 				614881A9177615FE00290172 /* zebra.jpg in Resources */,
 				6148822A17761B2D00290172 /* PrintPhotoViewController.xib in Resources */,
-				6148823517761B4300290172 /* PictureBingoGameViewController-landscape.xib in Resources */,
-				6148823617761B4300290172 /* PictureBingoGameViewController-landscapeIphone5.xib in Resources */,
-				6148823817761B4300290172 /* PictureBingoGameViewController.xib in Resources */,
-				6148823917761B4300290172 /* PictureBingoGameViewControllerIphone5.xib in Resources */,
 				6148823B17761F8100290172 /* FirstImage.jpg in Resources */,
 				6148823D1776239D00290172 /* loginWithFacebook_button.png in Resources */,
+				6A81A56417771C3B003F0419 /* MeBingo_Background@2x.png in Resources */,
+				6A81A56617771C8A003F0419 /* Button_PlayGame@2x.png in Resources */,
+				6A81A56817771CA6003F0419 /* Button_PrintBingoCards@2x.png in Resources */,
+				6A81A56A17771CDC003F0419 /* Button_CustomizeGames@2x.png in Resources */,
+				6A81A56C17771CE7003F0419 /* Button_GameCenter@2x.png in Resources */,
+				6A81A56E17771D92003F0419 /* Button_Oldtimerbingogame@2x.png in Resources */,
+				6A81A57017771DA8003F0419 /* Button_picturebingogame@2x.png in Resources */,
+				6A81A57217771DAF003F0419 /* Button_world-languagebingogame@2x.png in Resources */,
+				6A81A57417771FE3003F0419 /* o.png in Resources */,
+				6A81A57617771FE6003F0419 /* g.png in Resources */,
+				6A81A57817771FEB003F0419 /* n.png in Resources */,
+				6A81A57A17771FF1003F0419 /* i.png in Resources */,
+				6A81A57C17771FF4003F0419 /* b.png in Resources */,
+				6A81A57E17772395003F0419 /* Button_Play@2x.png in Resources */,
+				6A81A5801777239B003F0419 /* Button_Pause@2x.png in Resources */,
+				6A81A582177723A6003F0419 /* Button_BINGO@2x.png in Resources */,
+				6A81A58617772419003F0419 /* free.png in Resources */,
+				6A81A588177724A7003F0419 /* box.png in Resources */,
+				6A81A58A17772841003F0419 /* Button_French@2x.png in Resources */,
+				6A81A58C1777284A003F0419 /* Button_Italian@2x.png in Resources */,
+				6A81A58E17772975003F0419 /* Button_Chinese@2x.png in Resources */,
+				6A81A5901777297F003F0419 /* Button_English@2x.png in Resources */,
+				6A81A59217772988003F0419 /* Button_Spanish@2x.png in Resources */,
+				6A81A59417772990003F0419 /* Button_Tagalog@2x.png in Resources */,
+				6A81A59617772FC2003F0419 /* Button_Play_click@2x.png in Resources */,
+				6A81A59817772FCC003F0419 /* Button_Pause_click@2x.png in Resources */,
+				6A81A59A17772FDA003F0419 /* TextBox@2x.png in Resources */,
+				6A81A59C177735F0003F0419 /* navBar@2x.png in Resources */,
+				6A81A59E17773619003F0419 /* Button_Back_SelectGame_click@2x.png in Resources */,
+				6A81A5A01777361F003F0419 /* Button_Back_click@2x.png in Resources */,
+				6A97B1EF177874A3004056F1 /* Icon-72.png in Resources */,
+				6A97B1F1177874BA004056F1 /* Icon.png in Resources */,
+				6A97B1F3177874C2004056F1 /* Icon-Small.png in Resources */,
+				6A97B1F517787546004056F1 /* iTunesArtwork.png in Resources */,
+				6148823F1779569100290172 /* GamePlayViewController-landscape.xib in Resources */,
+				61488246177AD4AB00290172 /* Icon-72@2x.png in Resources */,
+				61488247177AD4AB00290172 /* Icon-Small-50.png in Resources */,
+				61488248177AD4AB00290172 /* Icon-Small-50@2x.png in Resources */,
+				61488249177AD4AB00290172 /* Icon-Small@2x.png in Resources */,
+				6148824A177AD4AB00290172 /* Icon@2x.png in Resources */,
+				6148824B177AD4AB00290172 /* iTunesArtwork@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,7 +935,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Charisse Ann Dirain (C4C3S7L5KU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Charisse Ann Dirain (C4C3S7L5KU)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -823,6 +952,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "48FBCAF8-A32C-4A55-A790-EE153557C23C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "48FBCAF8-A32C-4A55-A790-EE153557C23C";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -839,7 +970,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Charisse Ann Dirain";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Charisse Ann Dirain";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -848,6 +980,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "59553F10-F95A-4BE1-B2D0-D267E1FD7F89";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "59553F10-F95A-4BE1-B2D0-D267E1FD7F89";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -857,19 +991,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Charisse Ann Dirain (C4C3S7L5KU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Charisse Ann Dirain (C4C3S7L5KU)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/GigyaSDK.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeBingo/MeBingo-Prefix.pch";
 				INFOPLIST_FILE = "MeBingo/MeBingo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "48FBCAF8-A32C-4A55-A790-EE153557C23C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "48FBCAF8-A32C-4A55-A790-EE153557C23C";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -878,19 +1016,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Charisse Ann Dirain";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Charisse Ann Dirain";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/GigyaSDK.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeBingo/MeBingo-Prefix.pch";
 				INFOPLIST_FILE = "MeBingo/MeBingo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "59553F10-F95A-4BE1-B2D0-D267E1FD7F89";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "59553F10-F95A-4BE1-B2D0-D267E1FD7F89";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

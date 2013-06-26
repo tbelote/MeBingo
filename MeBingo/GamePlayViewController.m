@@ -9,8 +9,6 @@
 #import "GamePlayViewController.h"
 
 @interface GamePlayViewController (){
-    NSMutableArray *bNumbers, *iNumbers, *nNumbers, *gNumbers, *oNumbers;
-    NSMutableArray *resultNumber;
     
     NSTimer *timer;
     
@@ -21,6 +19,7 @@
 
 @implementation GamePlayViewController
 
+@synthesize resultWord;
 @synthesize displayLabel;
 @synthesize b1Button, b2Button, b3Button, b4Button, b5Button;
 @synthesize i1Button, i2Button, i3Button, i4Button, i5Button;
@@ -40,21 +39,35 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //[self callAppropriateXIB:self.interfaceOrientation];
     
-    resultNumber = [[NSMutableArray alloc] init];
+    //add custom backbutton
+    UIImage *backImage = [UIImage imageNamed:@"Button_Back_click@2x.png"];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:backImage forState:UIControlStateNormal];
+    button.frame = CGRectMake(0, 0, backImage.size.width, backImage.size.height);
+    [button addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBar@2x.png"] forBarMetrics:UIBarMetricsDefault];
+    UIBarButtonItem *backbtn = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.leftBarButtonItem = backbtn;
+
+    
+    
+    
+    self.resultWord = [[NSMutableArray alloc] init];
     bNumbers = [[NSMutableArray alloc] init];
     iNumbers = [[NSMutableArray alloc] init];
     nNumbers = [[NSMutableArray alloc] init];
     gNumbers = [[NSMutableArray alloc] init];
     oNumbers = [[NSMutableArray alloc] init];
-    
-    [self getBNumbers];
-    [self getINumbers];
-    [self getNNumbers];
-    [self getGNumbers];
-    [self getONumbers];
+
     
     shouldRestartGame = FALSE;
+}
+
+-(void) back{
+    [timer invalidate];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,40 +78,38 @@
 
 #pragma IBOutlet Methods
 
--(IBAction)playButtonIsClicked:(id)sender{
-    
-    if (shouldRestartGame) {
-        displayLabel.text = @"";
-        
-        [resultNumber removeAllObjects];
-        [bNumbers removeAllObjects];
-        [iNumbers removeAllObjects];
-        [nNumbers removeAllObjects];
-        [gNumbers removeAllObjects];
-        [oNumbers removeAllObjects];
-        
-        [self getBNumbers];
-        [self getINumbers];
-        [self getNNumbers];
-        [self getGNumbers];
-        [self getONumbers];
-    }
-    
-    [self updateTime];
-    timer=  [NSTimer scheduledTimerWithTimeInterval:4.0 target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
+-(void)resetGame {
+    displayLabel.text = @"";
+    [self.resultWord removeAllObjects];
+    [bNumbers removeAllObjects];
+    [iNumbers removeAllObjects];
+    [nNumbers removeAllObjects];
+    [gNumbers removeAllObjects];
+    [oNumbers removeAllObjects];
+  
 }
 
--(IBAction)pauseButtonIsClicked:(id)sender{
-    [timer invalidate];
+-(IBAction)playButtonIsClicked:(id)sender{
+    UIButton * button = sender;
+    if (timer && [timer isValid]) {
+        [timer invalidate];
+        [button setImage:[UIImage imageNamed:@"Button_Play.png"] forState:UIControlStateNormal];
+    } else {
+        [button setImage:[UIImage imageNamed:@"Button_Pause.png"] forState:UIControlStateNormal];
+        if (shouldRestartGame) {
+            [self resetGame];
+        }
+        [self updateTime];
+        timer=  [NSTimer scheduledTimerWithTimeInterval:4.0 target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
+    }
 }
+
 
 - (IBAction)checkButtonWithGeneratedNumber:(id)sender{
     
     UIButton *button = sender;
-    NSLog(@"%@", [button titleForState:UIControlStateNormal]);
-    NSLog(@"%@", resultNumber);
-    NSString  *buttonTitle = [button titleForState:UIControlStateNormal];
-    if ([resultNumber containsObject:[NSNumber numberWithInt:[buttonTitle intValue]]]) {
+    if ([self.resultWord containsObject:[NSNumber numberWithInt:button.tag]]) {
+        button.enabled = NO;
         button.backgroundColor = [UIColor yellowColor];
     }else{
         [UIView animateWithDuration:1.0
@@ -118,89 +129,97 @@
     bool hasNoError = FALSE;
     
     //check horizotal
-    if ([resultNumber containsObject:[NSNumber numberWithInt:[[b1Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[i1Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[n1Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[g1Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[o1Button titleForState:UIControlStateNormal] intValue]]]) {
+    if ([self.resultWord containsObject:[bNumbers objectAtIndex:0]] &&
+        [self.resultWord containsObject:[iNumbers objectAtIndex:0]] &&
+        [self.resultWord containsObject:[nNumbers objectAtIndex:0]] &&
+        [self.resultWord containsObject:[gNumbers objectAtIndex:0]] &&
+        [self.resultWord containsObject:[oNumbers objectAtIndex:0]]) {
         hasNoError = TRUE;
     }
     
-    if ([resultNumber containsObject:[NSNumber numberWithInt:[[b2Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[i2Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[n2Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[g2Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[o2Button titleForState:UIControlStateNormal] intValue]]]) {
+    if ([self.resultWord containsObject:[bNumbers objectAtIndex:1]] &&
+        [self.resultWord containsObject:[iNumbers objectAtIndex:1]] &&
+        [self.resultWord containsObject:[nNumbers objectAtIndex:1]] &&
+        [self.resultWord containsObject:[gNumbers objectAtIndex:1]] &&
+        [self.resultWord containsObject:[oNumbers objectAtIndex:1]]) {
         hasNoError = TRUE;
     }
     
-    if ([resultNumber containsObject:[NSNumber numberWithInt:[[b3Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[i3Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[g3Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[o3Button titleForState:UIControlStateNormal] intValue]]]) {
+    if ([self.resultWord containsObject:[bNumbers objectAtIndex:2]] &&
+        [self.resultWord containsObject:[iNumbers objectAtIndex:2]] &&
+        [self.resultWord containsObject:[gNumbers objectAtIndex:2]] &&
+        [self.resultWord containsObject:[oNumbers objectAtIndex:2]]) {
         hasNoError = TRUE;
     }
     
-    if ([resultNumber containsObject:[NSNumber numberWithInt:[[b4Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[i4Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[n4Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[g4Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[o4Button titleForState:UIControlStateNormal] intValue]]]) {
+    if ([self.resultWord containsObject:[bNumbers objectAtIndex:3]] &&
+        [self.resultWord containsObject:[iNumbers objectAtIndex:3]] &&
+        [self.resultWord containsObject:[nNumbers objectAtIndex:3]] &&
+        [self.resultWord containsObject:[gNumbers objectAtIndex:3]] &&
+        [self.resultWord containsObject:[oNumbers objectAtIndex:3]]) {
         hasNoError = TRUE;
     }
     
-    if ([resultNumber containsObject:[NSNumber numberWithInt:[[b5Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[i5Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[n5Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[g5Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[o5Button titleForState:UIControlStateNormal] intValue]]]) {
+    if ([self.resultWord containsObject:[bNumbers objectAtIndex:4]] &&
+        [self.resultWord containsObject:[iNumbers objectAtIndex:4]] &&
+        [self.resultWord containsObject:[nNumbers objectAtIndex:4]] &&
+        [self.resultWord containsObject:[gNumbers objectAtIndex:4]] &&
+        [self.resultWord containsObject:[oNumbers objectAtIndex:4]]) {
         hasNoError = TRUE;
     }
     
     //vertical
-    if ([resultNumber containsObject:[NSNumber numberWithInt:[[b1Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[b2Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[b3Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[b4Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[b5Button titleForState:UIControlStateNormal] intValue]]]) {
+    if ([self.resultWord containsObject:[bNumbers objectAtIndex:0]] &&
+        [self.resultWord containsObject:[bNumbers objectAtIndex:1]] &&
+        [self.resultWord containsObject:[bNumbers objectAtIndex:2]] &&
+        [self.resultWord containsObject:[bNumbers objectAtIndex:3]] &&
+        [self.resultWord containsObject:[bNumbers objectAtIndex:4]]) {
         hasNoError = TRUE;
     }
     
-    if ([resultNumber containsObject:[NSNumber numberWithInt:[[i1Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[i2Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[i3Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[i4Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[i5Button titleForState:UIControlStateNormal] intValue]]]) {
+    if ([self.resultWord containsObject:[iNumbers objectAtIndex:0]] &&
+        [self.resultWord containsObject:[iNumbers objectAtIndex:1]] &&
+        [self.resultWord containsObject:[iNumbers objectAtIndex:2]] &&
+        [self.resultWord containsObject:[iNumbers objectAtIndex:3]] &&
+        [self.resultWord containsObject:[iNumbers objectAtIndex:4]]) {
         hasNoError = TRUE;
     }
     
-    if ([resultNumber containsObject:[NSNumber numberWithInt:[[n1Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[n2Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[n4Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[n5Button titleForState:UIControlStateNormal] intValue]]]) {
+    if ([self.resultWord containsObject:[nNumbers objectAtIndex:0]] &&
+        [self.resultWord containsObject:[nNumbers objectAtIndex:1]] &&
+        [self.resultWord containsObject:[nNumbers objectAtIndex:3]] &&
+        [self.resultWord containsObject:[nNumbers objectAtIndex:4]]) {
         hasNoError = TRUE;
     }
     
-    if ([resultNumber containsObject:[NSNumber numberWithInt:[[g1Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[g2Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[g3Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[g4Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[g5Button titleForState:UIControlStateNormal] intValue]]]) {
+    if ([self.resultWord containsObject:[gNumbers objectAtIndex:0]] &&
+        [self.resultWord containsObject:[gNumbers objectAtIndex:1]] &&
+        [self.resultWord containsObject:[gNumbers objectAtIndex:2]] &&
+        [self.resultWord containsObject:[gNumbers objectAtIndex:3]] &&
+        [self.resultWord containsObject:[gNumbers objectAtIndex:4]]) {
+        hasNoError = TRUE;
+    }
+    
+    if ([self.resultWord containsObject:[oNumbers objectAtIndex:0]] &&
+        [self.resultWord containsObject:[oNumbers objectAtIndex:1]] &&
+        [self.resultWord containsObject:[oNumbers objectAtIndex:2]] &&
+        [self.resultWord containsObject:[oNumbers objectAtIndex:3]] &&
+        [self.resultWord containsObject:[oNumbers objectAtIndex:4]]) {
         hasNoError = TRUE;
     }
     
     //diagonal
-    if ([resultNumber containsObject:[NSNumber numberWithInt:[[b1Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[i2Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[g4Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[o5Button titleForState:UIControlStateNormal] intValue]]]) {
+    if ([self.resultWord containsObject:[bNumbers objectAtIndex:0]] &&
+        [self.resultWord containsObject:[iNumbers objectAtIndex:1]] &&
+        [self.resultWord containsObject:[gNumbers objectAtIndex:3]] &&
+        [self.resultWord containsObject:[oNumbers objectAtIndex:4]]) {
         hasNoError = TRUE;
     }
     
-    if ([resultNumber containsObject:[NSNumber numberWithInt:[[b5Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[i4Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[g2Button titleForState:UIControlStateNormal] intValue]]] &&
-        [resultNumber containsObject:[NSNumber numberWithInt:[[o1Button titleForState:UIControlStateNormal] intValue]]]) {
+    if ([self.resultWord containsObject:[bNumbers objectAtIndex:4]] &&
+        [self.resultWord containsObject:[iNumbers objectAtIndex:3]] &&
+        [self.resultWord containsObject:[gNumbers objectAtIndex:1]] &&
+        [self.resultWord containsObject:[oNumbers objectAtIndex:0]]) {
         hasNoError = TRUE;
     }
     
@@ -227,41 +246,14 @@
     
 }
 
+
 - (void) dealloc {
     [timer invalidate];
 }
 #pragma Private Methods
 
 - (void)updateTime{
-    int generatedNumber = [self getRandomNumberBetweenMin:1 andMax:75];
-    if ([resultNumber count]!=75) {
-        if (![resultNumber containsObject:[NSNumber numberWithInt:generatedNumber]]) {
-            NSLog(@"generatedNumber: %i", generatedNumber);
-            [resultNumber addObject:[NSNumber numberWithInt:generatedNumber]];
-            
-            displayLabel.text = [self appendBINGOLetterWithNumber:generatedNumber];
-            
-            /*[UIView animateWithDuration:3.0
-             delay:1.0
-             options:UIViewAnimationCurveEaseInOut
-             animations:^ {
-             displayLabel.text = [NSString stringWithFormat:@"%i", generatedNumber];
-             displayLabel.alpha = 0.0;
-             }
-             completion:^(BOOL finished) {
-             displayLabel.alpha = 1.0;
-             }];*/
-        }else{
-            [self updateTime];
-        }
-    }else{
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Done!"
-                                                        message:@"All possible numbers are selected!"
-                                                       delegate:self
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil, nil];
-        [alert show];
-    }
+
 }
 
 -(int) getRandomNumberBetweenMin:(int)min andMax:(int)max
@@ -271,109 +263,53 @@
 
 -(NSString *) appendBINGOLetterWithNumber:(int)num{
     NSString *returnString = @"";
-    if(num>=1 && num<=15) returnString = [NSString stringWithFormat:@"B%i", num];
-    if(num>=16 && num<=30) returnString = [NSString stringWithFormat:@"I%i", num];
-    if(num>=31 && num<=45) returnString = [NSString stringWithFormat:@"N%i", num];
-    if(num>=46 && num<=60) returnString = [NSString stringWithFormat:@"G%i", num];
-    if(num>=61 && num<=75) returnString = [NSString stringWithFormat:@"O%i", num];
+    if(num>= 1 && num<=15) returnString = [NSString stringWithFormat:@"B %i", num];
+    if(num>=16 && num<=30) returnString = [NSString stringWithFormat:@"I %i", num];
+    if(num>=31 && num<=45) returnString = [NSString stringWithFormat:@"N %i", num];
+    if(num>=46 && num<=60) returnString = [NSString stringWithFormat:@"G %i", num];
+    if(num>=61 && num<=75) returnString = [NSString stringWithFormat:@"O %i", num];
     return returnString;
 }
 
-#pragma Generate Numbers
+#pragma mark Methods that handle rotation
+-(void) populateButtonTitleAfterRotation{
 
-- (void) getBNumbers{
-    int i = 1;
-    while(i<6){
-        int generatedNumber = [self getRandomNumberBetweenMin:1 andMax:15];
-        if (![bNumbers containsObject:[NSNumber numberWithInt:generatedNumber]]) {
-            [bNumbers addObject:[NSNumber numberWithInt:generatedNumber]];
-            UIButton *button = [[UIButton alloc] init];
-            if (i==1) button = b1Button;
-            if (i==2) button = b2Button;
-            if (i==3) button = b3Button;
-            if (i==4) button = b4Button;
-            if (i==5) button = b5Button;
-            [button setTitle:[NSString stringWithFormat:@"%i", generatedNumber] forState:UIControlStateNormal];
-            [button setBackgroundColor:[UIColor lightGrayColor]];
-            i++;
-        }
-    }
+    
 }
 
-- (void) getINumbers{
-    int i = 0;
-    while(i<6){
-        int generatedNumber = [self getRandomNumberBetweenMin:16 andMax:30];
-        if (![iNumbers containsObject:[NSNumber numberWithInt:generatedNumber]]) {
-            [iNumbers addObject:[NSNumber numberWithInt:generatedNumber]];
-            UIButton *button = [[UIButton alloc] init];
-            if (i==1) button = i1Button;
-            if (i==2) button = i2Button;
-            if (i==3) button = i3Button;
-            if (i==4) button = i4Button;
-            if (i==5) button = i5Button;
-            [button setTitle:[NSString stringWithFormat:@"%i", generatedNumber] forState:UIControlStateNormal];
-            [button setBackgroundColor:[UIColor lightGrayColor]];
-            i++;
-        }
-    }
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations
+    return YES;
 }
 
-- (void) getNNumbers{
-    int i = 0;
-    while(i<6){
-        int generatedNumber = [self getRandomNumberBetweenMin:31 andMax:45];
-        if (![nNumbers containsObject:[NSNumber numberWithInt:generatedNumber]]) {
-            [nNumbers addObject:[NSNumber numberWithInt:generatedNumber]];
-            UIButton *button = [[UIButton alloc] init];
-            if (i==1) button = n1Button;
-            if (i==2) button = n2Button;
-            if (i==3) button = n3Button;
-            if (i==4) button = n4Button;
-            if (i==5) button = n5Button;
-            [button setTitle:[NSString stringWithFormat:@"%i", generatedNumber] forState:UIControlStateNormal];
-            [button setBackgroundColor:[UIColor lightGrayColor]];
-            i++;
-        }
-    }
+-(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    //[self callAppropriateXIB:toInterfaceOrientation];
+    //[self populateButtonTitleAfterRotation];
 }
 
-- (void) getGNumbers{
-    int i = 0;
-    while(i<6){
-        int generatedNumber = [self getRandomNumberBetweenMin:46 andMax:60];
-        if (![gNumbers containsObject:[NSNumber numberWithInt:generatedNumber]]) {
-            [gNumbers addObject:[NSNumber numberWithInt:generatedNumber]];
-            UIButton *button = [[UIButton alloc] init];
-            if (i==1) button = g1Button;
-            if (i==2) button = g2Button;
-            if (i==3) button = g3Button;
-            if (i==4) button = g4Button;
-            if (i==5) button = g5Button;
-            [button setTitle:[NSString stringWithFormat:@"%i", generatedNumber] forState:UIControlStateNormal];
-            [button setBackgroundColor:[UIColor lightGrayColor]];
-            i++;
-        }
-    }
+
+-(void) callAppropriateXIB:(UIInterfaceOrientation)toInterfaceOrientation{
+    
+//    
+//    if( UIInterfaceOrientationIsLandscape(toInterfaceOrientation) )
+//    {
+//        
+//       [[NSBundle mainBundle] loadNibNamed: @"GamePlayViewController-landscape"
+//                                    owner: self
+//                                    options: nil];
+//    }
+//    else
+//    {
+//        [[NSBundle mainBundle] loadNibNamed:@"GamePlayViewController"
+//                                      owner: self
+//                                    options: nil];
+//    }
 }
 
-- (void) getONumbers{
-    int i = 0;
-    while(i<6){
-        int generatedNumber = [self getRandomNumberBetweenMin:61 andMax:75];
-        if (![oNumbers containsObject:[NSNumber numberWithInt:generatedNumber]]) {
-            [oNumbers addObject:[NSNumber numberWithInt:generatedNumber]];
-            UIButton *button = [[UIButton alloc] init];
-            if (i==1) button = o1Button;
-            if (i==2) button = o2Button;
-            if (i==3) button = o3Button;
-            if (i==4) button = o4Button;
-            if (i==5) button = o5Button;
-            [button setTitle:[NSString stringWithFormat:@"%i", generatedNumber] forState:UIControlStateNormal];
-            [button setBackgroundColor:[UIColor lightGrayColor]];
-            i++;
-        }
-    }
-}
 
+-(void) viewWillAppear:(BOOL)animated{
+    
+    self.navigationController.navigationBar.hidden=NO;
+}
 @end

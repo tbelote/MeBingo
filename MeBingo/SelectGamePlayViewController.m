@@ -10,6 +10,7 @@
 #import "WordGamePlayViewController.h"
 #import "SelectLanguageViewController.h"
 #import "PictureBingoGameViewController.h"
+#import "ViewController.h"
 
 @interface SelectGamePlayViewController ()
 
@@ -25,12 +26,31 @@
     }
     return self;
 }
-
+-(void) viewWillAppear:(BOOL)animated{
+    
+    self.navigationController.navigationBar.hidden=NO;
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"Select Game";
+    //self.navigationItem.title = @"Select Game";
+    
+    //add custom backbutton
+    UIImage *backImage = [UIImage imageNamed:@"Button_Back_click@2x.png"];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:backImage forState:UIControlStateNormal];
+    button.frame = CGRectMake(0, 0, backImage.size.width, backImage.size.height);
+    [button addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBar@2x.png"] forBarMetrics:UIBarMetricsDefault];
+    UIBarButtonItem *backbtn = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.leftBarButtonItem = backbtn;
+    
+    //[self callAppropriateXIB:self.interfaceOrientation];
+}
+
+-(void) back{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,10 +64,8 @@
 
 
 -(IBAction)oldTimeBingoGameIsClicked:(id)sender{
-    /*GamePlayViewController *gamePlay = [[[GamePlayViewController alloc] initWithNibName:@"GamePlayViewController" bundle:nil] autorelease];
-    [self.navigationController pushViewController:gamePlay animated:YES];*/
-    
-    WordGamePlayViewController *wordGamePlay = [[WordGamePlayViewController alloc] initWithNibName:@"WordGamePlayViewController" bundle:nil];
+  
+    WordGamePlayViewController *wordGamePlay = [[WordGamePlayViewController alloc] initWithNibName:@"GamePlayViewController" bundle:nil];
     wordGamePlay.language = @"numbers";
     [self.navigationController pushViewController:wordGamePlay animated:YES];
 }
@@ -58,8 +76,27 @@
 }
 
 -(IBAction)pictureBingoIsClicked:(id)sender{
-    PictureBingoGameViewController *selectLanguage = [[PictureBingoGameViewController alloc] initWithNibName:@"PictureBingoGameViewController" bundle:nil];
-    [self.navigationController pushViewController:selectLanguage animated:YES];
+    PictureBingoGameViewController *pictureBingoGame = [[PictureBingoGameViewController alloc] initWithNibName:@"GamePlayViewController" bundle:nil];
+    [self.navigationController pushViewController:pictureBingoGame animated:YES];
+}
+
+-(void) callAppropriateXIB:(UIInterfaceOrientation)toInterfaceOrientation{
+    //[[NSBundle mainBundle] loadNibNamed: [NSString stringWithFormat:@"%@", NSStringFromClass([self class])]
+    //                                      owner: self
+    //                                    options: nil];
+}
+
+#pragma mark Methods that handle rotation
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations
+    return YES;
+}
+
+-(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    //[self callAppropriateXIB:toInterfaceOrientation];
+    //[self populateButtonTitleAfterRotation];
 }
 
 @end

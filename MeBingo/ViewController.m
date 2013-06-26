@@ -34,7 +34,7 @@
 
 #pragma IBOutlet Method
 
--(IBAction)playGameIsClciked:(id)sender{
+-(IBAction)playGameIsClicked:(id)sender{
     SelectGamePlayViewController *selectGamePlay = [[SelectGamePlayViewController alloc] initWithNibName:@"SelectGamePlayViewController" bundle:nil];
     [self.navigationController pushViewController:selectGamePlay animated:YES];
 }
@@ -177,6 +177,9 @@
     }
 }
 
+-(void) viewWillAppear:(BOOL)animated{
+    self.navigationController.navigationBar.hidden=YES;
+}
 
 -(IBAction)printCard:(id)sender{
     PrintPhotoViewController *printphoto = [[PrintPhotoViewController alloc] initWithNibName:@"PrintPhotoViewController" bundle:nil];

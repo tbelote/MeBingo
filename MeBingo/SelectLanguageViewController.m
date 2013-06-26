@@ -9,6 +9,7 @@
 #import "SelectLanguageViewController.h"
 #import "WordGamePlayViewController.h"
 
+
 @interface SelectLanguageViewController ()
 
 @end
@@ -30,9 +31,22 @@
     
     self.navigationItem.title = @"Select Language";
     
-    [self callAppropriateXIB:self.interfaceOrientation];
+    //add custom backbutton
+    UIImage *backImage = [UIImage imageNamed:@"Button_Back_click@2x.png"];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:backImage forState:UIControlStateNormal];
+    button.frame = CGRectMake(0, 0, backImage.size.width, backImage.size.height);
+    [button addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBar@2x.png"] forBarMetrics:UIBarMetricsDefault];
+    UIBarButtonItem *backbtn = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.leftBarButtonItem = backbtn;
+    
+    //[self callAppropriateXIB:self.interfaceOrientation];
 }
 
+-(void) back{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -94,13 +108,18 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations
-    [self callAppropriateXIB:interfaceOrientation];
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+//    [self callAppropriateXIB:interfaceOrientation];
+    return YES;
 }
 
 -(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
-    [self callAppropriateXIB:toInterfaceOrientation];
+    //[self callAppropriateXIB:toInterfaceOrientation];
+}
+
+-(void) viewWillAppear:(BOOL)animated{
+    
+    self.navigationController.navigationBar.hidden=NO;
 }
 
 @end
