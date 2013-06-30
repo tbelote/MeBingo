@@ -107,6 +107,13 @@
     
 }
 
+-(void)formatButton:(UIButton*)button {
+    [super formatButton:button];
+    if ( ![language isEqual:@"numbers"]) {
+        button.titleLabel.font = [UIFont boldSystemFontOfSize:18];
+    }
+}
+
 
 - (void)updateTime{
     if (([remainingWords count]) <= 0) {
@@ -152,7 +159,7 @@
             if (i==5){ button = self.b5Button; b5ButtonText = buttonTitle; }
             [button setTitle:buttonTitle forState:UIControlStateNormal];
             [button setTag:generatedNumber];
-            [button setBackgroundColor:[UIColor lightGrayColor]];
+            [self formatButton:button];
             i++;
         }
     }
@@ -173,7 +180,7 @@
             if (i==5){ button = self.i5Button; i5ButtonText = buttonTitle; }
             [button setTitle:buttonTitle forState:UIControlStateNormal];
             [button setTag:generatedNumber];
-            [button setBackgroundColor:[UIColor lightGrayColor]];
+            [self formatButton:button];            
             i++;
         }
     }
@@ -194,7 +201,7 @@
             if (i==5){ button = self.n5Button; n5ButtonText = buttonTitle; }
             [button setTitle:buttonTitle forState:UIControlStateNormal];
             [button setTag:generatedNumber];
-            [button setBackgroundColor:[UIColor lightGrayColor]];
+            [self formatButton:button];
             i++;
         }
     }
@@ -215,7 +222,7 @@
             if (i==5){ button = self.g5Button; g5ButtonText = buttonTitle; }
             [button setTitle:buttonTitle forState:UIControlStateNormal];
             [button setTag:generatedNumber];
-            [button setBackgroundColor:[UIColor lightGrayColor]];
+            [self formatButton:button];
             i++;
         }
     }
@@ -236,7 +243,7 @@
             if (i==5){ button = self.o5Button; o5ButtonText = buttonTitle; }
             [button setTitle:buttonTitle forState:UIControlStateNormal];
             [button setTag:generatedNumber];
-            [button setBackgroundColor:[UIColor lightGrayColor]];
+            [self formatButton:button];
             i++;
         }
     }

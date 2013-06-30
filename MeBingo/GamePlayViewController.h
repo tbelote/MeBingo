@@ -23,6 +23,7 @@
 -(int) getRandomNumberBetweenMin:(int)min andMax:(int)max;
 -(NSString *) appendBINGOLetterWithNumber:(int)num;
 -(void)resetGame;
+-(void)formatButton:(UIButton*)button;
 - (void)updateTime;
 - (IBAction)checkButtonWithGeneratedNumber:(id)sender;
 

@@ -50,11 +50,11 @@
 			<key>TintColor</key>
 			<dict>
 				<key>Blue</key>
-				<real>1</real>
+				<real>0.90196079015731812</real>
 				<key>Green</key>
-				<real>0.0</real>
+				<real>0.90196079015731812</real>
 				<key>Red</key>
-				<real>0.0</real>
+				<real>0.90196079015731812</real>
 			</dict>
 			<key>Translucent</key>
 			<false/>

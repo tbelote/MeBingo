@@ -36,6 +36,7 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -52,6 +53,9 @@
     self.navigationItem.leftBarButtonItem = backbtn;
 
     
+    self.displayLabel.font = [UIFont boldSystemFontOfSize:80.0];
+    self.displayLabel.minimumScaleFactor = 0.1;
+    self.displayLabel.adjustsFontSizeToFitWidth = YES;
     
     
     self.resultWord = [[NSMutableArray alloc] init];
@@ -100,10 +104,15 @@
             [self resetGame];
         }
         [self updateTime];
-        timer=  [NSTimer scheduledTimerWithTimeInterval:4.0 target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
+        timer=  [NSTimer scheduledTimerWithTimeInterval:4.5 target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
     }
 }
 
+-(void) pauseGame {
+    if (timer && [timer isValid]) {
+        [timer invalidate];
+    }
+}
 
 - (IBAction)checkButtonWithGeneratedNumber:(id)sender{
     
@@ -228,16 +237,16 @@
         
         shouldRestartGame = TRUE;
         
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations!"
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations, You WON!"
                                                         message:@"Thank you for playing BINGO!"
                                                        delegate:self
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil, nil];
         [alert show];
     }else{
-        
+        [self pauseGame];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sorry"
-                                                        message:@"You didnt have enough numbers in your card for BINGO!"
+                                                        message:@"You don't have enough numbers in your card for BINGO!"
                                                        delegate:self
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil, nil];
@@ -246,15 +255,26 @@
     
 }
 
+-(void)formatButton:(UIButton*)button {
+    [button setTitleColor:[ UIColor colorWithRed: 0.200 green: 0.200 blue: 0.200 alpha: 1.000 ] forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont boldSystemFontOfSize:30];
+    button.titleLabel.minimumScaleFactor = 0.01;
+    button.titleLabel.numberOfLines = 1;
+    button.titleLabel.adjustsFontSizeToFitWidth = YES;
+    button.titleLabel.lineBreakMode = NSLineBreakByClipping;
+    [button setBackgroundColor:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.6]];
+
+}
+- (void)updateTime{
+    
+}
 
 - (void) dealloc {
     [timer invalidate];
 }
 #pragma Private Methods
 
-- (void)updateTime{
 
-}
 
 -(int) getRandomNumberBetweenMin:(int)min andMax:(int)max
 {
