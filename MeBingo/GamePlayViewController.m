@@ -43,10 +43,11 @@
     //[self callAppropriateXIB:self.interfaceOrientation];
     
     //add custom backbutton
+    //add custom backbutton
     UIImage *backImage = [UIImage imageNamed:@"Button_Back_click@2x.png"];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setImage:backImage forState:UIControlStateNormal];
-    button.frame = CGRectMake(0, 0, backImage.size.width, backImage.size.height);
+    button.frame = CGRectMake(0, 0, 67.0, 26.0);
     [button addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBar@2x.png"] forBarMetrics:UIBarMetricsDefault];
     UIBarButtonItem *backbtn = [[UIBarButtonItem alloc] initWithCustomView:button];

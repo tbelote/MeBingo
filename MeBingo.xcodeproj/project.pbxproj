@@ -117,6 +117,8 @@
 		61488249177AD4AB00290172 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61488243177AD4A800290172 /* Icon-Small@2x.png */; };
 		6148824A177AD4AB00290172 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61488244177AD4A900290172 /* Icon@2x.png */; };
 		6148824B177AD4AB00290172 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61488245177AD4A900290172 /* iTunesArtwork@2x.png */; };
+		61A4F28D17972EA90097AAA3 /* GamePlayPrint.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A4F28B17972EA90097AAA3 /* GamePlayPrint.xib */; };
+		61A4F28E17972EA90097AAA3 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61A4F28C17972EA90097AAA3 /* logo@2x.png */; };
 		6A81A56417771C3B003F0419 /* MeBingo_Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56317771C3B003F0419 /* MeBingo_Background@2x.png */; };
 		6A81A56617771C8A003F0419 /* Button_PlayGame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56517771C8A003F0419 /* Button_PlayGame@2x.png */; };
 		6A81A56817771CA6003F0419 /* Button_PrintBingoCards@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56717771CA6003F0419 /* Button_PrintBingoCards@2x.png */; };
@@ -288,6 +290,8 @@
 		61488243177AD4A800290172 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		61488244177AD4A900290172 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		61488245177AD4A900290172 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		61A4F28B17972EA90097AAA3 /* GamePlayPrint.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamePlayPrint.xib; sourceTree = "<group>"; };
+		61A4F28C17972EA90097AAA3 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		6A81A56317771C3B003F0419 /* MeBingo_Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeBingo_Background@2x.png"; sourceTree = "<group>"; };
 		6A81A56517771C8A003F0419 /* Button_PlayGame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_PlayGame@2x.png"; sourceTree = "<group>"; };
 		6A81A56717771CA6003F0419 /* Button_PrintBingoCards@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_PrintBingoCards@2x.png"; sourceTree = "<group>"; };
@@ -457,6 +461,7 @@
 		B822773F16ECBB2F00456D3C /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				61A4F28C17972EA90097AAA3 /* logo@2x.png */,
 				6A81A56017771BE4003F0419 /* screens */,
 				61488110177615FE00290172 /* airplane.jpg */,
 				61488111177615FE00290172 /* animal.jpg */,
@@ -576,6 +581,7 @@
 		B822774316ECBBA200456D3C /* GamePlayViewController */ = {
 			isa = PBXGroup;
 			children = (
+				61A4F28B17972EA90097AAA3 /* GamePlayPrint.xib */,
 				B8998C2F16E3831800878C17 /* GamePlayViewController.h */,
 				B8998C3016E3831800878C17 /* GamePlayViewController.m */,
 				B8998C3116E3831800878C17 /* GamePlayViewController.xib */,
@@ -877,6 +883,8 @@
 				61488249177AD4AB00290172 /* Icon-Small@2x.png in Resources */,
 				6148824A177AD4AB00290172 /* Icon@2x.png in Resources */,
 				6148824B177AD4AB00290172 /* iTunesArtwork@2x.png in Resources */,
+				61A4F28D17972EA90097AAA3 /* GamePlayPrint.xib in Resources */,
+				61A4F28E17972EA90097AAA3 /* logo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
