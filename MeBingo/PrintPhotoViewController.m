@@ -50,6 +50,8 @@
 #import "PrintPhotoPageRenderer.h"
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "ViewController.h"
+#import "PictureBingoGameViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation PrintPhotoViewController
 
@@ -109,12 +111,34 @@
   // Set the properties on our image view.
   UIImageView *imageView = (UIImageView *)self.view;
   imageView.contentMode = UIViewContentModeScaleAspectFit;
-  imageView.backgroundColor = [UIColor blackColor];
+  imageView.backgroundColor = [UIColor clearColor];
 
+    /* TODO render a random card to an image using:*/
+   // This is for retina render check
+    PictureBingoGameViewController * pictureGame = [[PictureBingoGameViewController alloc] initWithNibName:@"GamePlayViewController" bundle:nil];
+    [pictureGame loadView];
+    UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]) {
+        UIGraphicsBeginImageContextWithOptions([UIScreen mainScreen].bounds.size, NO, [UIScreen mainScreen].scale);
+    } else {
+        UIGraphicsBeginImageContext(keyWindow.bounds.size);
+    }
+    // And it goes up to here the rest stays the same
+ 
+ [pictureGame.view.layer renderInContext:UIGraphicsGetCurrentContext()]; //TODO should be viewcontroller for game
+ UIImage* image1 = UIGraphicsGetImageFromCurrentImageContext();
+ UIGraphicsEndImageContext();
+ NSData *imageData = UIImagePNGRepresentation(image1);
+    path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"bingocard.png"];
+ [imageData writeToFile:path atomically:YES];
+    
+
+    
+    
   // Obtain the starting image presented prior to the user choosing one.
-  path = [[NSBundle mainBundle] pathForResource:@"FirstImage" ofType:@"jpg"];
+  // path = [[NSBundle mainBundle] pathForResource:@"FirstImage" ofType:@"jpg"];
   // Load the image at that path.
-  imageView.image = [UIImage imageWithContentsOfFile:path];
+    imageView.image = image1; //[UIImage imageWithContentsOfFile:path];
 
   // Use that image as the image to print.
   if(imageView.image)
