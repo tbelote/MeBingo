@@ -119,6 +119,30 @@
 		6148824B177AD4AB00290172 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61488245177AD4A900290172 /* iTunesArtwork@2x.png */; };
 		61A4F28D17972EA90097AAA3 /* GamePlayPrint.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A4F28B17972EA90097AAA3 /* GamePlayPrint.xib */; };
 		61A4F28E17972EA90097AAA3 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61A4F28C17972EA90097AAA3 /* logo@2x.png */; };
+		61B56CF1179917EF003C1ECF /* Button_Back_click.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CD9179917EF003C1ECF /* Button_Back_click.png */; };
+		61B56CF2179917EF003C1ECF /* Button_Back_SelectGame_click.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CDA179917EF003C1ECF /* Button_Back_SelectGame_click.png */; };
+		61B56CF3179917EF003C1ECF /* Button_BINGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CDB179917EF003C1ECF /* Button_BINGO.png */; };
+		61B56CF4179917EF003C1ECF /* Button_Chinese.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CDC179917EF003C1ECF /* Button_Chinese.png */; };
+		61B56CF5179917EF003C1ECF /* Button_CustomizeGames.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CDD179917EF003C1ECF /* Button_CustomizeGames.png */; };
+		61B56CF6179917EF003C1ECF /* Button_English.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CDE179917EF003C1ECF /* Button_English.png */; };
+		61B56CF7179917EF003C1ECF /* Button_French.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CDF179917EF003C1ECF /* Button_French.png */; };
+		61B56CF8179917EF003C1ECF /* Button_GameCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE0179917EF003C1ECF /* Button_GameCenter.png */; };
+		61B56CF9179917EF003C1ECF /* Button_Italian.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE1179917EF003C1ECF /* Button_Italian.png */; };
+		61B56CFA179917EF003C1ECF /* Button_Oldtimerbingogame.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE2179917EF003C1ECF /* Button_Oldtimerbingogame.png */; };
+		61B56CFB179917EF003C1ECF /* Button_Pause_click.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE3179917EF003C1ECF /* Button_Pause_click.png */; };
+		61B56CFC179917EF003C1ECF /* Button_Pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE4179917EF003C1ECF /* Button_Pause.png */; };
+		61B56CFD179917EF003C1ECF /* Button_picturebingogame.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE5179917EF003C1ECF /* Button_picturebingogame.png */; };
+		61B56CFE179917EF003C1ECF /* Button_Play_click.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE6179917EF003C1ECF /* Button_Play_click.png */; };
+		61B56CFF179917EF003C1ECF /* Button_Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE7179917EF003C1ECF /* Button_Play.png */; };
+		61B56D00179917EF003C1ECF /* Button_PlayGame.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE8179917EF003C1ECF /* Button_PlayGame.png */; };
+		61B56D01179917EF003C1ECF /* Button_PrintBingoCards.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE9179917EF003C1ECF /* Button_PrintBingoCards.png */; };
+		61B56D02179917EF003C1ECF /* Button_Spanish.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CEA179917EF003C1ECF /* Button_Spanish.png */; };
+		61B56D03179917EF003C1ECF /* Button_Tagalog.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CEB179917EF003C1ECF /* Button_Tagalog.png */; };
+		61B56D04179917EF003C1ECF /* Button_world-languagebingogame.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CEC179917EF003C1ECF /* Button_world-languagebingogame.png */; };
+		61B56D05179917EF003C1ECF /* Default-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CED179917EF003C1ECF /* Default-568h.png */; };
+		61B56D06179917EF003C1ECF /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CEE179917EF003C1ECF /* logo.png */; };
+		61B56D07179917EF003C1ECF /* MeBingo_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CEF179917EF003C1ECF /* MeBingo_Background.png */; };
+		61B56D08179917EF003C1ECF /* TextBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CF0179917EF003C1ECF /* TextBox.png */; };
 		6A81A56417771C3B003F0419 /* MeBingo_Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56317771C3B003F0419 /* MeBingo_Background@2x.png */; };
 		6A81A56617771C8A003F0419 /* Button_PlayGame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56517771C8A003F0419 /* Button_PlayGame@2x.png */; };
 		6A81A56817771CA6003F0419 /* Button_PrintBingoCards@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56717771CA6003F0419 /* Button_PrintBingoCards@2x.png */; };
@@ -292,6 +316,30 @@
 		61488245177AD4A900290172 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		61A4F28B17972EA90097AAA3 /* GamePlayPrint.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamePlayPrint.xib; sourceTree = "<group>"; };
 		61A4F28C17972EA90097AAA3 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		61B56CD9179917EF003C1ECF /* Button_Back_click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Back_click.png; sourceTree = "<group>"; };
+		61B56CDA179917EF003C1ECF /* Button_Back_SelectGame_click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Back_SelectGame_click.png; sourceTree = "<group>"; };
+		61B56CDB179917EF003C1ECF /* Button_BINGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_BINGO.png; sourceTree = "<group>"; };
+		61B56CDC179917EF003C1ECF /* Button_Chinese.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Chinese.png; sourceTree = "<group>"; };
+		61B56CDD179917EF003C1ECF /* Button_CustomizeGames.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_CustomizeGames.png; sourceTree = "<group>"; };
+		61B56CDE179917EF003C1ECF /* Button_English.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_English.png; sourceTree = "<group>"; };
+		61B56CDF179917EF003C1ECF /* Button_French.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_French.png; sourceTree = "<group>"; };
+		61B56CE0179917EF003C1ECF /* Button_GameCenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_GameCenter.png; sourceTree = "<group>"; };
+		61B56CE1179917EF003C1ECF /* Button_Italian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Italian.png; sourceTree = "<group>"; };
+		61B56CE2179917EF003C1ECF /* Button_Oldtimerbingogame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Oldtimerbingogame.png; sourceTree = "<group>"; };
+		61B56CE3179917EF003C1ECF /* Button_Pause_click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Pause_click.png; sourceTree = "<group>"; };
+		61B56CE4179917EF003C1ECF /* Button_Pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Pause.png; sourceTree = "<group>"; };
+		61B56CE5179917EF003C1ECF /* Button_picturebingogame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_picturebingogame.png; sourceTree = "<group>"; };
+		61B56CE6179917EF003C1ECF /* Button_Play_click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Play_click.png; sourceTree = "<group>"; };
+		61B56CE7179917EF003C1ECF /* Button_Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Play.png; sourceTree = "<group>"; };
+		61B56CE8179917EF003C1ECF /* Button_PlayGame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_PlayGame.png; sourceTree = "<group>"; };
+		61B56CE9179917EF003C1ECF /* Button_PrintBingoCards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_PrintBingoCards.png; sourceTree = "<group>"; };
+		61B56CEA179917EF003C1ECF /* Button_Spanish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Spanish.png; sourceTree = "<group>"; };
+		61B56CEB179917EF003C1ECF /* Button_Tagalog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Tagalog.png; sourceTree = "<group>"; };
+		61B56CEC179917EF003C1ECF /* Button_world-languagebingogame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_world-languagebingogame.png"; sourceTree = "<group>"; };
+		61B56CED179917EF003C1ECF /* Default-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h.png"; sourceTree = "<group>"; };
+		61B56CEE179917EF003C1ECF /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		61B56CEF179917EF003C1ECF /* MeBingo_Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MeBingo_Background.png; sourceTree = "<group>"; };
+		61B56CF0179917EF003C1ECF /* TextBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextBox.png; sourceTree = "<group>"; };
 		6A81A56317771C3B003F0419 /* MeBingo_Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeBingo_Background@2x.png"; sourceTree = "<group>"; };
 		6A81A56517771C8A003F0419 /* Button_PlayGame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_PlayGame@2x.png"; sourceTree = "<group>"; };
 		6A81A56717771CA6003F0419 /* Button_PrintBingoCards@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_PrintBingoCards@2x.png"; sourceTree = "<group>"; };
@@ -424,6 +472,30 @@
 		6A81A56017771BE4003F0419 /* screens */ = {
 			isa = PBXGroup;
 			children = (
+				61B56CD9179917EF003C1ECF /* Button_Back_click.png */,
+				61B56CDA179917EF003C1ECF /* Button_Back_SelectGame_click.png */,
+				61B56CDB179917EF003C1ECF /* Button_BINGO.png */,
+				61B56CDC179917EF003C1ECF /* Button_Chinese.png */,
+				61B56CDD179917EF003C1ECF /* Button_CustomizeGames.png */,
+				61B56CDE179917EF003C1ECF /* Button_English.png */,
+				61B56CDF179917EF003C1ECF /* Button_French.png */,
+				61B56CE0179917EF003C1ECF /* Button_GameCenter.png */,
+				61B56CE1179917EF003C1ECF /* Button_Italian.png */,
+				61B56CE2179917EF003C1ECF /* Button_Oldtimerbingogame.png */,
+				61B56CE3179917EF003C1ECF /* Button_Pause_click.png */,
+				61B56CE4179917EF003C1ECF /* Button_Pause.png */,
+				61B56CE5179917EF003C1ECF /* Button_picturebingogame.png */,
+				61B56CE6179917EF003C1ECF /* Button_Play_click.png */,
+				61B56CE7179917EF003C1ECF /* Button_Play.png */,
+				61B56CE8179917EF003C1ECF /* Button_PlayGame.png */,
+				61B56CE9179917EF003C1ECF /* Button_PrintBingoCards.png */,
+				61B56CEA179917EF003C1ECF /* Button_Spanish.png */,
+				61B56CEB179917EF003C1ECF /* Button_Tagalog.png */,
+				61B56CEC179917EF003C1ECF /* Button_world-languagebingogame.png */,
+				61B56CED179917EF003C1ECF /* Default-568h.png */,
+				61B56CEE179917EF003C1ECF /* logo.png */,
+				61B56CEF179917EF003C1ECF /* MeBingo_Background.png */,
+				61B56CF0179917EF003C1ECF /* TextBox.png */,
 				6A81A56317771C3B003F0419 /* MeBingo_Background@2x.png */,
 				6A81A59517772FC2003F0419 /* Button_Play_click@2x.png */,
 				6A81A59B177735F0003F0419 /* navBar@2x.png */,
@@ -885,6 +957,30 @@
 				6148824B177AD4AB00290172 /* iTunesArtwork@2x.png in Resources */,
 				61A4F28D17972EA90097AAA3 /* GamePlayPrint.xib in Resources */,
 				61A4F28E17972EA90097AAA3 /* logo@2x.png in Resources */,
+				61B56CF1179917EF003C1ECF /* Button_Back_click.png in Resources */,
+				61B56CF2179917EF003C1ECF /* Button_Back_SelectGame_click.png in Resources */,
+				61B56CF3179917EF003C1ECF /* Button_BINGO.png in Resources */,
+				61B56CF4179917EF003C1ECF /* Button_Chinese.png in Resources */,
+				61B56CF5179917EF003C1ECF /* Button_CustomizeGames.png in Resources */,
+				61B56CF6179917EF003C1ECF /* Button_English.png in Resources */,
+				61B56CF7179917EF003C1ECF /* Button_French.png in Resources */,
+				61B56CF8179917EF003C1ECF /* Button_GameCenter.png in Resources */,
+				61B56CF9179917EF003C1ECF /* Button_Italian.png in Resources */,
+				61B56CFA179917EF003C1ECF /* Button_Oldtimerbingogame.png in Resources */,
+				61B56CFB179917EF003C1ECF /* Button_Pause_click.png in Resources */,
+				61B56CFC179917EF003C1ECF /* Button_Pause.png in Resources */,
+				61B56CFD179917EF003C1ECF /* Button_picturebingogame.png in Resources */,
+				61B56CFE179917EF003C1ECF /* Button_Play_click.png in Resources */,
+				61B56CFF179917EF003C1ECF /* Button_Play.png in Resources */,
+				61B56D00179917EF003C1ECF /* Button_PlayGame.png in Resources */,
+				61B56D01179917EF003C1ECF /* Button_PrintBingoCards.png in Resources */,
+				61B56D02179917EF003C1ECF /* Button_Spanish.png in Resources */,
+				61B56D03179917EF003C1ECF /* Button_Tagalog.png in Resources */,
+				61B56D04179917EF003C1ECF /* Button_world-languagebingogame.png in Resources */,
+				61B56D05179917EF003C1ECF /* Default-568h.png in Resources */,
+				61B56D06179917EF003C1ECF /* logo.png in Resources */,
+				61B56D07179917EF003C1ECF /* MeBingo_Background.png in Resources */,
+				61B56D08179917EF003C1ECF /* TextBox.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

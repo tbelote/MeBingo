@@ -90,15 +90,16 @@
 
 - (void)setupToolbarItems {
   // Use the system camera icon as the toolbar icon for choosing to select a photo from the photo library.
-  self.pickerButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(showImagePicker:)];
+//  self.pickerButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(showImagePicker:)];
   
   // Only add an icon for selecting printing if printing is available on this device.
   if([UIPrintInteractionController isPrintingAvailable]){
     UIBarButtonItem *spaceItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     self.printButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(printImage:)];
-    self.toolbar.items = [NSArray arrayWithObjects: self.pickerButton, spaceItem, self.printButton, nil];
-  }else
+    self.toolbar.items = [NSArray arrayWithObjects: spaceItem, self.printButton, nil];
+  }else {
     self.toolbar.items = [NSArray arrayWithObjects: self.pickerButton, nil];
+  }
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -111,7 +112,7 @@
   // Set the properties on our image view.
   UIImageView *imageView = (UIImageView *)self.view;
   imageView.contentMode = UIViewContentModeScaleAspectFit;
-  imageView.backgroundColor = [UIColor clearColor];
+  imageView.backgroundColor = [UIColor whiteColor];
 
     /* TODO render a random card to an image using:*/
    // This is for retina render check
@@ -149,7 +150,7 @@
     // For the iPad we'll put the toolbar at the top.
     toolbarFrame = CGRectMake(0, 0, bounds.size.width, kToolbarHeight);
   }else{
-    toolbarFrame = CGRectMake(0, bounds.size.height - kToolbarHeight, bounds.size.width, kToolbarHeight);
+    toolbarFrame = CGRectMake(0, imageView.frame.size.height - kToolbarHeight, bounds.size.width, kToolbarHeight);
   }
     
   UIToolbar *aToolbar = [[UIToolbar alloc] initWithFrame:toolbarFrame];
@@ -170,12 +171,12 @@
   [imageView addSubview:aToolbar];
     
     //add custom backbutton
-    UIImage *backImage = [UIImage imageNamed:@"Button_Back_click@2x.png"];
+    UIImage *backImage = [UIImage imageNamed:@"Button_Back_click.png"];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setImage:backImage forState:UIControlStateNormal];
     button.frame = CGRectMake(0, 0, 67.0, 26.0);
     [button addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBar@2x.png"] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBar.png"] forBarMetrics:UIBarMetricsDefault];
     UIBarButtonItem *backbtn = [[UIBarButtonItem alloc] initWithCustomView:button];
     self.navigationItem.leftBarButtonItem = backbtn;
 }
