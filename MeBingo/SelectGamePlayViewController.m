@@ -42,7 +42,7 @@
     [button setImage:backImage forState:UIControlStateNormal];
     button.frame = CGRectMake(0, 0, 67.0, 26.0);
     [button addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBar.png"] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBar@2x.png"] forBarMetrics:UIBarMetricsDefault];
     UIBarButtonItem *backbtn = [[UIBarButtonItem alloc] initWithCustomView:button];
     self.navigationItem.leftBarButtonItem = backbtn;
 
