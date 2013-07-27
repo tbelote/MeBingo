@@ -90,13 +90,13 @@
 
 - (void)setupToolbarItems {
   // Use the system camera icon as the toolbar icon for choosing to select a photo from the photo library.
-//  self.pickerButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(showImagePicker:)];
+  self.pickerButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(showImagePicker:)];
   
   // Only add an icon for selecting printing if printing is available on this device.
   if([UIPrintInteractionController isPrintingAvailable]){
     UIBarButtonItem *spaceItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     self.printButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(printImage:)];
-    self.toolbar.items = [NSArray arrayWithObjects: spaceItem, self.printButton, nil];
+    self.toolbar.items = [NSArray arrayWithObjects: self.pickerButton, spaceItem, self.printButton, nil];
   }else {
     self.toolbar.items = [NSArray arrayWithObjects: self.pickerButton, nil];
   }
@@ -281,27 +281,45 @@
   if([UIPrintInteractionController isPrintingAvailable] && UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
     [[UIPrintInteractionController sharedPrintController] dismissAnimated:YES];
 
-  // If a popover is already showing, dismiss it.
-  if(self.popover){
-    [self.popover dismissPopoverAnimated:YES];
-    self.popover = nil;
-    return;
-  }
+//  // If a popover is already showing, dismiss it.
+//  if(self.popover){
+//    [self.popover dismissPopoverAnimated:YES];
+//    self.popover = nil;
+//    return;
+//  }
+//
+//  // UIImagePickerController let's the user choose an image.
+//  UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+//  imagePicker.delegate = self;
+//  // On the iPad we need to present the image picker in a popover.
+//  if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+//    // If a popover is already showing, dismiss it before presenting a new one.
+//    // We own this instance of the popover controller but will release it in popoverControllerDidDismissPopover.
+//    UIPopoverController *popoverController = [[UIPopoverController alloc] initWithContentViewController:imagePicker];
+//    popoverController.delegate = self;
+//    self.popover = popoverController;
+//    [popoverController presentPopoverFromBarButtonItem:self.pickerButton permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+//  }else{
+//      [self presentViewController:imagePicker animated:YES completion:nil];
+//  }
+    
+    //TODO save image to camera roll
+    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+    UIImageView * imageView = (UIImageView*)self.view;
+    ALAssetsLibraryWriteImageCompletionBlock completionBlock = ^(NSURL *assetURL, NSError *error) {
+        if (error) {
+            UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Error saving bingo card" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alert show];
+        } else {
+            UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Bingo Card Saved" message:@"The bingo card has been saved to your camera roll." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alert show];
+        }
+    };
+    [library writeImageToSavedPhotosAlbum:[imageView.image CGImage]
+                              orientation:(ALAssetOrientation)[imageView.image imageOrientation]
+                          completionBlock:completionBlock];
 
-  // UIImagePickerController let's the user choose an image.
-  UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-  imagePicker.delegate = self;
-  // On the iPad we need to present the image picker in a popover.
-  if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-    // If a popover is already showing, dismiss it before presenting a new one.
-    // We own this instance of the popover controller but will release it in popoverControllerDidDismissPopover.
-    UIPopoverController *popoverController = [[UIPopoverController alloc] initWithContentViewController:imagePicker];
-    popoverController.delegate = self;
-    self.popover = popoverController;
-    [popoverController presentPopoverFromBarButtonItem:self.pickerButton permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-  }else{
-      [self presentViewController:imagePicker animated:YES completion:nil];
-  }
+
 }
 
 #pragma mark delegate methods

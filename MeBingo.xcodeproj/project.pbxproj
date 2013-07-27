@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6145B76517A36A200058017E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6145B76417A36A200058017E /* Icon@2x.png */; };
+		6145B76717A36A260058017E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6145B76617A36A260058017E /* Icon.png */; };
 		6148815D177615FE00290172 /* airplane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61488110177615FE00290172 /* airplane.jpg */; };
 		6148815E177615FE00290172 /* animal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61488111177615FE00290172 /* animal.jpg */; };
 		6148815F177615FE00290172 /* ant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61488112177615FE00290172 /* ant.jpg */; };
@@ -199,6 +201,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6145B76417A36A200058017E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		6145B76617A36A260058017E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		61488110177615FE00290172 /* airplane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = airplane.jpg; path = Media/airplane.jpg; sourceTree = "<group>"; };
 		61488111177615FE00290172 /* animal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = animal.jpg; path = Media/animal.jpg; sourceTree = "<group>"; };
 		61488112177615FE00290172 /* ant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ant.jpg; path = Media/ant.jpg; sourceTree = "<group>"; };
@@ -695,6 +699,8 @@
 		B89F8DF316E3200A000FB79C = {
 			isa = PBXGroup;
 			children = (
+				6145B76617A36A260058017E /* Icon.png */,
+				6145B76417A36A200058017E /* Icon@2x.png */,
 				B89F8E0516E3200A000FB79C /* MeBingo */,
 				B89F8DFE16E3200A000FB79C /* Frameworks */,
 				B89F8DFD16E3200A000FB79C /* Products */,
@@ -981,6 +987,8 @@
 				61B56D06179917EF003C1ECF /* logo.png in Resources */,
 				61B56D07179917EF003C1ECF /* MeBingo_Background.png in Resources */,
 				61B56D08179917EF003C1ECF /* TextBox.png in Resources */,
+				6145B76517A36A200058017E /* Icon@2x.png in Resources */,
+				6145B76717A36A260058017E /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1039,8 +1047,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Charisse Ann Dirain (C4C3S7L5KU)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Charisse Ann Dirain (C4C3S7L5KU)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1056,8 +1064,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "48FBCAF8-A32C-4A55-A790-EE153557C23C";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "48FBCAF8-A32C-4A55-A790-EE153557C23C";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1074,8 +1082,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Charisse Ann Dirain";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Charisse Ann Dirain";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1084,8 +1092,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "59553F10-F95A-4BE1-B2D0-D267E1FD7F89";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "59553F10-F95A-4BE1-B2D0-D267E1FD7F89";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1095,8 +1103,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Charisse Ann Dirain (C4C3S7L5KU)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Charisse Ann Dirain (C4C3S7L5KU)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -1110,8 +1118,8 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "48FBCAF8-A32C-4A55-A790-EE153557C23C";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "48FBCAF8-A32C-4A55-A790-EE153557C23C";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1120,8 +1128,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Charisse Ann Dirain";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Charisse Ann Dirain";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -1135,8 +1143,8 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "59553F10-F95A-4BE1-B2D0-D267E1FD7F89";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "59553F10-F95A-4BE1-B2D0-D267E1FD7F89";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
