@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		6145B76517A36A200058017E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6145B76417A36A200058017E /* Icon@2x.png */; };
 		6145B76717A36A260058017E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6145B76617A36A260058017E /* Icon.png */; };
+		6145B76A17A8DE530058017E /* navBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6145B76817A8DE530058017E /* navBar.png */; };
+		6145B76B17A8DE530058017E /* whiteButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6145B76917A8DE530058017E /* whiteButton@2x.png */; };
+		6145B76D17A8DE710058017E /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6145B76C17A8DE710058017E /* whiteButton.png */; };
+		6145B77017A8E5460058017E /* WhiteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145B76F17A8E5460058017E /* WhiteButton.m */; };
 		6148815D177615FE00290172 /* airplane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61488110177615FE00290172 /* airplane.jpg */; };
 		6148815E177615FE00290172 /* animal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61488111177615FE00290172 /* animal.jpg */; };
 		6148815F177615FE00290172 /* ant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61488112177615FE00290172 /* ant.jpg */; };
@@ -109,7 +113,6 @@
 		6148822A17761B2D00290172 /* PrintPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6148822717761B2D00290172 /* PrintPhotoViewController.xib */; };
 		6148822E17761B3700290172 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148822D17761B3700290172 /* GameCenterManager.m */; };
 		6148823717761B4300290172 /* PictureBingoGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148823217761B4300290172 /* PictureBingoGameViewController.m */; };
-		6148823D1776239D00290172 /* loginWithFacebook_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6148823C1776239D00290172 /* loginWithFacebook_button.png */; };
 		61488246177AD4AB00290172 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61488240177AD4A600290172 /* Icon-72@2x.png */; };
 		61488247177AD4AB00290172 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 61488241177AD4A600290172 /* Icon-Small-50.png */; };
 		61488248177AD4AB00290172 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61488242177AD4A700290172 /* Icon-Small-50@2x.png */; };
@@ -118,36 +121,19 @@
 		61A4F28E17972EA90097AAA3 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61A4F28C17972EA90097AAA3 /* logo@2x.png */; };
 		61B56CF1179917EF003C1ECF /* Button_Back_click.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CD9179917EF003C1ECF /* Button_Back_click.png */; };
 		61B56CF2179917EF003C1ECF /* Button_Back_SelectGame_click.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CDA179917EF003C1ECF /* Button_Back_SelectGame_click.png */; };
-		61B56CF3179917EF003C1ECF /* Button_BINGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CDB179917EF003C1ECF /* Button_BINGO.png */; };
-		61B56CF4179917EF003C1ECF /* Button_Chinese.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CDC179917EF003C1ECF /* Button_Chinese.png */; };
 		61B56CF5179917EF003C1ECF /* Button_CustomizeGames.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CDD179917EF003C1ECF /* Button_CustomizeGames.png */; };
-		61B56CF6179917EF003C1ECF /* Button_English.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CDE179917EF003C1ECF /* Button_English.png */; };
-		61B56CF7179917EF003C1ECF /* Button_French.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CDF179917EF003C1ECF /* Button_French.png */; };
 		61B56CF8179917EF003C1ECF /* Button_GameCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE0179917EF003C1ECF /* Button_GameCenter.png */; };
-		61B56CF9179917EF003C1ECF /* Button_Italian.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE1179917EF003C1ECF /* Button_Italian.png */; };
-		61B56CFA179917EF003C1ECF /* Button_Oldtimerbingogame.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE2179917EF003C1ECF /* Button_Oldtimerbingogame.png */; };
 		61B56CFB179917EF003C1ECF /* Button_Pause_click.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE3179917EF003C1ECF /* Button_Pause_click.png */; };
 		61B56CFC179917EF003C1ECF /* Button_Pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE4179917EF003C1ECF /* Button_Pause.png */; };
-		61B56CFD179917EF003C1ECF /* Button_picturebingogame.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE5179917EF003C1ECF /* Button_picturebingogame.png */; };
 		61B56CFE179917EF003C1ECF /* Button_Play_click.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE6179917EF003C1ECF /* Button_Play_click.png */; };
 		61B56CFF179917EF003C1ECF /* Button_Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE7179917EF003C1ECF /* Button_Play.png */; };
-		61B56D00179917EF003C1ECF /* Button_PlayGame.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE8179917EF003C1ECF /* Button_PlayGame.png */; };
-		61B56D01179917EF003C1ECF /* Button_PrintBingoCards.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE9179917EF003C1ECF /* Button_PrintBingoCards.png */; };
-		61B56D02179917EF003C1ECF /* Button_Spanish.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CEA179917EF003C1ECF /* Button_Spanish.png */; };
-		61B56D03179917EF003C1ECF /* Button_Tagalog.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CEB179917EF003C1ECF /* Button_Tagalog.png */; };
-		61B56D04179917EF003C1ECF /* Button_world-languagebingogame.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CEC179917EF003C1ECF /* Button_world-languagebingogame.png */; };
 		61B56D05179917EF003C1ECF /* Default-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CED179917EF003C1ECF /* Default-568h.png */; };
 		61B56D06179917EF003C1ECF /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CEE179917EF003C1ECF /* logo.png */; };
 		61B56D07179917EF003C1ECF /* MeBingo_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CEF179917EF003C1ECF /* MeBingo_Background.png */; };
 		61B56D08179917EF003C1ECF /* TextBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CF0179917EF003C1ECF /* TextBox.png */; };
 		6A81A56417771C3B003F0419 /* MeBingo_Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56317771C3B003F0419 /* MeBingo_Background@2x.png */; };
-		6A81A56617771C8A003F0419 /* Button_PlayGame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56517771C8A003F0419 /* Button_PlayGame@2x.png */; };
-		6A81A56817771CA6003F0419 /* Button_PrintBingoCards@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56717771CA6003F0419 /* Button_PrintBingoCards@2x.png */; };
 		6A81A56A17771CDC003F0419 /* Button_CustomizeGames@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56917771CDC003F0419 /* Button_CustomizeGames@2x.png */; };
 		6A81A56C17771CE7003F0419 /* Button_GameCenter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56B17771CE7003F0419 /* Button_GameCenter@2x.png */; };
-		6A81A56E17771D92003F0419 /* Button_Oldtimerbingogame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56D17771D92003F0419 /* Button_Oldtimerbingogame@2x.png */; };
-		6A81A57017771DA8003F0419 /* Button_picturebingogame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A56F17771DA8003F0419 /* Button_picturebingogame@2x.png */; };
-		6A81A57217771DAF003F0419 /* Button_world-languagebingogame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57117771DAF003F0419 /* Button_world-languagebingogame@2x.png */; };
 		6A81A57417771FE3003F0419 /* o.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57317771FE3003F0419 /* o.png */; };
 		6A81A57617771FE6003F0419 /* g.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57517771FE6003F0419 /* g.png */; };
 		6A81A57817771FEB003F0419 /* n.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57717771FEB003F0419 /* n.png */; };
@@ -155,15 +141,8 @@
 		6A81A57C17771FF4003F0419 /* b.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57B17771FF4003F0419 /* b.png */; };
 		6A81A57E17772395003F0419 /* Button_Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57D17772395003F0419 /* Button_Play@2x.png */; };
 		6A81A5801777239B003F0419 /* Button_Pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57F1777239B003F0419 /* Button_Pause@2x.png */; };
-		6A81A582177723A6003F0419 /* Button_BINGO@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A581177723A6003F0419 /* Button_BINGO@2x.png */; };
 		6A81A58617772419003F0419 /* free.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A58517772419003F0419 /* free.png */; };
 		6A81A588177724A7003F0419 /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A587177724A7003F0419 /* box.png */; };
-		6A81A58A17772841003F0419 /* Button_French@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A58917772841003F0419 /* Button_French@2x.png */; };
-		6A81A58C1777284A003F0419 /* Button_Italian@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A58B1777284A003F0419 /* Button_Italian@2x.png */; };
-		6A81A58E17772975003F0419 /* Button_Chinese@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A58D17772975003F0419 /* Button_Chinese@2x.png */; };
-		6A81A5901777297F003F0419 /* Button_English@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A58F1777297F003F0419 /* Button_English@2x.png */; };
-		6A81A59217772988003F0419 /* Button_Spanish@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59117772988003F0419 /* Button_Spanish@2x.png */; };
-		6A81A59417772990003F0419 /* Button_Tagalog@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59317772990003F0419 /* Button_Tagalog@2x.png */; };
 		6A81A59617772FC2003F0419 /* Button_Play_click@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59517772FC2003F0419 /* Button_Play_click@2x.png */; };
 		6A81A59817772FCC003F0419 /* Button_Pause_click@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59717772FCC003F0419 /* Button_Pause_click@2x.png */; };
 		6A81A59A17772FDA003F0419 /* TextBox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59917772FDA003F0419 /* TextBox@2x.png */; };
@@ -177,7 +156,6 @@
 		B822774E16ECC51200456D3C /* WordGamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B822774C16ECC51200456D3C /* WordGamePlayViewController.m */; };
 		B822775416ECC5CB00456D3C /* SelectLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B822775216ECC5CB00456D3C /* SelectLanguageViewController.m */; };
 		B822775516ECC5CB00456D3C /* SelectLanguageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B822775316ECC5CB00456D3C /* SelectLanguageViewController.xib */; };
-		B89944FB16F14E3D007A223B /* SelectLanguageViewController-landscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = B89944F916F14E3D007A223B /* SelectLanguageViewController-landscape.xib */; };
 		B8998C3216E3831800878C17 /* GamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8998C3016E3831800878C17 /* GamePlayViewController.m */; };
 		B8998C3316E3831800878C17 /* GamePlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8998C3116E3831800878C17 /* GamePlayViewController.xib */; };
 		B89F8E0016E3200A000FB79C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89F8DFF16E3200A000FB79C /* UIKit.framework */; };
@@ -196,6 +174,11 @@
 /* Begin PBXFileReference section */
 		6145B76417A36A200058017E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		6145B76617A36A260058017E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		6145B76817A8DE530058017E /* navBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navBar.png; sourceTree = "<group>"; };
+		6145B76917A8DE530058017E /* whiteButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteButton@2x.png"; sourceTree = "<group>"; };
+		6145B76C17A8DE710058017E /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteButton.png; sourceTree = "<group>"; };
+		6145B76E17A8E5460058017E /* WhiteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteButton.h; sourceTree = "<group>"; };
+		6145B76F17A8E5460058017E /* WhiteButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteButton.m; sourceTree = "<group>"; };
 		61488110177615FE00290172 /* airplane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = airplane.jpg; path = Media/airplane.jpg; sourceTree = "<group>"; };
 		61488111177615FE00290172 /* animal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = animal.jpg; path = Media/animal.jpg; sourceTree = "<group>"; };
 		61488112177615FE00290172 /* ant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ant.jpg; path = Media/ant.jpg; sourceTree = "<group>"; };
@@ -301,7 +284,6 @@
 		6148822D17761B3700290172 /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
 		6148823117761B4300290172 /* PictureBingoGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureBingoGameViewController.h; sourceTree = "<group>"; };
 		6148823217761B4300290172 /* PictureBingoGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureBingoGameViewController.m; sourceTree = "<group>"; };
-		6148823C1776239D00290172 /* loginWithFacebook_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginWithFacebook_button.png; sourceTree = "<group>"; };
 		61488240177AD4A600290172 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		61488241177AD4A600290172 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
 		61488242177AD4A700290172 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
@@ -310,36 +292,19 @@
 		61A4F28C17972EA90097AAA3 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		61B56CD9179917EF003C1ECF /* Button_Back_click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Back_click.png; sourceTree = "<group>"; };
 		61B56CDA179917EF003C1ECF /* Button_Back_SelectGame_click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Back_SelectGame_click.png; sourceTree = "<group>"; };
-		61B56CDB179917EF003C1ECF /* Button_BINGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_BINGO.png; sourceTree = "<group>"; };
-		61B56CDC179917EF003C1ECF /* Button_Chinese.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Chinese.png; sourceTree = "<group>"; };
 		61B56CDD179917EF003C1ECF /* Button_CustomizeGames.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_CustomizeGames.png; sourceTree = "<group>"; };
-		61B56CDE179917EF003C1ECF /* Button_English.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_English.png; sourceTree = "<group>"; };
-		61B56CDF179917EF003C1ECF /* Button_French.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_French.png; sourceTree = "<group>"; };
 		61B56CE0179917EF003C1ECF /* Button_GameCenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_GameCenter.png; sourceTree = "<group>"; };
-		61B56CE1179917EF003C1ECF /* Button_Italian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Italian.png; sourceTree = "<group>"; };
-		61B56CE2179917EF003C1ECF /* Button_Oldtimerbingogame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Oldtimerbingogame.png; sourceTree = "<group>"; };
 		61B56CE3179917EF003C1ECF /* Button_Pause_click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Pause_click.png; sourceTree = "<group>"; };
 		61B56CE4179917EF003C1ECF /* Button_Pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Pause.png; sourceTree = "<group>"; };
-		61B56CE5179917EF003C1ECF /* Button_picturebingogame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_picturebingogame.png; sourceTree = "<group>"; };
 		61B56CE6179917EF003C1ECF /* Button_Play_click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Play_click.png; sourceTree = "<group>"; };
 		61B56CE7179917EF003C1ECF /* Button_Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Play.png; sourceTree = "<group>"; };
-		61B56CE8179917EF003C1ECF /* Button_PlayGame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_PlayGame.png; sourceTree = "<group>"; };
-		61B56CE9179917EF003C1ECF /* Button_PrintBingoCards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_PrintBingoCards.png; sourceTree = "<group>"; };
-		61B56CEA179917EF003C1ECF /* Button_Spanish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Spanish.png; sourceTree = "<group>"; };
-		61B56CEB179917EF003C1ECF /* Button_Tagalog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Tagalog.png; sourceTree = "<group>"; };
-		61B56CEC179917EF003C1ECF /* Button_world-languagebingogame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_world-languagebingogame.png"; sourceTree = "<group>"; };
 		61B56CED179917EF003C1ECF /* Default-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h.png"; sourceTree = "<group>"; };
 		61B56CEE179917EF003C1ECF /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		61B56CEF179917EF003C1ECF /* MeBingo_Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MeBingo_Background.png; sourceTree = "<group>"; };
 		61B56CF0179917EF003C1ECF /* TextBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextBox.png; sourceTree = "<group>"; };
 		6A81A56317771C3B003F0419 /* MeBingo_Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeBingo_Background@2x.png"; sourceTree = "<group>"; };
-		6A81A56517771C8A003F0419 /* Button_PlayGame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_PlayGame@2x.png"; sourceTree = "<group>"; };
-		6A81A56717771CA6003F0419 /* Button_PrintBingoCards@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_PrintBingoCards@2x.png"; sourceTree = "<group>"; };
 		6A81A56917771CDC003F0419 /* Button_CustomizeGames@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_CustomizeGames@2x.png"; sourceTree = "<group>"; };
 		6A81A56B17771CE7003F0419 /* Button_GameCenter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_GameCenter@2x.png"; sourceTree = "<group>"; };
-		6A81A56D17771D92003F0419 /* Button_Oldtimerbingogame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Oldtimerbingogame@2x.png"; sourceTree = "<group>"; };
-		6A81A56F17771DA8003F0419 /* Button_picturebingogame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_picturebingogame@2x.png"; sourceTree = "<group>"; };
-		6A81A57117771DAF003F0419 /* Button_world-languagebingogame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_world-languagebingogame@2x.png"; sourceTree = "<group>"; };
 		6A81A57317771FE3003F0419 /* o.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = o.png; sourceTree = "<group>"; };
 		6A81A57517771FE6003F0419 /* g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = g.png; sourceTree = "<group>"; };
 		6A81A57717771FEB003F0419 /* n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = n.png; sourceTree = "<group>"; };
@@ -347,15 +312,8 @@
 		6A81A57B17771FF4003F0419 /* b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b.png; sourceTree = "<group>"; };
 		6A81A57D17772395003F0419 /* Button_Play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Play@2x.png"; sourceTree = "<group>"; };
 		6A81A57F1777239B003F0419 /* Button_Pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Pause@2x.png"; sourceTree = "<group>"; };
-		6A81A581177723A6003F0419 /* Button_BINGO@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_BINGO@2x.png"; sourceTree = "<group>"; };
 		6A81A58517772419003F0419 /* free.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = free.png; sourceTree = "<group>"; };
 		6A81A587177724A7003F0419 /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
-		6A81A58917772841003F0419 /* Button_French@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_French@2x.png"; sourceTree = "<group>"; };
-		6A81A58B1777284A003F0419 /* Button_Italian@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Italian@2x.png"; sourceTree = "<group>"; };
-		6A81A58D17772975003F0419 /* Button_Chinese@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Chinese@2x.png"; sourceTree = "<group>"; };
-		6A81A58F1777297F003F0419 /* Button_English@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_English@2x.png"; sourceTree = "<group>"; };
-		6A81A59117772988003F0419 /* Button_Spanish@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Spanish@2x.png"; sourceTree = "<group>"; };
-		6A81A59317772990003F0419 /* Button_Tagalog@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Tagalog@2x.png"; sourceTree = "<group>"; };
 		6A81A59517772FC2003F0419 /* Button_Play_click@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Play_click@2x.png"; sourceTree = "<group>"; };
 		6A81A59717772FCC003F0419 /* Button_Pause_click@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Pause_click@2x.png"; sourceTree = "<group>"; };
 		6A81A59917772FDA003F0419 /* TextBox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TextBox@2x.png"; sourceTree = "<group>"; };
@@ -372,7 +330,6 @@
 		B822775116ECC5CB00456D3C /* SelectLanguageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectLanguageViewController.h; sourceTree = "<group>"; };
 		B822775216ECC5CB00456D3C /* SelectLanguageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectLanguageViewController.m; sourceTree = "<group>"; };
 		B822775316ECC5CB00456D3C /* SelectLanguageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectLanguageViewController.xib; sourceTree = "<group>"; };
-		B89944F916F14E3D007A223B /* SelectLanguageViewController-landscape.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SelectLanguageViewController-landscape.xib"; sourceTree = "<group>"; };
 		B8998C2F16E3831800878C17 /* GamePlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePlayViewController.h; sourceTree = "<group>"; };
 		B8998C3016E3831800878C17 /* GamePlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePlayViewController.m; sourceTree = "<group>"; };
 		B8998C3116E3831800878C17 /* GamePlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamePlayViewController.xib; sourceTree = "<group>"; };
@@ -461,26 +418,17 @@
 		6A81A56017771BE4003F0419 /* screens */ = {
 			isa = PBXGroup;
 			children = (
+				6145B76817A8DE530058017E /* navBar.png */,
+				6145B76C17A8DE710058017E /* whiteButton.png */,
+				6145B76917A8DE530058017E /* whiteButton@2x.png */,
 				61B56CD9179917EF003C1ECF /* Button_Back_click.png */,
 				61B56CDA179917EF003C1ECF /* Button_Back_SelectGame_click.png */,
-				61B56CDB179917EF003C1ECF /* Button_BINGO.png */,
-				61B56CDC179917EF003C1ECF /* Button_Chinese.png */,
 				61B56CDD179917EF003C1ECF /* Button_CustomizeGames.png */,
-				61B56CDE179917EF003C1ECF /* Button_English.png */,
-				61B56CDF179917EF003C1ECF /* Button_French.png */,
 				61B56CE0179917EF003C1ECF /* Button_GameCenter.png */,
-				61B56CE1179917EF003C1ECF /* Button_Italian.png */,
-				61B56CE2179917EF003C1ECF /* Button_Oldtimerbingogame.png */,
 				61B56CE3179917EF003C1ECF /* Button_Pause_click.png */,
 				61B56CE4179917EF003C1ECF /* Button_Pause.png */,
-				61B56CE5179917EF003C1ECF /* Button_picturebingogame.png */,
 				61B56CE6179917EF003C1ECF /* Button_Play_click.png */,
 				61B56CE7179917EF003C1ECF /* Button_Play.png */,
-				61B56CE8179917EF003C1ECF /* Button_PlayGame.png */,
-				61B56CE9179917EF003C1ECF /* Button_PrintBingoCards.png */,
-				61B56CEA179917EF003C1ECF /* Button_Spanish.png */,
-				61B56CEB179917EF003C1ECF /* Button_Tagalog.png */,
-				61B56CEC179917EF003C1ECF /* Button_world-languagebingogame.png */,
 				61B56CED179917EF003C1ECF /* Default-568h.png */,
 				61B56CEE179917EF003C1ECF /* logo.png */,
 				61B56CEF179917EF003C1ECF /* MeBingo_Background.png */,
@@ -492,22 +440,10 @@
 				6A81A59F1777361F003F0419 /* Button_Back_click@2x.png */,
 				6A81A59917772FDA003F0419 /* TextBox@2x.png */,
 				6A81A59717772FCC003F0419 /* Button_Pause_click@2x.png */,
-				6A81A56517771C8A003F0419 /* Button_PlayGame@2x.png */,
-				6A81A56717771CA6003F0419 /* Button_PrintBingoCards@2x.png */,
 				6A81A56917771CDC003F0419 /* Button_CustomizeGames@2x.png */,
 				6A81A56B17771CE7003F0419 /* Button_GameCenter@2x.png */,
-				6A81A56D17771D92003F0419 /* Button_Oldtimerbingogame@2x.png */,
-				6A81A56F17771DA8003F0419 /* Button_picturebingogame@2x.png */,
-				6A81A57117771DAF003F0419 /* Button_world-languagebingogame@2x.png */,
 				6A81A57D17772395003F0419 /* Button_Play@2x.png */,
 				6A81A57F1777239B003F0419 /* Button_Pause@2x.png */,
-				6A81A581177723A6003F0419 /* Button_BINGO@2x.png */,
-				6A81A58917772841003F0419 /* Button_French@2x.png */,
-				6A81A58B1777284A003F0419 /* Button_Italian@2x.png */,
-				6A81A58D17772975003F0419 /* Button_Chinese@2x.png */,
-				6A81A58F1777297F003F0419 /* Button_English@2x.png */,
-				6A81A59117772988003F0419 /* Button_Spanish@2x.png */,
-				6A81A59317772990003F0419 /* Button_Tagalog@2x.png */,
 				6A81A58517772419003F0419 /* free.png */,
 				6A81A587177724A7003F0419 /* box.png */,
 				6A81A57B17771FF4003F0419 /* b.png */,
@@ -616,6 +552,8 @@
 				B822774416ECBBED00456D3C /* SelectGamePlayController */,
 				B822774216ECBB8400456D3C /* HomeViewController */,
 				B822774116ECBB6400456D3C /* AppDelegate */,
+				6145B76E17A8E5460058017E /* WhiteButton.h */,
+				6145B76F17A8E5460058017E /* WhiteButton.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -675,7 +613,6 @@
 				B822775116ECC5CB00456D3C /* SelectLanguageViewController.h */,
 				B822775216ECC5CB00456D3C /* SelectLanguageViewController.m */,
 				B822775316ECC5CB00456D3C /* SelectLanguageViewController.xib */,
-				B89944F916F14E3D007A223B /* SelectLanguageViewController-landscape.xib */,
 			);
 			name = SelectLanguageViewController;
 			sourceTree = "<group>";
@@ -747,7 +684,6 @@
 				61488243177AD4A800290172 /* Icon-Small@2x.png */,
 				6A97B1EE177874A3004056F1 /* Icon-72.png */,
 				6A97B1F2177874C2004056F1 /* Icon-Small.png */,
-				6148823C1776239D00290172 /* loginWithFacebook_button.png */,
 				B89F8E0716E3200A000FB79C /* MeBingo-Info.plist */,
 				B89F8E0816E3200A000FB79C /* InfoPlist.strings */,
 				B89F8E0B16E3200A000FB79C /* main.m */,
@@ -818,7 +754,6 @@
 				B8998C3316E3831800878C17 /* GamePlayViewController.xib in Resources */,
 				B822774916ECBC1F00456D3C /* SelectGamePlayViewController.xib in Resources */,
 				B822775516ECC5CB00456D3C /* SelectLanguageViewController.xib in Resources */,
-				B89944FB16F14E3D007A223B /* SelectLanguageViewController-landscape.xib in Resources */,
 				6148815D177615FE00290172 /* airplane.jpg in Resources */,
 				6148815E177615FE00290172 /* animal.jpg in Resources */,
 				6148815F177615FE00290172 /* ant.jpg in Resources */,
@@ -896,15 +831,9 @@
 				614881A8177615FE00290172 /* yell.jpg in Resources */,
 				614881A9177615FE00290172 /* zebra.jpg in Resources */,
 				6148822A17761B2D00290172 /* PrintPhotoViewController.xib in Resources */,
-				6148823D1776239D00290172 /* loginWithFacebook_button.png in Resources */,
 				6A81A56417771C3B003F0419 /* MeBingo_Background@2x.png in Resources */,
-				6A81A56617771C8A003F0419 /* Button_PlayGame@2x.png in Resources */,
-				6A81A56817771CA6003F0419 /* Button_PrintBingoCards@2x.png in Resources */,
 				6A81A56A17771CDC003F0419 /* Button_CustomizeGames@2x.png in Resources */,
 				6A81A56C17771CE7003F0419 /* Button_GameCenter@2x.png in Resources */,
-				6A81A56E17771D92003F0419 /* Button_Oldtimerbingogame@2x.png in Resources */,
-				6A81A57017771DA8003F0419 /* Button_picturebingogame@2x.png in Resources */,
-				6A81A57217771DAF003F0419 /* Button_world-languagebingogame@2x.png in Resources */,
 				6A81A57417771FE3003F0419 /* o.png in Resources */,
 				6A81A57617771FE6003F0419 /* g.png in Resources */,
 				6A81A57817771FEB003F0419 /* n.png in Resources */,
@@ -912,15 +841,8 @@
 				6A81A57C17771FF4003F0419 /* b.png in Resources */,
 				6A81A57E17772395003F0419 /* Button_Play@2x.png in Resources */,
 				6A81A5801777239B003F0419 /* Button_Pause@2x.png in Resources */,
-				6A81A582177723A6003F0419 /* Button_BINGO@2x.png in Resources */,
 				6A81A58617772419003F0419 /* free.png in Resources */,
 				6A81A588177724A7003F0419 /* box.png in Resources */,
-				6A81A58A17772841003F0419 /* Button_French@2x.png in Resources */,
-				6A81A58C1777284A003F0419 /* Button_Italian@2x.png in Resources */,
-				6A81A58E17772975003F0419 /* Button_Chinese@2x.png in Resources */,
-				6A81A5901777297F003F0419 /* Button_English@2x.png in Resources */,
-				6A81A59217772988003F0419 /* Button_Spanish@2x.png in Resources */,
-				6A81A59417772990003F0419 /* Button_Tagalog@2x.png in Resources */,
 				6A81A59617772FC2003F0419 /* Button_Play_click@2x.png in Resources */,
 				6A81A59817772FCC003F0419 /* Button_Pause_click@2x.png in Resources */,
 				6A81A59A17772FDA003F0419 /* TextBox@2x.png in Resources */,
@@ -937,30 +859,21 @@
 				61A4F28E17972EA90097AAA3 /* logo@2x.png in Resources */,
 				61B56CF1179917EF003C1ECF /* Button_Back_click.png in Resources */,
 				61B56CF2179917EF003C1ECF /* Button_Back_SelectGame_click.png in Resources */,
-				61B56CF3179917EF003C1ECF /* Button_BINGO.png in Resources */,
-				61B56CF4179917EF003C1ECF /* Button_Chinese.png in Resources */,
 				61B56CF5179917EF003C1ECF /* Button_CustomizeGames.png in Resources */,
-				61B56CF6179917EF003C1ECF /* Button_English.png in Resources */,
-				61B56CF7179917EF003C1ECF /* Button_French.png in Resources */,
 				61B56CF8179917EF003C1ECF /* Button_GameCenter.png in Resources */,
-				61B56CF9179917EF003C1ECF /* Button_Italian.png in Resources */,
-				61B56CFA179917EF003C1ECF /* Button_Oldtimerbingogame.png in Resources */,
 				61B56CFB179917EF003C1ECF /* Button_Pause_click.png in Resources */,
 				61B56CFC179917EF003C1ECF /* Button_Pause.png in Resources */,
-				61B56CFD179917EF003C1ECF /* Button_picturebingogame.png in Resources */,
 				61B56CFE179917EF003C1ECF /* Button_Play_click.png in Resources */,
 				61B56CFF179917EF003C1ECF /* Button_Play.png in Resources */,
-				61B56D00179917EF003C1ECF /* Button_PlayGame.png in Resources */,
-				61B56D01179917EF003C1ECF /* Button_PrintBingoCards.png in Resources */,
-				61B56D02179917EF003C1ECF /* Button_Spanish.png in Resources */,
-				61B56D03179917EF003C1ECF /* Button_Tagalog.png in Resources */,
-				61B56D04179917EF003C1ECF /* Button_world-languagebingogame.png in Resources */,
 				61B56D05179917EF003C1ECF /* Default-568h.png in Resources */,
 				61B56D06179917EF003C1ECF /* logo.png in Resources */,
 				61B56D07179917EF003C1ECF /* MeBingo_Background.png in Resources */,
 				61B56D08179917EF003C1ECF /* TextBox.png in Resources */,
 				6145B76517A36A200058017E /* Icon@2x.png in Resources */,
 				6145B76717A36A260058017E /* Icon.png in Resources */,
+				6145B76A17A8DE530058017E /* navBar.png in Resources */,
+				6145B76B17A8DE530058017E /* whiteButton@2x.png in Resources */,
+				6145B76D17A8DE710058017E /* whiteButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -982,6 +895,7 @@
 				6148822917761B2D00290172 /* PrintPhotoViewController.m in Sources */,
 				6148822E17761B3700290172 /* GameCenterManager.m in Sources */,
 				6148823717761B4300290172 /* PictureBingoGameViewController.m in Sources */,
+				6145B77017A8E5460058017E /* WhiteButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "WhiteButton.h"
 @interface SelectGamePlayViewController : UIViewController
+
 
 @end

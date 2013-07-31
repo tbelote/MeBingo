@@ -10,6 +10,7 @@
 #import <GameKit/GameKit.h>
 #import "GameCenterManager.h"
 #import "AppSpecificValues.h"
+#import "WhiteButton.h"
 
 @interface ViewController : UIViewController<UIActionSheetDelegate,GKLeaderboardViewControllerDelegate, GKAchievementViewControllerDelegate, GameCenterManagerDelegate>{
     

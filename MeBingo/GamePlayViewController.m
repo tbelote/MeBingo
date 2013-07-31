@@ -19,6 +19,7 @@
 
 @implementation GamePlayViewController
 
+@synthesize bingo;
 @synthesize resultWord;
 @synthesize displayLabel;
 @synthesize b1Button, b2Button, b3Button, b4Button, b5Button;
@@ -42,6 +43,8 @@
     [super viewDidLoad];
     //[self callAppropriateXIB:self.interfaceOrientation];
     
+    [self.bingo setBackgroundImage:[[UIImage imageNamed:@"whiteButton.png"] stretchableImageWithLeftCapWidth:20.0 topCapHeight:20.0] forState:UIControlStateNormal];
+
     //add custom backbutton
     //add custom backbutton
     UIImage *backImage = [UIImage imageNamed:@"Button_Back_click.png"];
@@ -53,10 +56,15 @@
     UIBarButtonItem *backbtn = [[UIBarButtonItem alloc] initWithCustomView:button];
     self.navigationItem.leftBarButtonItem = backbtn;
 
-    
-    self.displayLabel.font = [UIFont boldSystemFontOfSize:80.0];
-    self.displayLabel.minimumScaleFactor = 0.1;
+    if ([UIScreen mainScreen].bounds.size.height < 961.0) {
+        self.displayLabel.font = [UIFont boldSystemFontOfSize:34.0];
+        self.displayLabel.minimumScaleFactor = 0.4;
+    } else {
+        self.displayLabel.font = [UIFont boldSystemFontOfSize:80.0];
+        self.displayLabel.minimumScaleFactor = 0.1;
+    }
     self.displayLabel.adjustsFontSizeToFitWidth = YES;
+    
     
     
     self.resultWord = [[NSMutableArray alloc] init];

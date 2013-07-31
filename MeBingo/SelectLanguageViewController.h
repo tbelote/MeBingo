@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WhiteButton.h"
 
 @interface SelectLanguageViewController : UIViewController
 

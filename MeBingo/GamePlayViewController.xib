@@ -107,16 +107,21 @@
 						<string key="IBUINormalTitle">BINGO!</string>
 						<reference key="IBUIHighlightedTitleColor" ref="78293112"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+							<int key="NSColorSpace">2</int>
+							<bytes key="NSRGB">MC4wMTU2ODYyNzU0NCAwLjM1Mjk0MTE4NTIgMC44MDc4NDMyMDgzAA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="514005652"/>
-						<object class="NSCustomResource" key="IBUINormalImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">Button_BINGO@2x.png</string>
+						<object class="IBUIFontDescription" key="IBUIFontDescription">
+							<string key="name">HelveticaNeue-Medium</string>
+							<string key="family">Helvetica Neue</string>
+							<int key="traits">0</int>
+							<double key="pointSize">18</double>
 						</object>
-						<reference key="IBUIFontDescription" ref="1017386302"/>
-						<reference key="IBUIFont" ref="260732122"/>
+						<object class="NSFont" key="IBUIFont">
+							<string key="NSName">HelveticaNeue-Medium</string>
+							<double key="NSSize">18</double>
+							<int key="NSfFlags">16</int>
+						</object>
 					</object>
 					<object class="IBUIImageView" id="1000019780">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -892,6 +897,7 @@
 						</object>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">0</int>
+						<float key="IBUIMinimumScaleFactor">0.20000000298023224</float>
 						<int key="IBUITextAlignment">1</int>
 						<object class="IBUIFontDescription" key="IBUIFontDescription">
 							<int key="type">1</int>
@@ -902,7 +908,6 @@
 							<double key="NSSize">17</double>
 							<int key="NSfFlags">16</int>
 						</object>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 					</object>
 				</array>
 				<string key="NSFrame">{{0, 64}, {320, 416}}</string>
@@ -1149,6 +1154,14 @@
 						<reference key="destination" ref="186140913"/>
 					</object>
 					<int key="connectionID">266</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">bingo</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="1065983884"/>
+					</object>
+					<int key="connectionID">788</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -5903,30 +5916,39 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">787</int>
+			<int key="maxID">788</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
 					<string key="className">GamePlayViewController</string>
 					<string key="superclassName">UIViewController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">checkButtonWithGeneratedNumber:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">checkButtonWithGeneratedNumber:</string>
-						<object class="IBActionInfo" key="NS.object.0">
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="bingoButtonIsClicked:">id</string>
+						<string key="checkButtonWithGeneratedNumber:">id</string>
+						<string key="playButtonIsClicked:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="bingoButtonIsClicked:">
+							<string key="name">bingoButtonIsClicked:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="checkButtonWithGeneratedNumber:">
 							<string key="name">checkButtonWithGeneratedNumber:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-					</object>
+						<object class="IBActionInfo" key="playButtonIsClicked:">
+							<string key="name">playButtonIsClicked:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="b1Button">UIButton</string>
 						<string key="b2Button">UIButton</string>
 						<string key="b3Button">UIButton</string>
 						<string key="b4Button">UIButton</string>
 						<string key="b5Button">UIButton</string>
+						<string key="bingo">UIButton</string>
 						<string key="displayLabel">UILabel</string>
 						<string key="g1Button">UIButton</string>
 						<string key="g2Button">UIButton</string>
@@ -5968,6 +5990,10 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="b5Button">
 							<string key="name">b5Button</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="bingo">
+							<string key="name">bingo</string>
 							<string key="candidateClassName">UIButton</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="displayLabel">
@@ -6075,7 +6101,6 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="Button_BINGO@2x.png">{160, 90}</string>
 			<string key="Button_Play@2x.png">{100, 83}</string>
 			<string key="MeBingo_Background@2x.png">{640, 960}</string>
 			<string key="TextBox@2x.png">{600, 71}</string>
