@@ -3,15 +3,15 @@
 //  MeBingo
 //
 //  Created by Anthony Yanto on 3/3/13.
-//  Copyright (c) 2013 Anthony Yanto. All rights reserved.
+//  Copyright (c) 2013 Thomas Belote. Attribution-ShareAlike 3.0 http://creativecommons.org/licenses/by-sa/3.0/
 //
 
 #import "GamePlayViewController.h"
 
 @interface GamePlayViewController (){
-    
+
     NSTimer *timer;
-    
+
     bool shouldRestartGame;
 }
 
@@ -42,7 +42,7 @@
 {
     [super viewDidLoad];
     //[self callAppropriateXIB:self.interfaceOrientation];
-    
+
     [self.bingo setBackgroundImage:[[UIImage imageNamed:@"whiteButton.png"] stretchableImageWithLeftCapWidth:20.0 topCapHeight:20.0] forState:UIControlStateNormal];
 
     //add custom backbutton
@@ -64,9 +64,9 @@
         self.displayLabel.minimumScaleFactor = 0.1;
     }
     self.displayLabel.adjustsFontSizeToFitWidth = YES;
-    
-    
-    
+
+
+
     self.resultWord = [[NSMutableArray alloc] init];
     bNumbers = [[NSMutableArray alloc] init];
     iNumbers = [[NSMutableArray alloc] init];
@@ -74,7 +74,7 @@
     gNumbers = [[NSMutableArray alloc] init];
     oNumbers = [[NSMutableArray alloc] init];
 
-    
+
     shouldRestartGame = FALSE;
 }
 
@@ -99,7 +99,7 @@
     [nNumbers removeAllObjects];
     [gNumbers removeAllObjects];
     [oNumbers removeAllObjects];
-  
+
 }
 
 -(IBAction)playButtonIsClicked:(id)sender{
@@ -124,7 +124,7 @@
 }
 
 - (IBAction)checkButtonWithGeneratedNumber:(id)sender{
-    
+
     UIButton *button = sender;
     if ([self.resultWord containsObject:[NSNumber numberWithInt:button.tag]]) {
         button.enabled = NO;
@@ -143,9 +143,9 @@
 }
 
 - (IBAction)bingoButtonIsClicked:(id)sender{
-    
+
     bool hasNoError = FALSE;
-    
+
     //check horizotal
     if ([self.resultWord containsObject:[bNumbers objectAtIndex:0]] &&
         [self.resultWord containsObject:[iNumbers objectAtIndex:0]] &&
@@ -154,7 +154,7 @@
         [self.resultWord containsObject:[oNumbers objectAtIndex:0]]) {
         hasNoError = TRUE;
     }
-    
+
     if ([self.resultWord containsObject:[bNumbers objectAtIndex:1]] &&
         [self.resultWord containsObject:[iNumbers objectAtIndex:1]] &&
         [self.resultWord containsObject:[nNumbers objectAtIndex:1]] &&
@@ -162,14 +162,14 @@
         [self.resultWord containsObject:[oNumbers objectAtIndex:1]]) {
         hasNoError = TRUE;
     }
-    
+
     if ([self.resultWord containsObject:[bNumbers objectAtIndex:2]] &&
         [self.resultWord containsObject:[iNumbers objectAtIndex:2]] &&
         [self.resultWord containsObject:[gNumbers objectAtIndex:2]] &&
         [self.resultWord containsObject:[oNumbers objectAtIndex:2]]) {
         hasNoError = TRUE;
     }
-    
+
     if ([self.resultWord containsObject:[bNumbers objectAtIndex:3]] &&
         [self.resultWord containsObject:[iNumbers objectAtIndex:3]] &&
         [self.resultWord containsObject:[nNumbers objectAtIndex:3]] &&
@@ -177,7 +177,7 @@
         [self.resultWord containsObject:[oNumbers objectAtIndex:3]]) {
         hasNoError = TRUE;
     }
-    
+
     if ([self.resultWord containsObject:[bNumbers objectAtIndex:4]] &&
         [self.resultWord containsObject:[iNumbers objectAtIndex:4]] &&
         [self.resultWord containsObject:[nNumbers objectAtIndex:4]] &&
@@ -185,7 +185,7 @@
         [self.resultWord containsObject:[oNumbers objectAtIndex:4]]) {
         hasNoError = TRUE;
     }
-    
+
     //vertical
     if ([self.resultWord containsObject:[bNumbers objectAtIndex:0]] &&
         [self.resultWord containsObject:[bNumbers objectAtIndex:1]] &&
@@ -194,7 +194,7 @@
         [self.resultWord containsObject:[bNumbers objectAtIndex:4]]) {
         hasNoError = TRUE;
     }
-    
+
     if ([self.resultWord containsObject:[iNumbers objectAtIndex:0]] &&
         [self.resultWord containsObject:[iNumbers objectAtIndex:1]] &&
         [self.resultWord containsObject:[iNumbers objectAtIndex:2]] &&
@@ -202,14 +202,14 @@
         [self.resultWord containsObject:[iNumbers objectAtIndex:4]]) {
         hasNoError = TRUE;
     }
-    
+
     if ([self.resultWord containsObject:[nNumbers objectAtIndex:0]] &&
         [self.resultWord containsObject:[nNumbers objectAtIndex:1]] &&
         [self.resultWord containsObject:[nNumbers objectAtIndex:3]] &&
         [self.resultWord containsObject:[nNumbers objectAtIndex:4]]) {
         hasNoError = TRUE;
     }
-    
+
     if ([self.resultWord containsObject:[gNumbers objectAtIndex:0]] &&
         [self.resultWord containsObject:[gNumbers objectAtIndex:1]] &&
         [self.resultWord containsObject:[gNumbers objectAtIndex:2]] &&
@@ -217,7 +217,7 @@
         [self.resultWord containsObject:[gNumbers objectAtIndex:4]]) {
         hasNoError = TRUE;
     }
-    
+
     if ([self.resultWord containsObject:[oNumbers objectAtIndex:0]] &&
         [self.resultWord containsObject:[oNumbers objectAtIndex:1]] &&
         [self.resultWord containsObject:[oNumbers objectAtIndex:2]] &&
@@ -225,7 +225,7 @@
         [self.resultWord containsObject:[oNumbers objectAtIndex:4]]) {
         hasNoError = TRUE;
     }
-    
+
     //diagonal
     if ([self.resultWord containsObject:[bNumbers objectAtIndex:0]] &&
         [self.resultWord containsObject:[iNumbers objectAtIndex:1]] &&
@@ -233,19 +233,19 @@
         [self.resultWord containsObject:[oNumbers objectAtIndex:4]]) {
         hasNoError = TRUE;
     }
-    
+
     if ([self.resultWord containsObject:[bNumbers objectAtIndex:4]] &&
         [self.resultWord containsObject:[iNumbers objectAtIndex:3]] &&
         [self.resultWord containsObject:[gNumbers objectAtIndex:1]] &&
         [self.resultWord containsObject:[oNumbers objectAtIndex:0]]) {
         hasNoError = TRUE;
     }
-    
+
     if (hasNoError) {
         [timer invalidate];
-        
+
         shouldRestartGame = TRUE;
-        
+
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations, You WON!"
                                                         message:@"Thank you for playing BINGO!"
                                                        delegate:self
@@ -261,7 +261,7 @@
                                               otherButtonTitles:nil, nil];
         [alert show];
     }
-    
+
 }
 
 -(void)formatButton:(UIButton*)button {
@@ -275,7 +275,7 @@
 
 }
 - (void)updateTime{
-    
+
 }
 
 - (void) dealloc {
@@ -303,7 +303,7 @@
 #pragma mark Methods that handle rotation
 -(void) populateButtonTitleAfterRotation{
 
-    
+
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -319,11 +319,11 @@
 
 
 -(void) callAppropriateXIB:(UIInterfaceOrientation)toInterfaceOrientation {
-    
-//    
+
+//
 //    if( UIInterfaceOrientationIsLandscape(toInterfaceOrientation) )
 //    {
-//        
+//
 //       [[NSBundle mainBundle] loadNibNamed: @"GamePlayViewController-landscape"
 //                                    owner: self
 //                                    options: nil];
@@ -338,7 +338,7 @@
 
 
 -(void) viewWillAppear:(BOOL)animated{
-    
+
     self.navigationController.navigationBar.hidden=NO;
 }
 @end

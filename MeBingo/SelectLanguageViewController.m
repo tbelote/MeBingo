@@ -3,7 +3,7 @@
 //  MeBingo
 //
 //  Created by Anthony Yanto on 3/10/13.
-//  Copyright (c) 2013 Anthony Yanto. All rights reserved.
+//  Copyright (c) 2013 Thomas Belote. Attribution-ShareAlike 3.0 http://creativecommons.org/licenses/by-sa/3.0/
 //
 
 #import "SelectLanguageViewController.h"
@@ -30,7 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     self.navigationItem.title = @"Select Language";
 
     //add custom backbutton
@@ -44,7 +44,7 @@
     UIBarButtonItem *backbtn = [[UIBarButtonItem alloc] initWithCustomView:button];
     self.navigationItem.leftBarButtonItem = backbtn;
 
-    
+
     //[self callAppropriateXIB:self.interfaceOrientation];
 }
 
@@ -62,7 +62,7 @@
 
 -(IBAction)languageButtonIsClicked:(id)sender{
     NSString *lang;
-    
+
     switch ([sender tag]) {
         case 1:
             lang = @"english";
@@ -83,7 +83,7 @@
             lang = @"italian";
             break;
     }
-    
+
     WordGamePlayViewController *wordGamePlay = [[WordGamePlayViewController alloc] initWithNibName:@"GamePlayViewController" bundle:nil];
     wordGamePlay.language = lang;
     [self.navigationController pushViewController:wordGamePlay animated:YES];
@@ -93,7 +93,7 @@
 #pragma mark Methods that handle rotation
 
 -(void) callAppropriateXIB:(UIInterfaceOrientation)toInterfaceOrientation{
-    
+
     if( UIInterfaceOrientationIsLandscape(toInterfaceOrientation) )
     {
         [[NSBundle mainBundle] loadNibNamed: [NSString stringWithFormat:@"%@-landscape", NSStringFromClass([self class])]
@@ -122,7 +122,7 @@
 }
 
 -(void) viewWillAppear:(BOOL)animated{
-    
+
     self.navigationController.navigationBar.hidden=NO;
 }
 

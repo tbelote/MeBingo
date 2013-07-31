@@ -3,7 +3,7 @@
 //  MeBingo
 //
 //  Created by Anthony Yanto on 3/10/13.
-//  Copyright (c) 2013 Anthony Yanto. All rights reserved.
+//  Copyright (c) 2013 Thomas Belote. Attribution-ShareAlike 3.0 http://creativecommons.org/licenses/by-sa/3.0/
 //
 
 #import "SelectGamePlayViewController.h"
@@ -28,15 +28,15 @@
     return self;
 }
 -(void) viewWillAppear:(BOOL)animated{
-    
+
     self.navigationController.navigationBar.hidden=NO;
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     //self.navigationItem.title = @"Select Game";
-    
+
     //add custom backbutton
     UIImage *backImage = [UIImage imageNamed:@"Button_Back_click.png"];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -47,7 +47,7 @@
     UIBarButtonItem *backbtn = [[UIBarButtonItem alloc] initWithCustomView:button];
     self.navigationItem.leftBarButtonItem = backbtn;
 
-    
+
     //[self callAppropriateXIB:self.interfaceOrientation];
 }
 
@@ -66,7 +66,7 @@
 
 
 -(IBAction)oldTimeBingoGameIsClicked:(id)sender{
-  
+
     WordGamePlayViewController *wordGamePlay = [[WordGamePlayViewController alloc] initWithNibName:@"GamePlayViewController" bundle:nil];
     wordGamePlay.language = @"numbers";
     [self.navigationController pushViewController:wordGamePlay animated:YES];

@@ -3,7 +3,7 @@
 //  MeBingo
 //
 //  Created by Anthony Yanto on 3/10/13.
-//  Copyright (c) 2013 Anthony Yanto. All rights reserved.
+//  Copyright (c) 2013 Thomas Belote. Attribution-ShareAlike 3.0 http://creativecommons.org/licenses/by-sa/3.0/
 //
 
 #import "WordGamePlayViewController.h"
@@ -104,7 +104,7 @@
     [self getNNumbers];
     [self getGNumbers];
     [self getONumbers];
-    
+
 }
 
 -(void)formatButton:(UIButton*)button {
@@ -180,7 +180,7 @@
             if (i==5){ button = self.i5Button; i5ButtonText = buttonTitle; }
             [button setTitle:buttonTitle forState:UIControlStateNormal];
             [button setTag:generatedNumber];
-            [self formatButton:button];            
+            [self formatButton:button];
             i++;
         }
     }

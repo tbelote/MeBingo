@@ -3,25 +3,25 @@
 //  MeBingo
 //
 //  Created by Charisse on 6/21/13.
-//  Copyright (c) 2013 Anthony Yanto. All rights reserved.
+//  Copyright (c) 2013 Thomas Belote. Attribution-ShareAlike 3.0 http://creativecommons.org/licenses/by-sa/3.0/
 //
 
 #import "PictureBingoGameViewController.h"
 #import "SelectGamePlayViewController.h"
 
 @interface PictureBingoGameViewController (){
-    
+
     NSMutableArray *remainingWords;
-    
+
     NSArray *wordsArray, *allEnglishWord;
-    
+
     NSString *displayText;
     NSString *b1ButtonText, *b2ButtonText, *b3ButtonText, *b4ButtonText, *b5ButtonText;
     NSString *i1ButtonText, *i2ButtonText, *i3ButtonText, *i4ButtonText, *i5ButtonText;
     NSString *n1ButtonText, *n2ButtonText, *n3ButtonText, *n4ButtonText, *n5ButtonText;
     NSString *g1ButtonText, *g2ButtonText, *g3ButtonText, *g4ButtonText, *g5ButtonText;
     NSString *o1ButtonText, *o2ButtonText, *o3ButtonText, *o4ButtonText, *o5ButtonText;
-    
+
     bool shouldRestartGame;
 
 }
@@ -44,24 +44,24 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    
+
+
     allEnglishWord = [[NSArray alloc] initWithObjects:@"null", @"ant", @"airplane", @"animal", @"bag", @"bird", @"ball", @"car", @"cat", @"cake", @"dog", @"doll", @"eight", @"egg", @"eye", @"ear", @"four", @"fish", @"fire", @"feet", @"gate", @"gift", @"guitar", @"hat", @"hand", @"hair", @"house", @"ice", @"island", @"jar", @"jump", @"key", @"king", @"leaf", @"lemon", @"lion", @"milk", @"man", @"nail", @"net", @"nose", @"nest", @"nine", @"one", @"onion", @"orange", @"pen", @"pig", @"pin", @"pail", @"pan", @"queen", @"row", @"rabbit", @"rose", @"ring", @"rain", @"rat", @"six", @"seven", @"seal", @"two", @"tent", @"three", @"tooth", @"tomato", @"umbrella", @"vest",  @"vowel", @"world", @"wheel", @"woman", @"yacht", @"yam", @"yell", @"zebra", nil];
-    
+
     wordsArray = [[NSArray alloc] initWithObjects:@"null", @"ant", @"airplane", @"animal", @"bag", @"bird", @"ball", @"car", @"cat", @"cake", @"dog", @"doll", @"eight", @"egg", @"eye", @"ear", @"four", @"fish", @"fire", @"feet", @"gate", @"gift", @"guitar", @"hat", @"hand", @"hair", @"house", @"ice", @"island", @"jar", @"jump", @"key", @"king", @"leaf", @"lemon", @"lion", @"milk", @"man", @"nail", @"net", @"nose", @"nest", @"nine", @"one", @"onion", @"orange", @"pen", @"pig", @"pin", @"pail", @"pan", @"queen", @"row", @"rabbit", @"rose", @"ring", @"rain", @"rat", @"six", @"seven", @"seal", @"two", @"tent", @"three", @"tooth", @"tomato", @"umbrella", @"vest",  @"vowel", @"world", @"wheel", @"woman", @"yacht", @"yam", @"yell", @"zebra", nil];
-    
+
     allEnglishWord = [[NSArray alloc] initWithArray:wordsArray];
     remainingWords = [NSMutableArray arrayWithArray:allEnglishWord];
-    
-    
+
+
     [self getBNumbers];
     [self getINumbers];
     [self getNNumbers];
     [self getGNumbers];
     [self getONumbers];
-    
+
     shouldRestartGame = NO;
-    
+
 }
 
 
@@ -74,12 +74,12 @@
         return;
     }
     int generatedNumber = [self getRandomNumberBetweenMin:1 andMax:([remainingWords count]-1)];
-    
+
     int indexOfWord = [allEnglishWord indexOfObject:[remainingWords objectAtIndex:generatedNumber]];
-    
+
     NSLog(@"generatedNumber, indexOfWord: %i, %i", generatedNumber, indexOfWord);
     [self.resultWord addObject:[NSNumber numberWithInt:indexOfWord]];
-    
+
     self.displayLabel.text = [self appendBINGOLetterWithNumber:indexOfWord];
     [remainingWords removeObjectAtIndex:generatedNumber];
 }
@@ -98,7 +98,7 @@
 
 - (void) getBNumbers{
     int i = 1;
-    
+
     while(i<6){
         int generatedNumber = [self getRandomNumberBetweenMin:1 andMax:15];
         if (![bNumbers containsObject:[NSNumber numberWithInt:generatedNumber]]) {
@@ -207,33 +207,33 @@
     }
 }
 -(void) populateButtonTitleAfterRotation{
-//    
+//
 //    self.displayLabel.text = displayText;
-//    
+//
 //    [self.b1Button setImage:[UIImage imageNamed:b1ButtonText] forState:UIControlStateNormal];
 //    [self.b2Button setImage:[UIImage imageNamed:b2ButtonText] forState:UIControlStateNormal];
 //    [self.b3Button setImage:[UIImage imageNamed:b3ButtonText] forState:UIControlStateNormal];
 //    [self.b4Button setImage:[UIImage imageNamed:b4ButtonText] forState:UIControlStateNormal];
 //    [self.b5Button setImage:[UIImage imageNamed:b5ButtonText] forState:UIControlStateNormal];
-//    
+//
 //    [self.i1Button setImage:[UIImage imageNamed:i1ButtonText] forState:UIControlStateNormal];
 //    [self.i2Button setImage:[UIImage imageNamed:i2ButtonText] forState:UIControlStateNormal];
 //    [self.i3Button setImage:[UIImage imageNamed:i3ButtonText] forState:UIControlStateNormal];
 //    [self.i4Button setImage:[UIImage imageNamed:i4ButtonText] forState:UIControlStateNormal];
 //    [self.i5Button setImage:[UIImage imageNamed:i5ButtonText] forState:UIControlStateNormal];
-//    
+//
 //    [self.n1Button setImage:[UIImage imageNamed:n1ButtonText] forState:UIControlStateNormal];
 //    [self.n2Button setImage:[UIImage imageNamed:n2ButtonText] forState:UIControlStateNormal];
 //    [self.n3Button setImage:[UIImage imageNamed:n3ButtonText] forState:UIControlStateNormal];
 //    [self.n4Button setImage:[UIImage imageNamed:n4ButtonText] forState:UIControlStateNormal];
 //    [self.n5Button setImage:[UIImage imageNamed:n5ButtonText] forState:UIControlStateNormal];
-//    
+//
 //    [self.g1Button setImage:[UIImage imageNamed:g1ButtonText] forState:UIControlStateNormal];
 //    [self.g2Button setImage:[UIImage imageNamed:g2ButtonText] forState:UIControlStateNormal];
 //    [self.g3Button setImage:[UIImage imageNamed:g3ButtonText] forState:UIControlStateNormal];
 //    [self.g4Button setImage:[UIImage imageNamed:g4ButtonText] forState:UIControlStateNormal];
 //    [self.g5Button setImage:[UIImage imageNamed:g5ButtonText] forState:UIControlStateNormal];
-//    
+//
 //    [self.o1Button setImage:[UIImage imageNamed:o1ButtonText] forState:UIControlStateNormal];
 //    [self.o2Button setImage:[UIImage imageNamed:o2ButtonText] forState:UIControlStateNormal];
 //    [self.o3Button setImage:[UIImage imageNamed:o3ButtonText] forState:UIControlStateNormal];
