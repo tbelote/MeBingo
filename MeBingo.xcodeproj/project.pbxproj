@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		610067A517B9F8540087A96D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610067A417B9F8540087A96D /* SenTestingKit.framework */; };
+		610067A617B9F8540087A96D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89F8DFF16E3200A000FB79C /* UIKit.framework */; };
+		610067A717B9F8540087A96D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89F8E0116E3200A000FB79C /* Foundation.framework */; };
+		610067AD17B9F8540087A96D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 610067AB17B9F8540087A96D /* InfoPlist.strings */; };
+		610067B017B9F8540087A96D /* MeBingoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 610067AF17B9F8540087A96D /* MeBingoTests.m */; };
 		6145B76517A36A200058017E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6145B76417A36A200058017E /* Icon@2x.png */; };
 		6145B76717A36A260058017E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6145B76617A36A260058017E /* Icon.png */; };
 		6145B76A17A8DE530058017E /* navBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6145B76817A8DE530058017E /* navBar.png */; };
@@ -93,12 +98,10 @@
 		614881E31776170B00290172 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881E21776170B00290172 /* CoreText.framework */; };
 		614881E51776171200290172 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881E41776171200290172 /* CoreFoundation.framework */; };
 		614881E71776171C00290172 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881E61776171C00290172 /* MediaPlayer.framework */; };
-		614881E91776172300290172 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881E81776172300290172 /* OpenGLES.framework */; };
 		614881EB1776172900290172 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881EA1776172900290172 /* AVFoundation.framework */; };
 		614881F31776174900290172 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881F21776174900290172 /* QuartzCore.framework */; };
 		614881F51776175100290172 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881F41776175100290172 /* CoreData.framework */; };
 		614882061776177900290172 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881F61776177800290172 /* GLKit.framework */; };
-		614882081776177900290172 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881F81776177800290172 /* libz.dylib */; };
 		6148820A1776177900290172 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881FA1776177800290172 /* CFNetwork.framework */; };
 		6148820E1776177900290172 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881FE1776177800290172 /* Social.framework */; };
 		6148820F1776177900290172 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614881FF1776177800290172 /* MessageUI.framework */; };
@@ -171,7 +174,24 @@
 		B89F8E1C16E3200A000FB79C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B89F8E1A16E3200A000FB79C /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		610067B517BA0F9E0087A96D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B89F8DF416E3200A000FB79C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B89F8DFB16E3200A000FB79C;
+			remoteInfo = MeBingo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		610067A317B9F8540087A96D /* MeBingoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeBingoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		610067A417B9F8540087A96D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		610067AA17B9F8540087A96D /* MeBingoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeBingoTests-Info.plist"; sourceTree = "<group>"; };
+		610067AC17B9F8540087A96D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		610067AE17B9F8540087A96D /* MeBingoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeBingoTests.h; sourceTree = "<group>"; };
+		610067AF17B9F8540087A96D /* MeBingoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeBingoTests.m; sourceTree = "<group>"; };
+		610067B117B9F8540087A96D /* MeBingoTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MeBingoTests-Prefix.pch"; sourceTree = "<group>"; };
 		6145B76417A36A200058017E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		6145B76617A36A260058017E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		6145B76817A8DE530058017E /* navBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navBar.png; sourceTree = "<group>"; };
@@ -259,12 +279,10 @@
 		614881E21776170B00290172 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		614881E41776171200290172 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		614881E61776171C00290172 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		614881E81776172300290172 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		614881EA1776172900290172 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		614881F21776174900290172 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		614881F41776175100290172 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		614881F61776177800290172 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		614881F81776177800290172 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		614881FA1776177800290172 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		614881FE1776177800290172 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		614881FF1776177800290172 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -352,12 +370,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6100679F17B9F8540087A96D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				610067A517B9F8540087A96D /* SenTestingKit.framework in Frameworks */,
+				610067A617B9F8540087A96D /* UIKit.framework in Frameworks */,
+				610067A717B9F8540087A96D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B89F8DF916E3200A000FB79C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				614882061776177900290172 /* GLKit.framework in Frameworks */,
-				614882081776177900290172 /* libz.dylib in Frameworks */,
 				6148820A1776177900290172 /* CFNetwork.framework in Frameworks */,
 				6148820E1776177900290172 /* Social.framework in Frameworks */,
 				6148820F1776177900290172 /* MessageUI.framework in Frameworks */,
@@ -371,7 +398,6 @@
 				614881E31776170B00290172 /* CoreText.framework in Frameworks */,
 				614881E51776171200290172 /* CoreFoundation.framework in Frameworks */,
 				614881E71776171C00290172 /* MediaPlayer.framework in Frameworks */,
-				614881E91776172300290172 /* OpenGLES.framework in Frameworks */,
 				614881EB1776172900290172 /* AVFoundation.framework in Frameworks */,
 				614881F31776174900290172 /* QuartzCore.framework in Frameworks */,
 				614881F51776175100290172 /* CoreData.framework in Frameworks */,
@@ -384,6 +410,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		610067A817B9F8540087A96D /* MeBingoTests */ = {
+			isa = PBXGroup;
+			children = (
+				610067AE17B9F8540087A96D /* MeBingoTests.h */,
+				610067AF17B9F8540087A96D /* MeBingoTests.m */,
+				610067A917B9F8540087A96D /* Supporting Files */,
+			);
+			path = MeBingoTests;
+			sourceTree = "<group>";
+		};
+		610067A917B9F8540087A96D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				610067AA17B9F8540087A96D /* MeBingoTests-Info.plist */,
+				610067AB17B9F8540087A96D /* InfoPlist.strings */,
+				610067B117B9F8540087A96D /* MeBingoTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		6148822017761A9A00290172 /* Printing */ = {
 			isa = PBXGroup;
 			children = (
@@ -623,6 +669,7 @@
 				6145B76617A36A260058017E /* Icon.png */,
 				6145B76417A36A200058017E /* Icon@2x.png */,
 				B89F8E0516E3200A000FB79C /* MeBingo */,
+				610067A817B9F8540087A96D /* MeBingoTests */,
 				B89F8DFE16E3200A000FB79C /* Frameworks */,
 				B89F8DFD16E3200A000FB79C /* Products */,
 			);
@@ -632,6 +679,7 @@
 			isa = PBXGroup;
 			children = (
 				B89F8DFC16E3200A000FB79C /* MeBingo.app */,
+				610067A317B9F8540087A96D /* MeBingoTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -651,16 +699,15 @@
 				B89F8E0116E3200A000FB79C /* Foundation.framework */,
 				614882051776177800290172 /* GameKit.framework */,
 				614881F61776177800290172 /* GLKit.framework */,
-				614881F81776177800290172 /* libz.dylib */,
 				614881E61776171C00290172 /* MediaPlayer.framework */,
 				614881FF1776177800290172 /* MessageUI.framework */,
 				614882031776177800290172 /* MobileCoreServices.framework */,
-				614881E81776172300290172 /* OpenGLES.framework */,
 				614881F21776174900290172 /* QuartzCore.framework */,
 				614882021776177800290172 /* Security.framework */,
 				614881FE1776177800290172 /* Social.framework */,
 				614882011776177800290172 /* SystemConfiguration.framework */,
 				B89F8DFF16E3200A000FB79C /* UIKit.framework */,
+				610067A417B9F8540087A96D /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -698,6 +745,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		610067A217B9F8540087A96D /* MeBingoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 610067B217B9F8540087A96D /* Build configuration list for PBXNativeTarget "MeBingoTests" */;
+			buildPhases = (
+				6100679E17B9F8540087A96D /* Sources */,
+				6100679F17B9F8540087A96D /* Frameworks */,
+				610067A017B9F8540087A96D /* Resources */,
+				610067A117B9F8540087A96D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				610067B617BA0F9E0087A96D /* PBXTargetDependency */,
+			);
+			name = MeBingoTests;
+			productName = MeBingoTests;
+			productReference = 610067A317B9F8540087A96D /* MeBingoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		B89F8DFB16E3200A000FB79C /* MeBingo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B89F8E1F16E3200A000FB79C /* Build configuration list for PBXNativeTarget "MeBingo" */;
@@ -722,7 +788,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "Anthony Yanto";
+				ORGANIZATIONNAME = "Thomas Belote";
 			};
 			buildConfigurationList = B89F8DF716E3200A000FB79C /* Build configuration list for PBXProject "MeBingo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -737,11 +803,20 @@
 			projectRoot = "";
 			targets = (
 				B89F8DFB16E3200A000FB79C /* MeBingo */,
+				610067A217B9F8540087A96D /* MeBingoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		610067A017B9F8540087A96D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				610067AD17B9F8540087A96D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B89F8DFA16E3200A000FB79C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -879,7 +954,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		610067A117B9F8540087A96D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		6100679E17B9F8540087A96D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				610067B017B9F8540087A96D /* MeBingoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B89F8DF816E3200A000FB79C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -901,7 +1000,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		610067B617BA0F9E0087A96D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B89F8DFB16E3200A000FB79C /* MeBingo */;
+			targetProxy = 610067B517BA0F9E0087A96D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		610067AB17B9F8540087A96D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				610067AC17B9F8540087A96D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		B89F8E0816E3200A000FB79C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -921,6 +1036,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		610067B317B9F8540087A96D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MeBingo.app/MeBingo";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MeBingoTests/MeBingoTests-Prefix.pch";
+				INFOPLIST_FILE = "MeBingoTests/MeBingoTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		610067B417B9F8540087A96D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MeBingo.app/MeBingo";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MeBingoTests/MeBingoTests-Prefix.pch";
+				INFOPLIST_FILE = "MeBingoTests/MeBingoTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		B89F8E1D16E3200A000FB79C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1038,6 +1191,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		610067B217B9F8540087A96D /* Build configuration list for PBXNativeTarget "MeBingoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				610067B317B9F8540087A96D /* Debug */,
+				610067B417B9F8540087A96D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B89F8DF716E3200A000FB79C /* Build configuration list for PBXProject "MeBingo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

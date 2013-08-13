@@ -27,6 +27,7 @@
 @property (nonatomic, retain) UILabel *currentScoreLabel;
 - (IBAction) reset;
 - (IBAction)playGameIsClicked:(id)sender;
+-(IBAction)printCard:(id)sender;
 - (IBAction) showLeaderboard;
 - (IBAction) showAchievements;
 - (IBAction) submitScore;
