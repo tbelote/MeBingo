@@ -108,11 +108,9 @@
 		614882121776177900290172 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614882021776177800290172 /* Security.framework */; };
 		614882131776177900290172 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614882031776177800290172 /* MobileCoreServices.framework */; };
 		614882141776177900290172 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614882041776177800290172 /* CoreLocation.framework */; };
-		614882151776177900290172 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614882051776177800290172 /* GameKit.framework */; };
 		6148822817761B2D00290172 /* PrintPhotoPageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148822417761B2D00290172 /* PrintPhotoPageRenderer.m */; };
 		6148822917761B2D00290172 /* PrintPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148822617761B2D00290172 /* PrintPhotoViewController.m */; };
 		6148822A17761B2D00290172 /* PrintPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6148822717761B2D00290172 /* PrintPhotoViewController.xib */; };
-		6148822E17761B3700290172 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148822D17761B3700290172 /* GameCenterManager.m */; };
 		6148823717761B4300290172 /* PictureBingoGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148823217761B4300290172 /* PictureBingoGameViewController.m */; };
 		61488246177AD4AB00290172 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61488240177AD4A600290172 /* Icon-72@2x.png */; };
 		61488247177AD4AB00290172 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 61488241177AD4A600290172 /* Icon-Small-50.png */; };
@@ -122,8 +120,6 @@
 		618116C317C6DD3D001229B7 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 618116C117C6DD3D001229B7 /* Icon@2x.png */; };
 		61A4F28D17972EA90097AAA3 /* GamePlayPrint.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A4F28B17972EA90097AAA3 /* GamePlayPrint.xib */; };
 		61A4F28E17972EA90097AAA3 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61A4F28C17972EA90097AAA3 /* logo@2x.png */; };
-		61B56CF1179917EF003C1ECF /* Button_Back_click.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CD9179917EF003C1ECF /* Button_Back_click.png */; };
-		61B56CF2179917EF003C1ECF /* Button_Back_SelectGame_click.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CDA179917EF003C1ECF /* Button_Back_SelectGame_click.png */; };
 		61B56CF5179917EF003C1ECF /* Button_CustomizeGames.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CDD179917EF003C1ECF /* Button_CustomizeGames.png */; };
 		61B56CF8179917EF003C1ECF /* Button_GameCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE0179917EF003C1ECF /* Button_GameCenter.png */; };
 		61B56CFB179917EF003C1ECF /* Button_Pause_click.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B56CE3179917EF003C1ECF /* Button_Pause_click.png */; };
@@ -150,8 +146,6 @@
 		6A81A59817772FCC003F0419 /* Button_Pause_click@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59717772FCC003F0419 /* Button_Pause_click@2x.png */; };
 		6A81A59A17772FDA003F0419 /* TextBox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59917772FDA003F0419 /* TextBox@2x.png */; };
 		6A81A59C177735F0003F0419 /* navBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59B177735F0003F0419 /* navBar@2x.png */; };
-		6A81A59E17773619003F0419 /* Button_Back_SelectGame_click@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59D17773619003F0419 /* Button_Back_SelectGame_click@2x.png */; };
-		6A81A5A01777361F003F0419 /* Button_Back_click@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59F1777361F003F0419 /* Button_Back_click@2x.png */; };
 		6A97B1EF177874A3004056F1 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A97B1EE177874A3004056F1 /* Icon-72.png */; };
 		6A97B1F3177874C2004056F1 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A97B1F2177874C2004056F1 /* Icon-Small.png */; };
 		B822774816ECBC1F00456D3C /* SelectGamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B822774616ECBC1F00456D3C /* SelectGamePlayViewController.m */; };
@@ -289,15 +283,11 @@
 		614882021776177800290172 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		614882031776177800290172 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		614882041776177800290172 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		614882051776177800290172 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		6148822317761B2D00290172 /* PrintPhotoPageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintPhotoPageRenderer.h; sourceTree = "<group>"; };
 		6148822417761B2D00290172 /* PrintPhotoPageRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintPhotoPageRenderer.m; sourceTree = "<group>"; };
 		6148822517761B2D00290172 /* PrintPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintPhotoViewController.h; sourceTree = "<group>"; };
 		6148822617761B2D00290172 /* PrintPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintPhotoViewController.m; sourceTree = "<group>"; };
 		6148822717761B2D00290172 /* PrintPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintPhotoViewController.xib; sourceTree = "<group>"; };
-		6148822B17761B3700290172 /* AppSpecificValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSpecificValues.h; sourceTree = "<group>"; };
-		6148822C17761B3700290172 /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
-		6148822D17761B3700290172 /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
 		6148823117761B4300290172 /* PictureBingoGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureBingoGameViewController.h; sourceTree = "<group>"; };
 		6148823217761B4300290172 /* PictureBingoGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureBingoGameViewController.m; sourceTree = "<group>"; };
 		61488240177AD4A600290172 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
@@ -308,8 +298,6 @@
 		618116C117C6DD3D001229B7 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		61A4F28B17972EA90097AAA3 /* GamePlayPrint.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamePlayPrint.xib; sourceTree = "<group>"; };
 		61A4F28C17972EA90097AAA3 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
-		61B56CD9179917EF003C1ECF /* Button_Back_click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Back_click.png; sourceTree = "<group>"; };
-		61B56CDA179917EF003C1ECF /* Button_Back_SelectGame_click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Back_SelectGame_click.png; sourceTree = "<group>"; };
 		61B56CDD179917EF003C1ECF /* Button_CustomizeGames.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_CustomizeGames.png; sourceTree = "<group>"; };
 		61B56CE0179917EF003C1ECF /* Button_GameCenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_GameCenter.png; sourceTree = "<group>"; };
 		61B56CE3179917EF003C1ECF /* Button_Pause_click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Pause_click.png; sourceTree = "<group>"; };
@@ -336,8 +324,6 @@
 		6A81A59717772FCC003F0419 /* Button_Pause_click@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Pause_click@2x.png"; sourceTree = "<group>"; };
 		6A81A59917772FDA003F0419 /* TextBox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TextBox@2x.png"; sourceTree = "<group>"; };
 		6A81A59B177735F0003F0419 /* navBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navBar@2x.png"; sourceTree = "<group>"; };
-		6A81A59D17773619003F0419 /* Button_Back_SelectGame_click@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Back_SelectGame_click@2x.png"; sourceTree = "<group>"; };
-		6A81A59F1777361F003F0419 /* Button_Back_click@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Back_click@2x.png"; sourceTree = "<group>"; };
 		6A97B1EE177874A3004056F1 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		6A97B1F2177874C2004056F1 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
 		B822774516ECBC1F00456D3C /* SelectGamePlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectGamePlayViewController.h; sourceTree = "<group>"; };
@@ -393,7 +379,6 @@
 				614882121776177900290172 /* Security.framework in Frameworks */,
 				614882131776177900290172 /* MobileCoreServices.framework in Frameworks */,
 				614882141776177900290172 /* CoreLocation.framework in Frameworks */,
-				614882151776177900290172 /* GameKit.framework in Frameworks */,
 				614881E11776170300290172 /* AssetsLibrary.framework in Frameworks */,
 				614881E31776170B00290172 /* CoreText.framework in Frameworks */,
 				614881E51776171200290172 /* CoreFoundation.framework in Frameworks */,
@@ -442,16 +427,6 @@
 			name = Printing;
 			sourceTree = "<group>";
 		};
-		6148822117761AA000290172 /* GameCenter */ = {
-			isa = PBXGroup;
-			children = (
-				6148822B17761B3700290172 /* AppSpecificValues.h */,
-				6148822C17761B3700290172 /* GameCenterManager.h */,
-				6148822D17761B3700290172 /* GameCenterManager.m */,
-			);
-			name = GameCenter;
-			sourceTree = "<group>";
-		};
 		6148822217761ABA00290172 /* PictureBingoGameViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,8 +442,6 @@
 				6145B76817A8DE530058017E /* navBar.png */,
 				6145B76C17A8DE710058017E /* whiteButton.png */,
 				6145B76917A8DE530058017E /* whiteButton@2x.png */,
-				61B56CD9179917EF003C1ECF /* Button_Back_click.png */,
-				61B56CDA179917EF003C1ECF /* Button_Back_SelectGame_click.png */,
 				61B56CDD179917EF003C1ECF /* Button_CustomizeGames.png */,
 				61B56CE0179917EF003C1ECF /* Button_GameCenter.png */,
 				61B56CE3179917EF003C1ECF /* Button_Pause_click.png */,
@@ -482,8 +455,6 @@
 				6A81A56317771C3B003F0419 /* MeBingo_Background@2x.png */,
 				6A81A59517772FC2003F0419 /* Button_Play_click@2x.png */,
 				6A81A59B177735F0003F0419 /* navBar@2x.png */,
-				6A81A59D17773619003F0419 /* Button_Back_SelectGame_click@2x.png */,
-				6A81A59F1777361F003F0419 /* Button_Back_click@2x.png */,
 				6A81A59917772FDA003F0419 /* TextBox@2x.png */,
 				6A81A59717772FCC003F0419 /* Button_Pause_click@2x.png */,
 				6A81A56917771CDC003F0419 /* Button_CustomizeGames@2x.png */,
@@ -590,7 +561,6 @@
 			isa = PBXGroup;
 			children = (
 				6148822017761A9A00290172 /* Printing */,
-				6148822117761AA000290172 /* GameCenter */,
 				6148822217761ABA00290172 /* PictureBingoGameViewController */,
 				B822775016ECC59A00456D3C /* SelectLanguageViewController */,
 				B822774A16ECC47500456D3C /* WordGamePlayViewController */,
@@ -695,7 +665,6 @@
 				614882041776177800290172 /* CoreLocation.framework */,
 				614881E21776170B00290172 /* CoreText.framework */,
 				B89F8E0116E3200A000FB79C /* Foundation.framework */,
-				614882051776177800290172 /* GameKit.framework */,
 				614881F61776177800290172 /* GLKit.framework */,
 				614881E61776171C00290172 /* MediaPlayer.framework */,
 				614881FF1776177800290172 /* MessageUI.framework */,
@@ -789,6 +758,16 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Thomas Belote";
+				TargetAttributes = {
+					B89F8DFB16E3200A000FB79C = {
+						DevelopmentTeam = C7TAQZ2EPT;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = B89F8DF716E3200A000FB79C /* Build configuration list for PBXProject "MeBingo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -922,8 +901,6 @@
 				6A81A59817772FCC003F0419 /* Button_Pause_click@2x.png in Resources */,
 				6A81A59A17772FDA003F0419 /* TextBox@2x.png in Resources */,
 				6A81A59C177735F0003F0419 /* navBar@2x.png in Resources */,
-				6A81A59E17773619003F0419 /* Button_Back_SelectGame_click@2x.png in Resources */,
-				6A81A5A01777361F003F0419 /* Button_Back_click@2x.png in Resources */,
 				6A97B1EF177874A3004056F1 /* Icon-72.png in Resources */,
 				6A97B1F3177874C2004056F1 /* Icon-Small.png in Resources */,
 				61488246177AD4AB00290172 /* Icon-72@2x.png in Resources */,
@@ -932,8 +909,6 @@
 				61488249177AD4AB00290172 /* Icon-Small@2x.png in Resources */,
 				61A4F28D17972EA90097AAA3 /* GamePlayPrint.xib in Resources */,
 				61A4F28E17972EA90097AAA3 /* logo@2x.png in Resources */,
-				61B56CF1179917EF003C1ECF /* Button_Back_click.png in Resources */,
-				61B56CF2179917EF003C1ECF /* Button_Back_SelectGame_click.png in Resources */,
 				61B56CF5179917EF003C1ECF /* Button_CustomizeGames.png in Resources */,
 				61B56CF8179917EF003C1ECF /* Button_GameCenter.png in Resources */,
 				61B56CFB179917EF003C1ECF /* Button_Pause_click.png in Resources */,
@@ -992,7 +967,6 @@
 				B822775416ECC5CB00456D3C /* SelectLanguageViewController.m in Sources */,
 				6148822817761B2D00290172 /* PrintPhotoPageRenderer.m in Sources */,
 				6148822917761B2D00290172 /* PrintPhotoViewController.m in Sources */,
-				6148822E17761B3700290172 /* GameCenterManager.m in Sources */,
 				6148823717761B4300290172 /* PictureBingoGameViewController.m in Sources */,
 				6145B77017A8E5460058017E /* WhiteButton.m in Sources */,
 			);
@@ -1142,7 +1116,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1151,13 +1125,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeBingo/MeBingo-Prefix.pch";
 				INFOPLIST_FILE = "MeBingo/MeBingo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "C13B2625-3919-4F46-8C79-EED7BA62112A";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1167,7 +1141,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1176,13 +1150,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeBingo/MeBingo-Prefix.pch";
 				INFOPLIST_FILE = "MeBingo/MeBingo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "7B2C6FD4-E2B4-4D82-B491-8265A0FF151F";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};

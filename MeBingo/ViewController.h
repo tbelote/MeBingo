@@ -8,30 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <GameKit/GameKit.h>
-#import "GameCenterManager.h"
-#import "AppSpecificValues.h"
 #import "WhiteButton.h"
 
-@interface ViewController : UIViewController<UIActionSheetDelegate,GKLeaderboardViewControllerDelegate, GKAchievementViewControllerDelegate, GameCenterManagerDelegate>{
-
-    GameCenterManager *gameCenterManager;
-	int64_t  currentScore;
-	NSString* currentLeaderBoard;
-	IBOutlet UILabel *currentScoreLabel;
+@interface ViewController : UIViewController<UIActionSheetDelegate>{
 }
 
-@property(nonatomic, strong) IBOutlet UIButton *playGameButton;
-@property (nonatomic, retain) GameCenterManager *gameCenterManager;
-@property (nonatomic, assign) int64_t currentScore;
-@property (nonatomic, retain) NSString* currentLeaderBoard;
-@property (nonatomic, retain) UILabel *currentScoreLabel;
-- (IBAction) reset;
+@property (nonatomic, strong) IBOutlet UIButton *playGameButton;
 - (IBAction)playGameIsClicked:(id)sender;
--(IBAction)printCard:(id)sender;
-- (IBAction) showLeaderboard;
-- (IBAction) showAchievements;
-- (IBAction) submitScore;
-- (IBAction) increaseScore;
-- (void) checkAchievements;
+- (IBAction)printCard:(id)sender;
 
 @end
