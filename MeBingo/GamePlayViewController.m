@@ -300,28 +300,8 @@
 
 -(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
-    //[self callAppropriateXIB:toInterfaceOrientation];
-    //[self populateButtonTitleAfterRotation];
 }
 
-
--(void) callAppropriateXIB:(UIInterfaceOrientation)toInterfaceOrientation {
-
-//
-//    if( UIInterfaceOrientationIsLandscape(toInterfaceOrientation) )
-//    {
-//
-//       [[NSBundle mainBundle] loadNibNamed: @"GamePlayViewController-landscape"
-//                                    owner: self
-//                                    options: nil];
-//    }
-//    else
-//    {
-//        [[NSBundle mainBundle] loadNibNamed:@"GamePlayViewController"
-//                                      owner: self
-//                                    options: nil];
-//    }
-}
 
 
 -(void) viewWillAppear:(BOOL)animated{

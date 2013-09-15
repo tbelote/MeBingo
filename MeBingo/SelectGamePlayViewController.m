@@ -70,11 +70,7 @@
     [self.navigationController pushViewController:pictureBingoGame animated:YES];
 }
 
--(void) callAppropriateXIB:(UIInterfaceOrientation)toInterfaceOrientation{
-    //[[NSBundle mainBundle] loadNibNamed: [NSString stringWithFormat:@"%@", NSStringFromClass([self class])]
-    //                                      owner: self
-    //                                    options: nil];
-}
+
 
 #pragma mark Methods that handle rotation
 
@@ -85,8 +81,6 @@
 
 -(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
-    //[self callAppropriateXIB:toInterfaceOrientation];
-    //[self populateButtonTitleAfterRotation];
 }
 
 @end

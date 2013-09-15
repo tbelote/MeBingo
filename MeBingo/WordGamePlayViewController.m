@@ -249,45 +249,5 @@
     }
 }
 
--(void) populateButtonTitleAfterRotation{
-//
-//    self.displayLabel.text = displayText;
-//
-//    [self.b1Button setTitle:b1ButtonText forState:UIControlStateNormal];
-//    [self.b2Button setTitle:b2ButtonText forState:UIControlStateNormal];
-//    [self.b3Button setTitle:b3ButtonText forState:UIControlStateNormal];
-//    [self.b4Button setTitle:b4ButtonText forState:UIControlStateNormal];
-//    [self.b5Button setTitle:b5ButtonText forState:UIControlStateNormal];
-//
-//    [self.i1Button setTitle:i1ButtonText forState:UIControlStateNormal];
-//    [self.i2Button setTitle:i2ButtonText forState:UIControlStateNormal];
-//    [self.i3Button setTitle:i3ButtonText forState:UIControlStateNormal];
-//    [self.i4Button setTitle:i4ButtonText forState:UIControlStateNormal];
-//    [self.i5Button setTitle:i5ButtonText forState:UIControlStateNormal];
-//
-//    [self.n1Button setTitle:n1ButtonText forState:UIControlStateNormal];
-//    [self.n2Button setTitle:n2ButtonText forState:UIControlStateNormal];
-//    [self.n3Button setTitle:n3ButtonText forState:UIControlStateNormal];
-//    [self.n4Button setTitle:n4ButtonText forState:UIControlStateNormal];
-//    [self.n5Button setTitle:n5ButtonText forState:UIControlStateNormal];
-//
-//    [self.g1Button setTitle:g1ButtonText forState:UIControlStateNormal];
-//    [self.g2Button setTitle:g2ButtonText forState:UIControlStateNormal];
-//    [self.g3Button setTitle:g3ButtonText forState:UIControlStateNormal];
-//    [self.g4Button setTitle:g4ButtonText forState:UIControlStateNormal];
-//    [self.g5Button setTitle:g5ButtonText forState:UIControlStateNormal];
-//
-//    [self.o1Button setTitle:o1ButtonText forState:UIControlStateNormal];
-//    [self.o2Button setTitle:o2ButtonText forState:UIControlStateNormal];
-//    [self.o3Button setTitle:o3ButtonText forState:UIControlStateNormal];
-//    [self.o4Button setTitle:o4ButtonText forState:UIControlStateNormal];
-//    [self.o5Button setTitle:o5ButtonText forState:UIControlStateNormal];
-
-}
-
-
-
-
-
 
 @end

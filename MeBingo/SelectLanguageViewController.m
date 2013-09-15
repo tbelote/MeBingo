@@ -78,35 +78,16 @@
 }
 
 
-#pragma mark Methods that handle rotation
-
--(void) callAppropriateXIB:(UIInterfaceOrientation)toInterfaceOrientation{
-
-    if( UIInterfaceOrientationIsLandscape(toInterfaceOrientation) )
-    {
-        [[NSBundle mainBundle] loadNibNamed: [NSString stringWithFormat:@"%@-landscape", NSStringFromClass([self class])]
-                                          owner: self
-                                        options: nil];
-    }
-    else
-    {
-        [[NSBundle mainBundle] loadNibNamed: [NSString stringWithFormat:@"%@", NSStringFromClass([self class])]
-                                          owner: self
-                                        options: nil];
-    }
-}
 
 #pragma mark Methods that handle rotation
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations
-//    [self callAppropriateXIB:interfaceOrientation];
     return UIInterfaceOrientationIsPortrait(interfaceOrientation);
 }
 
 -(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
-    //[self callAppropriateXIB:toInterfaceOrientation];
 }
 
 -(void) viewWillAppear:(BOOL)animated{

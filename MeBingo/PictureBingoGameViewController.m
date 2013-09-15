@@ -206,40 +206,7 @@
         }
     }
 }
--(void) populateButtonTitleAfterRotation{
-//
-//    self.displayLabel.text = displayText;
-//
-//    [self.b1Button setImage:[UIImage imageNamed:b1ButtonText] forState:UIControlStateNormal];
-//    [self.b2Button setImage:[UIImage imageNamed:b2ButtonText] forState:UIControlStateNormal];
-//    [self.b3Button setImage:[UIImage imageNamed:b3ButtonText] forState:UIControlStateNormal];
-//    [self.b4Button setImage:[UIImage imageNamed:b4ButtonText] forState:UIControlStateNormal];
-//    [self.b5Button setImage:[UIImage imageNamed:b5ButtonText] forState:UIControlStateNormal];
-//
-//    [self.i1Button setImage:[UIImage imageNamed:i1ButtonText] forState:UIControlStateNormal];
-//    [self.i2Button setImage:[UIImage imageNamed:i2ButtonText] forState:UIControlStateNormal];
-//    [self.i3Button setImage:[UIImage imageNamed:i3ButtonText] forState:UIControlStateNormal];
-//    [self.i4Button setImage:[UIImage imageNamed:i4ButtonText] forState:UIControlStateNormal];
-//    [self.i5Button setImage:[UIImage imageNamed:i5ButtonText] forState:UIControlStateNormal];
-//
-//    [self.n1Button setImage:[UIImage imageNamed:n1ButtonText] forState:UIControlStateNormal];
-//    [self.n2Button setImage:[UIImage imageNamed:n2ButtonText] forState:UIControlStateNormal];
-//    [self.n3Button setImage:[UIImage imageNamed:n3ButtonText] forState:UIControlStateNormal];
-//    [self.n4Button setImage:[UIImage imageNamed:n4ButtonText] forState:UIControlStateNormal];
-//    [self.n5Button setImage:[UIImage imageNamed:n5ButtonText] forState:UIControlStateNormal];
-//
-//    [self.g1Button setImage:[UIImage imageNamed:g1ButtonText] forState:UIControlStateNormal];
-//    [self.g2Button setImage:[UIImage imageNamed:g2ButtonText] forState:UIControlStateNormal];
-//    [self.g3Button setImage:[UIImage imageNamed:g3ButtonText] forState:UIControlStateNormal];
-//    [self.g4Button setImage:[UIImage imageNamed:g4ButtonText] forState:UIControlStateNormal];
-//    [self.g5Button setImage:[UIImage imageNamed:g5ButtonText] forState:UIControlStateNormal];
-//
-//    [self.o1Button setImage:[UIImage imageNamed:o1ButtonText] forState:UIControlStateNormal];
-//    [self.o2Button setImage:[UIImage imageNamed:o2ButtonText] forState:UIControlStateNormal];
-//    [self.o3Button setImage:[UIImage imageNamed:o3ButtonText] forState:UIControlStateNormal];
-//    [self.o4Button setImage:[UIImage imageNamed:o4ButtonText] forState:UIControlStateNormal];
-//    [self.o5Button setImage:[UIImage imageNamed:o5ButtonText] forState:UIControlStateNormal];
-}
+
 
 - (void)didReceiveMemoryWarning
 {
