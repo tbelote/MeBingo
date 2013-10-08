@@ -44,7 +44,7 @@
 
 
     if ([UIScreen mainScreen].bounds.size.height < 961.0) {
-        self.displayLabel.font = [UIFont boldSystemFontOfSize:34.0];
+        self.displayLabel.font = [UIFont boldSystemFontOfSize:74.0];
         self.displayLabel.minimumScaleFactor = 0.4;
     } else {
         self.displayLabel.font = [UIFont boldSystemFontOfSize:80.0];
@@ -93,9 +93,16 @@
     UIButton * button = sender;
     if (timer && [timer isValid]) {
         [timer invalidate];
-        [button setImage:[UIImage imageNamed:@"Button_Play.png"] forState:UIControlStateNormal];
+        if(!ISIPAD)
+            [button setImage:[UIImage imageNamed:@"Button_Play.png"] forState:UIControlStateNormal];
+        else
+            [button setImage:[UIImage imageNamed:@"Button_Play@2x.png"] forState:UIControlStateNormal];
     } else {
-        [button setImage:[UIImage imageNamed:@"Button_Pause.png"] forState:UIControlStateNormal];
+        if(!ISIPAD)
+            [button setImage:[UIImage imageNamed:@"Button_Pause.png"] forState:UIControlStateNormal];
+        else
+            [button setImage:[UIImage imageNamed:@"Button_Pause@2x.png"] forState:UIControlStateNormal];
+        
         if (shouldRestartGame) {
             [self resetGame];
         }

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#define ISIPAD  UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
 
 @class ViewController;
 

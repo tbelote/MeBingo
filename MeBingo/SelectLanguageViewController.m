@@ -72,7 +72,12 @@
             break;
     }
 
-    WordGamePlayViewController *wordGamePlay = [[WordGamePlayViewController alloc] initWithNibName:@"GamePlayViewController" bundle:nil];
+    WordGamePlayViewController *wordGamePlay;
+    if (!ISIPAD) {
+        wordGamePlay = [[WordGamePlayViewController alloc] initWithNibName:@"GamePlayViewController" bundle:nil];
+    }else{
+        wordGamePlay = [[WordGamePlayViewController alloc] initWithNibName:@"GamePlayViewController_iPad" bundle:nil];
+    }
     wordGamePlay.language = lang;
     [self.navigationController pushViewController:wordGamePlay animated:YES];
 }

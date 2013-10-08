@@ -116,7 +116,13 @@
 
     /* TODO render a random card to an image using:*/
    // This is for retina render check
-    PictureBingoGameViewController * pictureGame = [[PictureBingoGameViewController alloc] initWithNibName:@"GamePlayPrint" bundle:nil];
+    
+    PictureBingoGameViewController * pictureGame;
+    if(!ISIPAD){
+        pictureGame= [[PictureBingoGameViewController alloc] initWithNibName:@"GamePlayPrint" bundle:nil];
+    }else{
+        pictureGame= [[PictureBingoGameViewController alloc] initWithNibName:@"GamePlayPrint_iPad" bundle:nil];
+    }
     [pictureGame loadView];
     [pictureGame viewDidLoad];
     UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];

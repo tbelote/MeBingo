@@ -37,7 +37,14 @@
 #pragma IBOutlet Method
 
 -(IBAction)playGameIsClicked:(id)sender{
-    SelectGamePlayViewController *selectGamePlay = [[SelectGamePlayViewController alloc] initWithNibName:@"SelectGamePlayViewController" bundle:nil];
+    
+    SelectGamePlayViewController *selectGamePlay;
+    
+    if (!ISIPAD) {
+        selectGamePlay = [[SelectGamePlayViewController alloc] initWithNibName:@"SelectGamePlayViewController" bundle:nil];
+    }else{
+        selectGamePlay = [[SelectGamePlayViewController alloc] initWithNibName:@"SelectGamePlayViewController_iPad" bundle:nil];
+    }
     [self.navigationController pushViewController:selectGamePlay animated:YES];
 }
 
@@ -46,7 +53,14 @@
 }
 
 -(IBAction)printCard:(id)sender{
-    PrintPhotoViewController *printphoto = [[PrintPhotoViewController alloc] initWithNibName:@"PrintPhotoViewController" bundle:nil];
+    PrintPhotoViewController *printphoto;
+    
+    if (!ISIPAD) {
+        printphoto = [[PrintPhotoViewController alloc] initWithNibName:@"PrintPhotoViewController" bundle:nil];
+        
+    }else{
+        printphoto = [[PrintPhotoViewController alloc] initWithNibName:@"PrintPhotoViewController_iPad" bundle:nil];
+    }
     [self.navigationController pushViewController:printphoto animated:YES];
 }
 @end

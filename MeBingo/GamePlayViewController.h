@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "WhiteButton.h"
+#import "AppDelegate.h"
 
 @interface GamePlayViewController : UIViewController {
     NSMutableArray *bNumbers, *iNumbers, *nNumbers, *gNumbers, *oNumbers;

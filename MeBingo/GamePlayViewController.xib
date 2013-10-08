@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
@@ -41,18 +41,14 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="MeBingo_Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="294">
-                    <rect key="frame" x="0.0" y="-17" width="320" height="498"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="MeBingo_Background.png" id="294">
+                    <rect key="frame" x="0.0" y="-18" width="320" height="498"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.015686275437474251" green="0.35294118523597717" blue="0.80784320831298828" alpha="1" colorSpace="deviceRGB"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4">
                     <rect key="frame" x="20" y="50" width="50" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="318"/>
-                        <constraint firstAttribute="width" constant="50" id="739"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <state key="normal" title="Play" image="Button_Play.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -65,12 +61,9 @@
                         <action selector="playButtonIsClicked:" destination="-1" eventType="touchUpInside" id="268"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6" customClass="WhiteButton">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6" customClass="WhiteButton">
                     <rect key="frame" x="220" y="50" width="80" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="80" id="743"/>
-                    </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
                     <state key="normal" title="BINGO!">
                         <color key="titleColor" red="0.015686275440000001" green="0.35294118520000001" blue="0.8078432083" alpha="1" colorSpace="deviceRGB"/>
@@ -83,70 +76,40 @@
                         <action selector="bingoButtonIsClicked:" destination="-1" eventType="touchUpInside" id="267"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="b.png" translatesAutoresizingMaskIntoConstraints="NO" id="300">
-                    <rect key="frame" x="24" y="158" width="30" height="30"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="b.png" id="300">
+                    <rect key="frame" x="25" y="158" width="30" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="30" id="323"/>
-                        <constraint firstAttribute="height" constant="30" id="324"/>
-                    </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="i.png" translatesAutoresizingMaskIntoConstraints="NO" id="301">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="i.png" id="301">
                     <rect key="frame" x="86" y="158" width="25" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="25" id="307"/>
-                    </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="n.png" translatesAutoresizingMaskIntoConstraints="NO" id="302">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="n.png" id="302">
                     <rect key="frame" x="144" y="158" width="33" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="33" id="492"/>
-                    </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="g.png" translatesAutoresizingMaskIntoConstraints="NO" id="303">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="g.png" id="303">
                     <rect key="frame" x="204" y="158" width="35" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="35" id="330"/>
-                    </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="o.png" translatesAutoresizingMaskIntoConstraints="NO" id="304">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="o.png" id="304">
                     <rect key="frame" x="264" y="158" width="32" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="32" id="313"/>
-                    </constraints>
                 </imageView>
-                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7">
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="7">
                     <rect key="frame" x="15" y="194" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="48" id="314"/>
-                        <constraint firstAttribute="width" constant="50" id="315"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
-                    <state key="normal" title="B1" backgroundImage="box.png">
-                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <state key="highlighted">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
+                    <state key="normal" title="B1" backgroundImage="box.png"/>
                     <connections>
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="270"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="8">
+                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="8">
                     <rect key="frame" x="76" y="194" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="322"/>
-                        <constraint firstAttribute="height" constant="48" id="529"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="I1" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -159,14 +122,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="275"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="9">
                     <rect key="frame" x="135" y="194" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="310"/>
-                        <constraint firstAttribute="height" constant="48" id="530"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="N1" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -179,14 +138,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="280"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="10">
+                <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="10">
                     <rect key="frame" x="195" y="194" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="328"/>
-                        <constraint firstAttribute="height" constant="48" id="531"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="G1" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -199,14 +154,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="284"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="11">
+                <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="11">
                     <rect key="frame" x="255" y="194" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="306"/>
-                        <constraint firstAttribute="height" constant="48" id="532"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="O1" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -219,14 +170,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="289"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="12">
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="12">
                     <rect key="frame" x="15" y="247" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="48" id="311"/>
-                        <constraint firstAttribute="width" constant="50" id="533"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="B2" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -239,14 +186,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="271"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="13">
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="13">
                     <rect key="frame" x="15" y="298" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="48" id="312"/>
-                        <constraint firstAttribute="width" constant="50" id="538"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="B3" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -259,14 +202,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="272"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="14">
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="14">
                     <rect key="frame" x="15" y="349" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="48" id="326"/>
-                        <constraint firstAttribute="width" constant="50" id="539"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="B4" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -279,14 +218,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="273"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="15">
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="15">
                     <rect key="frame" x="15" y="405" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="48" id="329"/>
-                        <constraint firstAttribute="width" constant="50" id="540"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="B5" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -299,14 +234,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="274"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="16">
+                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="16">
                     <rect key="frame" x="76" y="247" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="48" id="534"/>
-                        <constraint firstAttribute="width" constant="50" id="535"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="I2" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -319,14 +250,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="276"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="17">
+                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="17">
                     <rect key="frame" x="76" y="298" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="549"/>
-                        <constraint firstAttribute="height" constant="48" id="555"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="I3" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -339,14 +266,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="277"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="18">
+                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="18">
                     <rect key="frame" x="76" y="350" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="48" id="317"/>
-                        <constraint firstAttribute="width" constant="50" id="541"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="I4" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -359,14 +282,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="278"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="19">
+                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="19">
                     <rect key="frame" x="76" y="405" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="544"/>
-                        <constraint firstAttribute="height" constant="48" id="547"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="I5" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -379,7 +298,7 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="279"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="20">
+                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="20">
                     <rect key="frame" x="135" y="247" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -395,13 +314,9 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="281"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21">
+                <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="21">
                     <rect key="frame" x="135" y="298" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="553"/>
-                        <constraint firstAttribute="height" constant="48" id="559"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <state key="normal" title="FREE" image="free.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -411,14 +326,10 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="22">
+                <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="22">
                     <rect key="frame" x="135" y="350" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="551"/>
-                        <constraint firstAttribute="height" constant="48" id="558"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="N4" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -431,14 +342,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="282"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="23">
+                <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="23">
                     <rect key="frame" x="135" y="405" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="543"/>
-                        <constraint firstAttribute="height" constant="48" id="546"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="N5" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -451,7 +358,7 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="283"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="24">
+                <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="24">
                     <rect key="frame" x="195" y="247" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -467,14 +374,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="285"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="25">
+                <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="25">
                     <rect key="frame" x="195" y="298" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="550"/>
-                        <constraint firstAttribute="height" constant="48" id="557"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="G3" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -487,14 +390,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="286"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="26">
+                <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="26">
                     <rect key="frame" x="195" y="350" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="548"/>
-                        <constraint firstAttribute="height" constant="48" id="556"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="G4" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -507,14 +406,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="287"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="27">
+                <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="27">
                     <rect key="frame" x="195" y="405" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="542"/>
-                        <constraint firstAttribute="height" constant="48" id="545"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="G5" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -527,14 +422,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="288"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="28">
+                <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="28">
                     <rect key="frame" x="255" y="247" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="562"/>
-                        <constraint firstAttribute="height" constant="48" id="563"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="O2" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -547,14 +438,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="290"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="29">
+                <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="29">
                     <rect key="frame" x="255" y="298" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="552"/>
-                        <constraint firstAttribute="height" constant="48" id="560"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="O3" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -567,14 +454,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="291"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="30">
+                <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="30">
                     <rect key="frame" x="255" y="350" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="554"/>
-                        <constraint firstAttribute="height" constant="48" id="561"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="O4" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -587,14 +470,10 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="292"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="31">
+                <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="31">
                     <rect key="frame" x="255" y="405" width="50" height="48"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="536"/>
-                        <constraint firstAttribute="height" constant="48" id="537"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                     <state key="normal" title="05" backgroundImage="box.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -607,14 +486,11 @@
                         <action selector="checkButtonWithGeneratedNumber:" destination="-1" eventType="touchUpInside" id="293"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="TextBox.png" translatesAutoresizingMaskIntoConstraints="NO" id="305">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="TextBox.png" id="305">
                     <rect key="frame" x="66" y="100" width="188" height="54"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="188" id="661"/>
-                    </constraints>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="37">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" id="37">
                     <rect key="frame" x="66" y="100" width="188" height="54"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -623,128 +499,6 @@
                 </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="31" firstAttribute="top" secondItem="27" secondAttribute="top" id="331"/>
-                <constraint firstItem="26" firstAttribute="leading" secondItem="25" secondAttribute="leading" id="332"/>
-                <constraint firstItem="9" firstAttribute="top" secondItem="8" secondAttribute="top" id="334"/>
-                <constraint firstItem="8" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" id="335"/>
-                <constraint firstItem="16" firstAttribute="leading" secondItem="17" secondAttribute="leading" id="336"/>
-                <constraint firstItem="8" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="76" id="338"/>
-                <constraint firstItem="11" firstAttribute="centerX" secondItem="304" secondAttribute="centerX" id="339"/>
-                <constraint firstItem="26" firstAttribute="bottom" secondItem="22" secondAttribute="bottom" id="340"/>
-                <constraint firstItem="21" firstAttribute="trailing" secondItem="22" secondAttribute="trailing" id="343"/>
-                <constraint firstItem="31" firstAttribute="leading" secondItem="30" secondAttribute="leading" id="344"/>
-                <constraint firstItem="20" firstAttribute="trailing" secondItem="21" secondAttribute="trailing" id="345"/>
-                <constraint firstItem="20" firstAttribute="leading" secondItem="9" secondAttribute="leading" id="346"/>
-                <constraint firstItem="25" firstAttribute="trailing" secondItem="24" secondAttribute="trailing" id="347"/>
-                <constraint firstItem="20" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" id="349"/>
-                <constraint firstItem="27" firstAttribute="trailing" secondItem="26" secondAttribute="trailing" id="350"/>
-                <constraint firstItem="9" firstAttribute="centerX" secondItem="302" secondAttribute="centerX" id="351"/>
-                <constraint firstItem="18" firstAttribute="leading" secondItem="17" secondAttribute="leading" id="353"/>
-                <constraint firstItem="24" firstAttribute="leading" secondItem="10" secondAttribute="leading" id="354"/>
-                <constraint firstItem="31" firstAttribute="trailing" secondItem="30" secondAttribute="trailing" id="356"/>
-                <constraint firstItem="22" firstAttribute="trailing" secondItem="23" secondAttribute="trailing" id="358"/>
-                <constraint firstItem="28" firstAttribute="leading" secondItem="29" secondAttribute="leading" id="359"/>
-                <constraint firstItem="4" firstAttribute="top" secondItem="1" secondAttribute="top" constant="50" id="360"/>
-                <constraint firstItem="29" firstAttribute="trailing" secondItem="28" secondAttribute="trailing" id="363"/>
-                <constraint firstItem="25" firstAttribute="top" secondItem="21" secondAttribute="top" id="366"/>
-                <constraint firstItem="17" firstAttribute="top" secondItem="21" secondAttribute="top" id="367"/>
-                <constraint firstItem="13" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" id="368"/>
-                <constraint firstItem="14" firstAttribute="leading" secondItem="15" secondAttribute="leading" id="369"/>
-                <constraint firstItem="24" firstAttribute="bottom" secondItem="20" secondAttribute="bottom" id="372"/>
-                <constraint firstItem="301" firstAttribute="top" secondItem="300" secondAttribute="top" id="373"/>
-                <constraint firstItem="19" firstAttribute="bottom" secondItem="15" secondAttribute="bottom" id="374"/>
-                <constraint firstItem="7" firstAttribute="bottom" secondItem="8" secondAttribute="bottom" id="375"/>
-                <constraint firstItem="8" firstAttribute="bottom" secondItem="9" secondAttribute="bottom" id="376"/>
-                <constraint firstItem="303" firstAttribute="bottom" secondItem="302" secondAttribute="bottom" id="380"/>
-                <constraint firstItem="29" firstAttribute="leading" secondItem="30" secondAttribute="leading" id="381"/>
-                <constraint firstItem="302" firstAttribute="bottom" secondItem="301" secondAttribute="bottom" id="382"/>
-                <constraint firstItem="15" firstAttribute="top" secondItem="19" secondAttribute="top" id="383"/>
-                <constraint firstItem="7" firstAttribute="leading" secondItem="12" secondAttribute="leading" id="385"/>
-                <constraint firstItem="10" firstAttribute="bottom" secondItem="9" secondAttribute="bottom" id="388"/>
-                <constraint firstItem="16" firstAttribute="top" secondItem="12" secondAttribute="top" id="391"/>
-                <constraint firstItem="13" firstAttribute="leading" secondItem="14" secondAttribute="leading" id="397"/>
-                <constraint firstItem="26" firstAttribute="leading" secondItem="27" secondAttribute="leading" id="398"/>
-                <constraint firstItem="18" firstAttribute="trailing" secondItem="19" secondAttribute="trailing" id="400"/>
-                <constraint firstItem="7" firstAttribute="trailing" secondItem="12" secondAttribute="trailing" id="401"/>
-                <constraint firstItem="23" firstAttribute="top" secondItem="27" secondAttribute="top" id="402"/>
-                <constraint firstAttribute="trailing" secondItem="10" secondAttribute="trailing" constant="75" id="403"/>
-                <constraint firstItem="26" firstAttribute="top" secondItem="22" secondAttribute="top" id="407"/>
-                <constraint firstItem="300" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="24" id="408"/>
-                <constraint firstItem="294" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="411"/>
-                <constraint firstItem="25" firstAttribute="bottom" secondItem="29" secondAttribute="bottom" id="413"/>
-                <constraint firstItem="7" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="15" id="415"/>
-                <constraint firstItem="21" firstAttribute="leading" secondItem="20" secondAttribute="leading" id="416"/>
-                <constraint firstItem="13" firstAttribute="top" secondItem="17" secondAttribute="top" id="417"/>
-                <constraint firstItem="20" firstAttribute="top" secondItem="24" secondAttribute="top" id="418"/>
-                <constraint firstItem="29" firstAttribute="top" secondItem="25" secondAttribute="top" id="419"/>
-                <constraint firstItem="23" firstAttribute="bottom" secondItem="19" secondAttribute="bottom" id="422"/>
-                <constraint firstItem="22" firstAttribute="bottom" secondItem="18" secondAttribute="bottom" id="423"/>
-                <constraint firstItem="15" firstAttribute="top" secondItem="14" secondAttribute="bottom" constant="8" symbolic="YES" id="424"/>
-                <constraint firstItem="27" firstAttribute="bottom" secondItem="31" secondAttribute="bottom" id="425"/>
-                <constraint firstItem="21" firstAttribute="leading" secondItem="22" secondAttribute="leading" id="427"/>
-                <constraint firstItem="300" firstAttribute="bottom" secondItem="301" secondAttribute="bottom" id="428"/>
-                <constraint firstItem="10" firstAttribute="bottom" secondItem="11" secondAttribute="bottom" id="429"/>
-                <constraint firstItem="14" firstAttribute="trailing" secondItem="15" secondAttribute="trailing" id="432"/>
-                <constraint firstItem="13" firstAttribute="trailing" secondItem="14" secondAttribute="trailing" id="433"/>
-                <constraint firstItem="28" firstAttribute="top" secondItem="24" secondAttribute="top" id="435"/>
-                <constraint firstItem="10" firstAttribute="top" secondItem="11" secondAttribute="top" id="436"/>
-                <constraint firstItem="12" firstAttribute="trailing" secondItem="13" secondAttribute="trailing" id="437"/>
-                <constraint firstItem="26" firstAttribute="bottom" secondItem="30" secondAttribute="bottom" id="438"/>
-                <constraint firstItem="13" firstAttribute="leading" secondItem="12" secondAttribute="leading" id="440"/>
-                <constraint firstItem="12" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" id="442"/>
-                <constraint firstItem="11" firstAttribute="leading" secondItem="28" secondAttribute="leading" id="443"/>
-                <constraint firstItem="28" firstAttribute="trailing" secondItem="11" secondAttribute="trailing" id="444"/>
-                <constraint firstItem="9" firstAttribute="trailing" secondItem="20" secondAttribute="trailing" id="446"/>
-                <constraint firstItem="21" firstAttribute="bottom" secondItem="25" secondAttribute="bottom" id="449"/>
-                <constraint firstItem="23" firstAttribute="top" secondItem="19" secondAttribute="top" id="451"/>
-                <constraint firstItem="26" firstAttribute="trailing" secondItem="25" secondAttribute="trailing" id="452"/>
-                <constraint firstAttribute="trailing" secondItem="303" secondAttribute="trailing" constant="81" id="455"/>
-                <constraint firstItem="29" firstAttribute="trailing" secondItem="30" secondAttribute="trailing" id="456"/>
-                <constraint firstItem="16" firstAttribute="top" secondItem="20" secondAttribute="top" id="458"/>
-                <constraint firstItem="303" firstAttribute="top" secondItem="304" secondAttribute="top" id="460"/>
-                <constraint firstItem="24" firstAttribute="trailing" secondItem="10" secondAttribute="trailing" id="461"/>
-                <constraint firstItem="19" firstAttribute="leading" secondItem="18" secondAttribute="leading" id="463"/>
-                <constraint firstItem="17" firstAttribute="bottom" secondItem="21" secondAttribute="bottom" id="465"/>
-                <constraint firstItem="30" firstAttribute="top" secondItem="26" secondAttribute="top" id="466"/>
-                <constraint firstItem="18" firstAttribute="top" secondItem="22" secondAttribute="top" id="467"/>
-                <constraint firstItem="4" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="468"/>
-                <constraint firstItem="17" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" id="469"/>
-                <constraint firstItem="303" firstAttribute="top" secondItem="302" secondAttribute="top" id="471"/>
-                <constraint firstItem="17" firstAttribute="trailing" secondItem="18" secondAttribute="trailing" id="473"/>
-                <constraint firstItem="8" firstAttribute="top" secondItem="7" secondAttribute="top" id="474"/>
-                <constraint firstItem="10" firstAttribute="top" secondItem="9" secondAttribute="top" id="475"/>
-                <constraint firstAttribute="trailing" secondItem="11" secondAttribute="trailing" constant="15" id="478"/>
-                <constraint firstItem="301" firstAttribute="top" secondItem="302" secondAttribute="top" id="482"/>
-                <constraint firstItem="24" firstAttribute="leading" secondItem="25" secondAttribute="leading" id="484"/>
-                <constraint firstItem="304" firstAttribute="bottom" secondItem="303" secondAttribute="bottom" id="485"/>
-                <constraint firstItem="23" firstAttribute="bottom" secondItem="27" secondAttribute="bottom" id="486"/>
-                <constraint firstItem="28" firstAttribute="bottom" secondItem="24" secondAttribute="bottom" id="488"/>
-                <constraint firstItem="16" firstAttribute="leading" secondItem="8" secondAttribute="leading" id="490"/>
-                <constraint firstItem="23" firstAttribute="leading" secondItem="22" secondAttribute="leading" id="491"/>
-                <constraint firstAttribute="bottom" secondItem="18" secondAttribute="bottom" constant="82" id="573"/>
-                <constraint firstAttribute="bottom" secondItem="13" secondAttribute="bottom" constant="134" id="608"/>
-                <constraint firstAttribute="bottom" secondItem="15" secondAttribute="bottom" constant="27" id="611"/>
-                <constraint firstItem="37" firstAttribute="trailing" secondItem="305" secondAttribute="trailing" id="725"/>
-                <constraint firstItem="37" firstAttribute="leading" secondItem="305" secondAttribute="leading" id="727"/>
-                <constraint firstItem="37" firstAttribute="centerX" secondItem="302" secondAttribute="centerX" id="728"/>
-                <constraint firstItem="37" firstAttribute="bottom" secondItem="305" secondAttribute="bottom" id="729"/>
-                <constraint firstItem="37" firstAttribute="top" secondItem="1" secondAttribute="top" constant="100" id="730"/>
-                <constraint firstItem="37" firstAttribute="top" secondItem="305" secondAttribute="top" id="731"/>
-                <constraint firstAttribute="bottom" secondItem="7" secondAttribute="bottom" constant="238" id="732"/>
-                <constraint firstAttribute="bottom" secondItem="12" secondAttribute="bottom" constant="185" id="733"/>
-                <constraint firstAttribute="bottom" secondItem="300" secondAttribute="bottom" constant="292" id="734"/>
-                <constraint firstAttribute="bottom" secondItem="37" secondAttribute="bottom" constant="326" id="735"/>
-                <constraint firstItem="305" firstAttribute="top" secondItem="1" secondAttribute="top" constant="100" id="736"/>
-                <constraint firstAttribute="bottom" secondItem="305" secondAttribute="bottom" constant="326" id="737"/>
-                <constraint firstAttribute="trailing" secondItem="6" secondAttribute="trailing" constant="20" id="742"/>
-                <constraint firstItem="6" firstAttribute="centerY" secondItem="4" secondAttribute="centerY" id="748"/>
-                <constraint firstItem="6" firstAttribute="top" secondItem="4" secondAttribute="top" id="749"/>
-                <constraint firstItem="301" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="86" id="750"/>
-                <constraint firstItem="294" firstAttribute="top" secondItem="1" secondAttribute="top" constant="-17" id="784"/>
-                <constraint firstItem="294" firstAttribute="centerX" secondItem="305" secondAttribute="centerX" id="785"/>
-                <constraint firstAttribute="bottom" secondItem="294" secondAttribute="bottom" constant="-1" id="787"/>
-            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>

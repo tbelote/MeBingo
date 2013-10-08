@@ -140,7 +140,6 @@
 		6A81A57817771FEB003F0419 /* n.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57717771FEB003F0419 /* n.png */; };
 		6A81A57A17771FF1003F0419 /* i.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57917771FF1003F0419 /* i.png */; };
 		6A81A57C17771FF4003F0419 /* b.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57B17771FF4003F0419 /* b.png */; };
-		6A81A57E17772395003F0419 /* Button_Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57D17772395003F0419 /* Button_Play@2x.png */; };
 		6A81A5801777239B003F0419 /* Button_Pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A57F1777239B003F0419 /* Button_Pause@2x.png */; };
 		6A81A58617772419003F0419 /* free.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A58517772419003F0419 /* free.png */; };
 		6A81A588177724A7003F0419 /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A587177724A7003F0419 /* box.png */; };
@@ -150,6 +149,13 @@
 		6A81A59C177735F0003F0419 /* navBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81A59B177735F0003F0419 /* navBar@2x.png */; };
 		6A97B1EF177874A3004056F1 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A97B1EE177874A3004056F1 /* Icon-72.png */; };
 		6A97B1F3177874C2004056F1 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A97B1F2177874C2004056F1 /* Icon-Small.png */; };
+		B37B76181803A49000F08253 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37B76161803A49000F08253 /* ViewController_iPad.xib */; };
+		B37B761D1803A8C200F08253 /* SelectGamePlayViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37B761B1803A8C200F08253 /* SelectGamePlayViewController_iPad.xib */; };
+		B37B76221803B56700F08253 /* SelectLanguageViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37B76201803B56700F08253 /* SelectLanguageViewController_iPad.xib */; };
+		B37B76271803B6DB00F08253 /* PrintPhotoViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37B76251803B6DB00F08253 /* PrintPhotoViewController_iPad.xib */; };
+		B37B762C1803B77800F08253 /* GamePlayPrint_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37B762A1803B77800F08253 /* GamePlayPrint_iPad.xib */; };
+		B37B76311803C3C500F08253 /* GamePlayViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37B762F1803C3C500F08253 /* GamePlayViewController_iPad.xib */; };
+		B37B76371803EE7B00F08253 /* Button_Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B37B76361803EE7B00F08253 /* Button_Play@2x.png */; };
 		B822774816ECBC1F00456D3C /* SelectGamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B822774616ECBC1F00456D3C /* SelectGamePlayViewController.m */; };
 		B822774916ECBC1F00456D3C /* SelectGamePlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B822774716ECBC1F00456D3C /* SelectGamePlayViewController.xib */; };
 		B822774E16ECC51200456D3C /* WordGamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B822774C16ECC51200456D3C /* WordGamePlayViewController.m */; };
@@ -320,7 +326,6 @@
 		6A81A57717771FEB003F0419 /* n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = n.png; sourceTree = "<group>"; };
 		6A81A57917771FF1003F0419 /* i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = i.png; sourceTree = "<group>"; };
 		6A81A57B17771FF4003F0419 /* b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b.png; sourceTree = "<group>"; };
-		6A81A57D17772395003F0419 /* Button_Play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Play@2x.png"; sourceTree = "<group>"; };
 		6A81A57F1777239B003F0419 /* Button_Pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Pause@2x.png"; sourceTree = "<group>"; };
 		6A81A58517772419003F0419 /* free.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = free.png; sourceTree = "<group>"; };
 		6A81A587177724A7003F0419 /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
@@ -330,6 +335,13 @@
 		6A81A59B177735F0003F0419 /* navBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navBar@2x.png"; sourceTree = "<group>"; };
 		6A97B1EE177874A3004056F1 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		6A97B1F2177874C2004056F1 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		B37B76161803A49000F08253 /* ViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController_iPad.xib; sourceTree = "<group>"; };
+		B37B761B1803A8C200F08253 /* SelectGamePlayViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectGamePlayViewController_iPad.xib; sourceTree = "<group>"; };
+		B37B76201803B56700F08253 /* SelectLanguageViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectLanguageViewController_iPad.xib; sourceTree = "<group>"; };
+		B37B76251803B6DB00F08253 /* PrintPhotoViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintPhotoViewController_iPad.xib; sourceTree = "<group>"; };
+		B37B762A1803B77800F08253 /* GamePlayPrint_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamePlayPrint_iPad.xib; sourceTree = "<group>"; };
+		B37B762F1803C3C500F08253 /* GamePlayViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamePlayViewController_iPad.xib; sourceTree = "<group>"; };
+		B37B76361803EE7B00F08253 /* Button_Play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Play@2x.png"; sourceTree = "<group>"; };
 		B822774516ECBC1F00456D3C /* SelectGamePlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectGamePlayViewController.h; sourceTree = "<group>"; };
 		B822774616ECBC1F00456D3C /* SelectGamePlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectGamePlayViewController.m; sourceTree = "<group>"; };
 		B822774716ECBC1F00456D3C /* SelectGamePlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectGamePlayViewController.xib; sourceTree = "<group>"; };
@@ -427,6 +439,7 @@
 				6148822517761B2D00290172 /* PrintPhotoViewController.h */,
 				6148822617761B2D00290172 /* PrintPhotoViewController.m */,
 				6148822717761B2D00290172 /* PrintPhotoViewController.xib */,
+				B37B76251803B6DB00F08253 /* PrintPhotoViewController_iPad.xib */,
 			);
 			name = Printing;
 			sourceTree = "<group>";
@@ -453,6 +466,7 @@
 				61B56CE6179917EF003C1ECF /* Button_Play_click.png */,
 				61B56CE7179917EF003C1ECF /* Button_Play.png */,
 				61B56CED179917EF003C1ECF /* Default-568h.png */,
+				B37B76361803EE7B00F08253 /* Button_Play@2x.png */,
 				61B56CEE179917EF003C1ECF /* logo.png */,
 				61B56CEF179917EF003C1ECF /* MeBingo_Background.png */,
 				61B56CF0179917EF003C1ECF /* TextBox.png */,
@@ -463,7 +477,6 @@
 				6A81A59717772FCC003F0419 /* Button_Pause_click@2x.png */,
 				6A81A56917771CDC003F0419 /* Button_CustomizeGames@2x.png */,
 				6A81A56B17771CE7003F0419 /* Button_GameCenter@2x.png */,
-				6A81A57D17772395003F0419 /* Button_Play@2x.png */,
 				6A81A57F1777239B003F0419 /* Button_Pause@2x.png */,
 				6A81A58517772419003F0419 /* free.png */,
 				6A81A587177724A7003F0419 /* box.png */,
@@ -593,6 +606,7 @@
 				B89F8E1716E3200A000FB79C /* ViewController.h */,
 				B89F8E1816E3200A000FB79C /* ViewController.m */,
 				B89F8E1A16E3200A000FB79C /* ViewController.xib */,
+				B37B76161803A49000F08253 /* ViewController_iPad.xib */,
 			);
 			name = HomeViewController;
 			sourceTree = "<group>";
@@ -601,9 +615,11 @@
 			isa = PBXGroup;
 			children = (
 				61A4F28B17972EA90097AAA3 /* GamePlayPrint.xib */,
+				B37B762A1803B77800F08253 /* GamePlayPrint_iPad.xib */,
 				B8998C2F16E3831800878C17 /* GamePlayViewController.h */,
 				B8998C3016E3831800878C17 /* GamePlayViewController.m */,
 				B8998C3116E3831800878C17 /* GamePlayViewController.xib */,
+				B37B762F1803C3C500F08253 /* GamePlayViewController_iPad.xib */,
 			);
 			name = GamePlayViewController;
 			sourceTree = "<group>";
@@ -614,6 +630,7 @@
 				B822774516ECBC1F00456D3C /* SelectGamePlayViewController.h */,
 				B822774616ECBC1F00456D3C /* SelectGamePlayViewController.m */,
 				B822774716ECBC1F00456D3C /* SelectGamePlayViewController.xib */,
+				B37B761B1803A8C200F08253 /* SelectGamePlayViewController_iPad.xib */,
 			);
 			name = SelectGamePlayController;
 			sourceTree = "<group>";
@@ -633,6 +650,7 @@
 				B822775116ECC5CB00456D3C /* SelectLanguageViewController.h */,
 				B822775216ECC5CB00456D3C /* SelectLanguageViewController.m */,
 				B822775316ECC5CB00456D3C /* SelectLanguageViewController.xib */,
+				B37B76201803B56700F08253 /* SelectLanguageViewController_iPad.xib */,
 			);
 			name = SelectLanguageViewController;
 			sourceTree = "<group>";
@@ -843,6 +861,7 @@
 				61488177177615FE00290172 /* hand.jpg in Resources */,
 				61488178177615FE00290172 /* house.jpg in Resources */,
 				61488179177615FE00290172 /* ice.jpg in Resources */,
+				B37B76181803A49000F08253 /* ViewController_iPad.xib in Resources */,
 				6148817A177615FE00290172 /* island.jpg in Resources */,
 				6148817B177615FE00290172 /* jar.jpg in Resources */,
 				6148817C177615FE00290172 /* jump.jpg in Resources */,
@@ -853,12 +872,14 @@
 				61488181177615FE00290172 /* lion.jpg in Resources */,
 				61488182177615FE00290172 /* man.jpg in Resources */,
 				61488183177615FE00290172 /* milk.jpg in Resources */,
+				B37B76311803C3C500F08253 /* GamePlayViewController_iPad.xib in Resources */,
 				61488184177615FE00290172 /* nail.jpg in Resources */,
 				61488185177615FE00290172 /* nest.jpg in Resources */,
 				61488186177615FE00290172 /* net.jpg in Resources */,
 				61488187177615FE00290172 /* nine.jpg in Resources */,
 				61488188177615FE00290172 /* nose.jpg in Resources */,
 				61488189177615FE00290172 /* one.jpg in Resources */,
+				B37B76271803B6DB00F08253 /* PrintPhotoViewController_iPad.xib in Resources */,
 				6148818A177615FE00290172 /* onion.jpg in Resources */,
 				6148818B177615FE00290172 /* orange.jpg in Resources */,
 				6148818C177615FE00290172 /* pail.jpg in Resources */,
@@ -901,8 +922,8 @@
 				6A81A57817771FEB003F0419 /* n.png in Resources */,
 				6A81A57A17771FF1003F0419 /* i.png in Resources */,
 				6A81A57C17771FF4003F0419 /* b.png in Resources */,
-				6A81A57E17772395003F0419 /* Button_Play@2x.png in Resources */,
 				6A81A5801777239B003F0419 /* Button_Pause@2x.png in Resources */,
+				B37B761D1803A8C200F08253 /* SelectGamePlayViewController_iPad.xib in Resources */,
 				6A81A58617772419003F0419 /* free.png in Resources */,
 				6A81A588177724A7003F0419 /* box.png in Resources */,
 				6A81A59617772FC2003F0419 /* Button_Play_click@2x.png in Resources */,
@@ -919,6 +940,8 @@
 				61A4F28E17972EA90097AAA3 /* logo@2x.png in Resources */,
 				61B56CF5179917EF003C1ECF /* Button_CustomizeGames.png in Resources */,
 				61B56CF8179917EF003C1ECF /* Button_GameCenter.png in Resources */,
+				B37B76371803EE7B00F08253 /* Button_Play@2x.png in Resources */,
+				B37B76221803B56700F08253 /* SelectLanguageViewController_iPad.xib in Resources */,
 				61B56CFB179917EF003C1ECF /* Button_Pause_click.png in Resources */,
 				61B56CFC179917EF003C1ECF /* Button_Pause.png in Resources */,
 				61B56CFE179917EF003C1ECF /* Button_Play_click.png in Resources */,
@@ -930,6 +953,7 @@
 				6145B76A17A8DE530058017E /* navBar.png in Resources */,
 				6145B76B17A8DE530058017E /* whiteButton@2x.png in Resources */,
 				6145B76D17A8DE710058017E /* whiteButton.png in Resources */,
+				B37B762C1803B77800F08253 /* GamePlayPrint_iPad.xib in Resources */,
 				618116C217C6DD3D001229B7 /* Icon.png in Resources */,
 				618116C317C6DD3D001229B7 /* Icon@2x.png in Resources */,
 			);
@@ -1141,6 +1165,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "C13B2625-3919-4F46-8C79-EED7BA62112A";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1166,6 +1191,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7B2C6FD4-E2B4-4D82-B491-8265A0FF151F";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

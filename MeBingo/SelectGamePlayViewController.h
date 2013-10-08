@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "WhiteButton.h"
+#import "AppDelegate.h"
 @interface SelectGamePlayViewController : UIViewController
 
-
+-(IBAction)oldTimeBingoGameIsClicked:(id)sender;
+-(IBAction)wordBingoGameIsClicked:(id)sender;
+-(IBAction)pictureBingoIsClicked:(id)sender;
 @end

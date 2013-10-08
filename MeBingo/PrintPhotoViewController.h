@@ -48,6 +48,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "AppDelegate.h"
 
 @interface PrintPhotoViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIPopoverControllerDelegate> {
   UIToolbar	  *toolbar;

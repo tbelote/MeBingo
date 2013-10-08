@@ -54,19 +54,37 @@
 
 
 -(IBAction)oldTimeBingoGameIsClicked:(id)sender{
-
-    WordGamePlayViewController *wordGamePlay = [[WordGamePlayViewController alloc] initWithNibName:@"GamePlayViewController" bundle:nil];
+    WordGamePlayViewController *wordGamePlay;
+    
+    if (!ISIPAD) {
+        wordGamePlay = [[WordGamePlayViewController alloc] initWithNibName:@"GamePlayViewController" bundle:nil];
+    }else{
+        wordGamePlay = [[WordGamePlayViewController alloc] initWithNibName:@"GamePlayViewController_iPad" bundle:nil];
+    }
     wordGamePlay.language = @"numbers";
     [self.navigationController pushViewController:wordGamePlay animated:YES];
 }
 
 -(IBAction)wordBingoGameIsClicked:(id)sender{
-    SelectLanguageViewController *selectLanguage = [[SelectLanguageViewController alloc] initWithNibName:@"SelectLanguageViewController" bundle:nil];
+    SelectLanguageViewController *selectLanguage;
+    
+     if (!ISIPAD) {
+         selectLanguage = [[SelectLanguageViewController alloc] initWithNibName:@"SelectLanguageViewController" bundle:nil];
+     }else{
+          selectLanguage = [[SelectLanguageViewController alloc] initWithNibName:@"SelectLanguageViewController_iPad" bundle:nil];
+     }
     [self.navigationController pushViewController:selectLanguage animated:YES];
 }
 
 -(IBAction)pictureBingoIsClicked:(id)sender{
-    PictureBingoGameViewController *pictureBingoGame = [[PictureBingoGameViewController alloc] initWithNibName:@"GamePlayViewController" bundle:nil];
+    
+    PictureBingoGameViewController *pictureBingoGame;
+    
+    if (!ISIPAD) {
+        pictureBingoGame = [[PictureBingoGameViewController alloc] initWithNibName:@"GamePlayViewController" bundle:nil];
+    }else{
+         pictureBingoGame = [[PictureBingoGameViewController alloc] initWithNibName:@"GamePlayViewController_iPad" bundle:nil];
+    }
     [self.navigationController pushViewController:pictureBingoGame animated:YES];
 }
 
